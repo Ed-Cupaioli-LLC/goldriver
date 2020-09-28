@@ -1,24 +1,24 @@
 ---
-title: 
-description: 
+title: Gold River Distillery
+description: Gold River Distillery is the first legal distillery in Sacramento County since Prohibition.
 meta_img:
-twitter:
+twitter: https://mobile.twitter.com/goldrdistillery
 favicon:
-url:
+url: https://goldriverdistillery.com/
 gtm:
 schema:
-  name: 
+  name: Gold River Distillery
   type: 
   image: 
   logo:
-  phone: 
+  phone: (916) 476-3868
   email: 
   social:
   location: 
-    address: 
-    city: 
-    state: 
-    zip: 
+    address: 11460 SUNRISE GOLD CIR. C
+    city: RANCHO CORDOVA
+    state: CA
+    zip: 95742
   hours:
     days:
     opens:
