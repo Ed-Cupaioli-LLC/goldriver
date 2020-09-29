@@ -1,3 +1,7 @@
+P{
+    padding:0;
+    margin:0;
+}
 #site-footer{
     background-color: black;
     font-family: 'Noto Sans JP', sans-serif;
@@ -5,55 +9,89 @@
     letter-spacing: 1px;
     line-height: 2.5em;
     font-weight: 400;
-    
-
-}
-.outter-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center  space-around;
-    padding-top: 50px;
-
-    
-
-}
-.links, .location, .social{
-    padding: 0 40px;
-}
-
-.links{
-    display: flex;
-    flex-direction: column;
-    color: white;
-
-}
-a{
-    color: white;
-    font-weight: 400;
-}
-P{
-    padding:0;
-    margin:0;
-}
-.footer_logo{
-    width: 50%;
-}
-.governmentWarning{
-    line-height: 1.7em;
-    font-weight: 500;
-
-}
-
-@include bp-large {
     .outter-content{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 77px 0;
+        width: 80%;
+        margin: 0 auto;
+        @include bp-large {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+            }
+        .logo{
+            margin-right: 55px;
+            text-align: left;
+            @include bp-large{
+                margin-right: 0;
+            }
+            .footer_logo{
+                max-width: 300px;
+            }
+        }
+        .links{
+            margin-right: 55px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            @include bp-large{
+                padding: 20px 0;
+                text-align: center;
+                margin-right: 0;
+            }
+                a{
+                    color: white;
+                    font-weight: 400;
+                }
+        }
+        .location{
+            margin-right: 55px;
+            text-align: left;
+            @include bp-large{
+                padding: 20px 0;
+                text-align: center;
+                margin-right: 0;
+            }
+        }
+        .social{
+            text-align: left;
+            @include bp-large{
+                text-align: center;
+                padding: 20px 0; 
+            }
+        }
+            .social-icons{
+                display: flex;
+                flex-direction: row;
+                padding: 10px 0 ;
+                @include bp-large{
+                    justify-content: center;
+                }
+                .social-logo{
+                    width: 42px;
+                    height:42px;
+                    margin-right: 10px;
+                    
+                }  
+            }
     }
-    .links, .location, .social{
-        padding: 20px 0;
-        text-align: center;
+    .governmentWarning{
+        border-top: solid #666 .5px;
+        font-weight: 300;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 40px 0;;
+         .warning{
+            padding-top: 40px;
+            line-height: 1.7em;
+            font-weight: 500;
+            color: #666;
+            font-weight: 300;
+            padding-bottom: 50px;
+        }
     }
-
 }
