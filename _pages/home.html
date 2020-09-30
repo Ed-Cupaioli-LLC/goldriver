@@ -4,43 +4,109 @@ layout: default
 permalink: /
 css: home
 
+intro:
+    header: GOLD RIVER DISTILLERY
+    content: is proud to be the first legal distillery in Sacramento County since Prohibition. We're a small-batch micro distillery located in Northern California, just outside of the city of Sacramento. Our Wheel House spirits are available in a growing number of stores through out California. Find where you can buy our spirits by visiting our retail locations page.
+served-spirits:
+    title: Spirits
+    list:
+    - title: Dry Gin
+      logo: "/img/logos-icons/bottle_icon.png"
+    - title: Absinthe
+      logo: "/img/logos-icons/bottle_icon.png"
+    - title: Bourbon
+      logo: "/img/logos-icons/bottle_icon.png"
+    - title: Whiskey
+      logo: "/img/logos-icons/bottle_icon.png"
+craft:
+    header: OUR HAND-CRAFTED STILL
+    content: Our hand-crafted still is a gallon small batch, side mount column still with a gin column and a vodka column. The still was designed and fabricated almost entirely by our founder and distillery, Greg Baughman, the summer before we began production. A special thanks goes out to Matt Noel and Steve Habbestad for your very special and hard to find welding skills to help us complete our project on time!
+    img: '/img/images/brewery-homepage.png'
+
+celebration:
+    header: IN CELEBRATION OF THE RICH HISTORY OF THE SACRAMENTO AREA
+    content: "the first spirit we introduced was a gin, one of the more popular spirits during the time of prohibition. Wheel House American Dry Gin was received with high praise, as many were excited for an alternative to the more juniper-heavy style of a London Dry gin. In response to popular demand, we have produced several more products in the Wheel House spirit family: Wheel House Sacramento Vodka, Wheel House Absinthe Verte, Wheel House Drowning Oak Corn Whiskey, Wheel House California Bourbon and Wheel House Malted Rice Whiskey." 
+    img: "/img/images/american_gin.png"
+    img-top: "/img/logos-icons/dividertop.jpg"
+    img-bottom: "/img/logos-icons/dividercrest.jpg"
+
+tasting-room:
+    header: STOP BY OUR TASTING ROOM
+    content: 'to check out our hand-crafted still, try our famous spirits, and pick up a few bottles for your friends and family.'
+    background-img: "img/background/wiskeyglasses.png"
+
+insta:
+    header: FOLLOW US ON INSTAGRAM
+    img-1: "img//images/greendrink.png"
+    img-2: "/img//images/wheelhousedrink.png"
+    img-3: "/img//images/yellowdrink.png"
+    img-4: "/img//images/barrelroom.png"
+   
 ---
 <div id="home">
-    <video>
-
-    </video>
     <div class='bio'>
-        <h1>GOLD RIVER DISTILLERY</h1>
-        <p>is proud to be the first legal distillery in Sacramento County since Prohibition. We're a small-batch micro distillery located in Northern California, just outside of the city of Sacramento. Our Wheel House spirits are available in a growing number of stores through out California. Find where you can buy our spirits by visiting our retail locations page.</p>
+        <p class='intro'><span class='gold-heading'>{{ page.intro.header }}</span>{{ page.intro.content}}</p>
         
         <div class='spirits-logo'>
-            <div class='gry-gin-home'>
-                <img alt='bottle icon' src='../img/logos-icons/bottle_icon.png'>
-                <h1>Dry Gin</h1>
-            </div>
-            <div class='absinthe-home'>
-                <img alt='bottle icon' src='../img/logos-icons/bottle_icon.png'>
-                <h1>Absinthe</h1>
-            </div>
-            <div class='bourbon-home'>
-                <img alt='bottle icon' src='../img/logos-icons/bottle_icon.png'>
-                <h1>Bourbon</h1>
-            </div>
-            <div class='whiskey-home'>
-                <img alt='bottle icon' src='../img/logos-icons/bottle_icon.png'>
-                <h1>Whiskey</h1>
-            </div>
-        </div>
-    </div>  
+                    {% for spirit in page.served-spirits.list %}
+                    <div class='spirit' >
+                    <img class="bottle-icon" src="{{ spirit.logo  | relative_url }}" />
+                    <span class='drink-names'>{{ spirit.title }} </span>
+                </div>
+                    {% endfor %}       
+        </div>  
+    </div>
     <div class='home-craft'>
         <div class='hand-crafted'>
-            <h1>OUR HAND-CRAFTED STILL</h1>
-            <p>Our hand-crafted still is a gallon small batch, side mount column still with a gin column and a vodka column. The still was designed and fabricated almost entirely by our founder and distillery, Greg Baughman, the summer before we began production. A special thanks goes out to Matt Noel and Steve Habbestad for your very special and hard to find welding skills to help us complete our project on time!</p>
+            <h2 class='craft'>{{ page.craft.header }}</h2>
+            <p class='craft-p'>{{ page.craft.content }}</p>
         </div>
         <div class='home-pressure-img'>
-            <img alt='bottle icon' src='../img/images/brewery-homepage.png'>
+            <img alt='bottle icon' class='pressure' src='{{ page.craft.img | relative_url }}'>
 
         </div>
+    </div>
+    <div class='home-celebration'>
+        
+        <div class=home-wheel>
+            <img class='wheel-house' alt='wheel house' src='{{ page.celebration.img | relative_url }}'>
+        </div>
+        <div class='home-sacramento'>
+            <div class='home-top-divi'>
+                <img src='{{ page.celebration.img-top | relative_url }}'>
+            </div>
+            <h1 class='sac'>{{ page.celebration.header }}</h1>
+            <p class='sac-p'>{{ page.celebration.content }}</p>
+            <button>Button</button>
+            <div class='home-bottom-divi'>
+                <img src='{{ page.celebration.img-top | relative_url }}'>
+            </div>
+        </div>
+        
+    </div>
+    <div  class='tasting-room'>
+        <h1>{{ page.tasting-room.header}}</h1>
+        <p class='p-home-tasting'>{{ page.tasting-room.content }}</p>
+        <button>Button</button>
+
+    </div>
+    <div class='home-insta'>
+        <h1>{{ page.insta.header }}</h1>
+        <div class=home-insta-layout>
+            <div>
+                <img src='{{ page.insta.img-1 | relative_url }}'>
+            </div>
+            <div>
+                <img src='{{ page.insta.img-2 | relative_url }}'>
+            </div>
+            <div>
+                <img src='{{ page.insta.img-3 | relative_url }}'>
+            </div>
+            <div>
+                <img src='{{ page.insta.img-4 | relative_url }}'>
+            </div>
+        </div>
+
     </div>
     
 </div>
