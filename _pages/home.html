@@ -3,4 +3,110 @@ title: Home Page
 layout: default
 permalink: /
 css: home
+
+intro:
+    header: GOLD RIVER DISTILLERY
+    content: is proud to be the first legal distillery in Sacramento County since Prohibition. We're a small-batch micro distillery located in Northern California, just outside of the city of Sacramento. Our Wheel House spirits are available in a growing number of stores through out California. Find where you can buy our spirits by visiting our retail locations page.
+served-spirits:
+    title: Spirits
+    list:
+    - title: Dry Gin
+      logo: "/img/logos-icons/bottle_icon.png"
+    - title: Absinthe
+      logo: "/img/logos-icons/bottle_icon.png"
+    - title: Bourbon
+      logo: "/img/logos-icons/bottle_icon.png"
+    - title: Whiskey
+      logo: "/img/logos-icons/bottle_icon.png"
+craft:
+    header: OUR HAND-CRAFTED STILL
+    content: Our hand-crafted still is a gallon small batch, side mount column still with a gin column and a vodka column. The still was designed and fabricated almost entirely by our founder and distillery, Greg Baughman, the summer before we began production. A special thanks goes out to Matt Noel and Steve Habbestad for your very special and hard to find welding skills to help us complete our project on time!
+    img: '/img/images/brewery-homepage.png'
+
+celebration:
+    header: IN CELEBRATION OF THE RICH HISTORY OF THE SACRAMENTO AREA
+    content: "the first spirit we introduced was a gin, one of the more popular spirits during the time of prohibition. Wheel House American Dry Gin was received with high praise, as many were excited for an alternative to the more juniper-heavy style of a London Dry gin. In response to popular demand, we have produced several more products in the Wheel House spirit family: Wheel House Sacramento Vodka, Wheel House Absinthe Verte, Wheel House Drowning Oak Corn Whiskey, Wheel House California Bourbon and Wheel House Malted Rice Whiskey." 
+    img: "/img/images/american_gin.png"
+    img-top: "/img/logos-icons/dividertop.jpg"
+    img-bottom: "/img/logos-icons/dividercrest.jpg"
+
+tasting-room:
+    header: STOP BY OUR TASTING ROOM
+    content: 'to check out our hand-crafted still, try our famous spirits, and pick up a few bottles for your friends and family.'
+    background-img: "img/background/wiskeyglasses.png"
+
+insta:
+    header: FOLLOW US ON INSTAGRAM
+    list:
+    - img: "/img/images/greendrink.png"
+    - img: "/img/images/wheelhousedrink.png"
+    - img: "/img/images/yellowdrink.png"
+    - img: "/img/images/barrelroom.png"
+   
 ---
+<div id="home">
+    <div class='bio'>
+        <p class='intro'><span class='gold-heading'>{{ page.intro.header }}</span>{{ page.intro.content}}</p>
+            <div class='spirits-logo'>
+                    {% for spirit in page.served-spirits.list %}
+                    <div class='spirit' >
+                        <img class="bottle-icon" src="{{ spirit.logo  | relative_url }}" />
+                        <span class='drink-names'>{{ spirit.title }} </span>
+                    </div>
+                    {% endfor %}       
+            </div>  
+    </div>
+
+    <div class='home-craft'>
+        <div class='hand-crafted'>
+            <h2 class='craft'>{{ page.craft.header }}</h2>
+            <p class='craft-p'>{{ page.craft.content }}</p>
+        </div>
+        <div class='home-pressure-img'>
+            <img alt='bottle icon' class='pressure' src='{{ page.craft.img | relative_url }}'>
+        </div>
+    </div>
+
+    <div class='home-celebration'>
+        <div class=home-wheel>
+            <img class='wheel-house' alt='wheel house' src='{{ page.celebration.img | relative_url }}'>
+        </div>
+        <div class='home-sacramento'>
+            <div class='home-top-divi'>
+                <img src='{{ page.celebration.img-top | relative_url }}'>
+            </div>
+            <h1 class='sac'>{{ page.celebration.header }}</h1>
+            <p class='sac-p'>{{ page.celebration.content }}</p>
+            <button>Button</button>
+            <div class='home-bottom-divi'>
+                <img src='{{ page.celebration.img-top | relative_url }}'>
+            </div>
+        </div>
+        
+    </div>
+
+    <div  class='tasting-room'>
+        <h1>{{ page.tasting-room.header}}</h1>
+        <p class='p-home-tasting'>{{ page.tasting-room.content }}</p>
+        <button>Button</button>
+    </div>
+
+    <div class='home-insta'>
+        <div class='header-insta'>
+            <div class='line'></div>
+            <h1 class='header'>{{ page.insta.header }}</h1>
+            <div  class='line'></div>
+        </div>
+       
+        <div class='image-layout'>
+            {% for images in page.insta.list %}
+            <div class='img-container'>
+                <img class="insta-photo" src="{{ images.img  | relative_url }}" />
+            </div>
+            {% endfor %}  
+        </div>
+
+    </div>
+    
+</div>
+  

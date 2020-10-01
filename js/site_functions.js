@@ -1,6 +1,6 @@
 $(function(){
     $(".button").click(function() {
-        let val = $(this).attr('id');
+        var val = $(this).attr('id');
         if (val == 0) {
             $("ul").hide();
             $(this).attr('id', '1');
