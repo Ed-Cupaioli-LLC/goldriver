@@ -1,0 +1,41 @@
+#tasting-info-page .background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+#tasting-info-page .header-image {
+  background-image: url("../img/tasting-room/wiskeyglasses.png");
+  height: 540px; }
+#tasting-info-page .covid {
+  font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/background/black-background.png") !important;
+  padding: 60px 10%;
+  background-size: cover; }
+  #tasting-info-page .covid .intro {
+    font-size: 19px;
+    font-weight: 300;
+    padding: 60px 0;
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #666;
+    text-align: left;
+    color: #ffffff; }
+    #tasting-info-page .covid .intro .gold-heading {
+      color: #e7b560;
+      font-size: 48px;
+      font-family: 'Aleo',Georgia,"Times New Roman",serif; }
+      @media only screen and (max-width: 1024px) {
+        #tasting-info-page .covid .intro .gold-heading {
+          display: block; } }
+      @media only screen and (max-width: 768px) {
+        #tasting-info-page .covid .intro .gold-heading {
+          font-size: 42px; } }
+      @media only screen and (max-width: 568px) {
+        #tasting-info-page .covid .intro .gold-heading {
+          font-size: 26px; } }
+
+/*# sourceMappingURL=tasting.min.css.map */

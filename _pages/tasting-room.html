@@ -2,22 +2,24 @@
 title: Home Page
 layout: default
 permalink: /tasting
-css: home
+css: tasting
 
+header:
+    img: "/img/tasting-room/'wiskeyglasses.png"
 covid:
     header: COVID-19 UPDATE
     content: "The safety of our visitors, communities, employees and their families is our number one priority during the coronavirus (COVID-19) pandemic. 
 
     Governor Gavin Newsom announced on June 5 that California tasting rooms may reopen where permitted by counties and issued state guidance for the health and safety of visitors and employees. Please check back for updates on our re-opening, we are looking forward to welcoming you back."
 
-tasitng-room:
+tasting-room:
     header: TASTING ROOM & STORE HOURS
     list:
-    -title: Wednesday By Appointment Only
-    -title: Friday 4-7 PM
-    -title: Saturday 11-3 PM
-    -title: Sunday 12-4 PM
-    -title: Call Ahead Number (916)-476-3868
+    -time: 'Wednesday By Appointment Only'
+    -time: 'Friday 4-7 PM'
+    -time: 'Saturday 11-3 PM'
+    -time: 'Sunday 12-4 PM'
+    -time: 'Call Ahead Number: (916)-476-3868'
 
     header-visit: VISIT THE TASTING ROOM
     location: 
@@ -30,6 +32,20 @@ tasitng-room:
     
 
 ---
-<div>
-    {{page.covid.content}}
+<div id='tasting-info-page'>
+    <div class='header-image background-image' ></div>
+
+    <div class='covid'>
+            <p class='intro'><span class='gold-heading font-header'>{{ page.covid.header }}</span>{{ page.covid.content }}</p>       
+    </div>
+
+    <div class=tasting-room>
+        <div class='hours'>
+            <h1> {{ page.tasting-room.header }} </h1>
+        </div>
+
+        
+
+    </div>
+   
 </div>
