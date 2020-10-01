@@ -37,25 +37,26 @@ tasting-room:
 
 insta:
     header: FOLLOW US ON INSTAGRAM
-    img-1: "img//images/greendrink.png"
-    img-2: "/img//images/wheelhousedrink.png"
-    img-3: "/img//images/yellowdrink.png"
-    img-4: "/img//images/barrelroom.png"
+    list:
+    - img: "/img/images/greendrink.png"
+    - img: "/img/images/wheelhousedrink.png"
+    - img: "/img/images/yellowdrink.png"
+    - img: "/img/images/barrelroom.png"
    
 ---
 <div id="home">
     <div class='bio'>
         <p class='intro'><span class='gold-heading'>{{ page.intro.header }}</span>{{ page.intro.content}}</p>
-        
-        <div class='spirits-logo'>
+            <div class='spirits-logo'>
                     {% for spirit in page.served-spirits.list %}
                     <div class='spirit' >
-                    <img class="bottle-icon" src="{{ spirit.logo  | relative_url }}" />
-                    <span class='drink-names'>{{ spirit.title }} </span>
-                </div>
+                        <img class="bottle-icon" src="{{ spirit.logo  | relative_url }}" />
+                        <span class='drink-names'>{{ spirit.title }} </span>
+                    </div>
                     {% endfor %}       
-        </div>  
+            </div>  
     </div>
+
     <div class='home-craft'>
         <div class='hand-crafted'>
             <h2 class='craft'>{{ page.craft.header }}</h2>
@@ -63,11 +64,10 @@ insta:
         </div>
         <div class='home-pressure-img'>
             <img alt='bottle icon' class='pressure' src='{{ page.craft.img | relative_url }}'>
-
         </div>
     </div>
+
     <div class='home-celebration'>
-        
         <div class=home-wheel>
             <img class='wheel-house' alt='wheel house' src='{{ page.celebration.img | relative_url }}'>
         </div>
@@ -84,27 +84,26 @@ insta:
         </div>
         
     </div>
+
     <div  class='tasting-room'>
         <h1>{{ page.tasting-room.header}}</h1>
         <p class='p-home-tasting'>{{ page.tasting-room.content }}</p>
         <button>Button</button>
-
     </div>
+
     <div class='home-insta'>
-        <h1>{{ page.insta.header }}</h1>
-        <div class=home-insta-layout>
-            <div>
-                <img src='{{ page.insta.img-1 | relative_url }}'>
+        <div class='header-insta'>
+            <div class='line'></div>
+            <h1 class='header'>{{ page.insta.header }}</h1>
+            <div  class='line'></div>
+        </div>
+       
+        <div class='image-layout'>
+            {% for images in page.insta.list %}
+            <div class='img-container'>
+                <img class="insta-photo" src="{{ images.img  | relative_url }}" />
             </div>
-            <div>
-                <img src='{{ page.insta.img-2 | relative_url }}'>
-            </div>
-            <div>
-                <img src='{{ page.insta.img-3 | relative_url }}'>
-            </div>
-            <div>
-                <img src='{{ page.insta.img-4 | relative_url }}'>
-            </div>
+            {% endfor %}  
         </div>
 
     </div>

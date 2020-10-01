@@ -12,6 +12,11 @@
         background-position: 50%;
         background-size: 100%;
         background-size: cover;
+        @include bp-medium{
+            padding: 0px;
+
+        }
+      
         .intro{
             font-size: 19px;
             font-weight: 300;
@@ -46,6 +51,9 @@
                 margin-bottom: 26px;
                 @include bp-medium {
                     flex-direction:column;
+                    margin-left: 30px;
+                   
+                    
                 }
                 .bottle-icon{
                     max-width: 100px;
@@ -58,6 +66,7 @@
                     text-transform: uppercase;
                     font-size: 26px;
                     margin-left: 15px;
+                    align-self: center;
                     @include bp-medium {
                         margin-left:0;
                         text-align: center;
@@ -69,11 +78,28 @@
     .home-craft{
         display:flex;
         flex-direction: row;
+        @include bp-medium {
+            flex-direction: column;
+            .hand-crafted{
+                order:2;
+            }
+            .home-pressure-img{
+                order:1;
+                background-size: cover;
+                height: 500px;
+                width: fit-content;
+            }
+
+        }
        
         .hand-crafted{
             background-color: #4d5f8a;
             width:50%;
             padding: 150px 0 150px 200px;
+            @include bp-medium {
+                width: 100%;
+                padding: 60px 40px;
+            }
             .craft{
                 font-family: 'Aleo',Georgia,"Times New Roman",serif;
                 font-weight: 700;
@@ -81,7 +107,7 @@
                 color: #ffffff!important;
                 letter-spacing: 1px;
                 line-height: 1.7em;
-                padding: 0 20px;
+                padding: 0 40px;
 
             }
             .craft-p{
@@ -90,18 +116,20 @@
                 font-size: 18px;
                 letter-spacing: 1px;
                 padding: 0 0 20px 0;
-    margin-bottom: 10px!important;
-    padding: 0 40px;
-    line-height: 2;
-    letter-spacing: 1px;
+                margin-bottom: 10px!important;
+                padding: 0 40px;
+                line-height: 2;
+                letter-spacing: 1px;
             }
         }
         .home-pressure-img{
             width: 50%;
+            background-repeat: no-repeat;
+            background-size: 100%;
 
             .pressure{
                 height: 100%;
-                max-width: auto;
+                max-width: unset;
             }
         }
       
@@ -112,37 +140,99 @@
         flex-direction: row;
         .home-wheel{
             width: 50%;
+            background-repeat: no-repeat;
+            background-size: 100%;
             .wheel-house{
                 height: 100%;
-                max-width: auto;
+                max-width: unset;
 
             }
         }
         .home-sacramento{
             width:50%;
-            .sac, .sac-p{
+            background-color: white;
+           
+            .home-top-divi, .home-bottom-divi{
+                height: 50px;
+                width: 300px;
+                margin: 60px auto;
+            }
+            .sac {
                 color: #4d5f8a;
+                font-family: 'Aleo',Georgia,"Times New Roman",serif;
+                font-weight: 700;
+                font-size: 35px;
+                color: #4d5f8a!important;
+                letter-spacing: 1px;
+                line-height: 1.7em;
+                padding: 0 40px;
+                padding-right: 200px;
+            }
+            .sac-p{
+                color: black;
                 font-family: 'Noto Sans JP';
                 font-weight: 300;
                 font-size: 18px;
                 letter-spacing: 1px;
                 padding: 0 0 20px 0;
-    margin-bottom: 10px!important;
-    padding: 0 40px;
-    line-height: 2;
-    letter-spacing: 1px;
-
-            }
-            .sac-p{
-                color: black;
+                margin-bottom: 10px!important;
+                padding: 0 40px;
+                line-height: 2;
+                letter-spacing: 1px;
+                padding-right: 200px;
             }
            
         }
        
     }
     .tasting-room{
-        background-image: linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url("../img/background/wiskeyglasses.png")!important;
+        background-image: linear-gradient(180deg,rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url("../img/background/wiskeyglasses.png")!important;
         height: 400px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .home-insta{
+        background-color: #4d5f8a;
+        display: flex;
+        flex-direction: column;
+        .header-insta{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .line{
+                border-top: 1px solid white;
+                width: 30%;
+            }
+            .header{
+                margin:0 10px;
+                font-family: 'Aleo',Georgia,"Times New Roman",serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #ffffff!important;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    text-align: center;
+    max-width: 550px;
+            }
+
+        }
+        .image-layout{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .img-container{
+
+                width: 167px;
+                height:  215px;
+                .insta-photo{
+                    height: 100%;
+                    max-width: unset;
+                }
+            }
+            
+        }
+       
     }
     
 }
