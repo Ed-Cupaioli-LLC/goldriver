@@ -1,65 +1,105 @@
 #home{
+    //setting for repeat elements in the document//
     font-family: 'Noto Sans JP', sans-serif;
     color: white;
-    
+    -webkit-font-smoothing: antialiased;
+    .background-image{
+        background-size:cover; 
+	    background-position:center; 
+        background-repeat:no-repeat; 
+    }
+    .font-header{
+        font-family: 'Aleo',Georgia,"Times New Roman",serif;
+        font-weight: 700;
+        font-size: 35px;
+        letter-spacing: 1px;
+        line-height: 1.7em;
+        @include bp-medium{
+            font-size: 26px;
+        }
+    }
+    .font-paragraph{
+        font-family: 'Noto Sans JP';
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 2;
+        letter-spacing: 1px;
+
+    }
+    @keyframes fadeTop {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        
+    }
+    //css elements
     .bio{
+        font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto;
-        padding: 80px;
         background-image: linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url("../img/background/black-background.png")!important;
-        background-position: 50%;
-        background-size: 100%;
+        padding: 60px 10%;
         background-size: cover;
-        @include bp-medium{
-            padding: 0px;
-
-        }
-      
         .intro{
             font-size: 19px;
             font-weight: 300;
             padding: 60px 0;
-            width: 90%;
             border-top: white solid 1px;
             border-bottom: white solid 1px;
             line-height: 2;
             letter-spacing: 0.5px;
+            color: #666;
             text-align: left;
+            color: #ffffff;
             .gold-heading{
                 color: #e7b560;
-                text-transform: uppercase;
                 font-size: 48px;
-                font-family: "Aleo";
-                font-weight: bold;
-                letter-spacing: 1px;
-                line-height: 1;
+                @include bp-large{
+                    display: block; 
+                }
+                @include bp-medium{
+                    font-size: 42px; 
+                }
+                @include bp-small{
+                    font-size: 26px;
+                }
             }
         } 
         .spirits-logo{
             display: flex;
             justify-content: space-between;
-            margin: 0!important;
-            flex-wrap: wrap;
-            width: 90%;
+            flex-flow: row wrap;
             padding-top: 50px;
             .spirit{
                 display: flex;
                 flex-direction: row;
-                margin-right: 30px;
-                margin-bottom: 26px;
+                margin: 30px;
                 @include bp-medium {
                     flex-direction:column;
-                    margin-left: 30px;
+                    align-content: center;
                    
-                    
+                }
+                @include bp-small {
+                    margin:10px;
                 }
                 .bottle-icon{
                     max-width: 100px;
                     height: 100px;
+                    align-self: center;
+                    padding-bottom: 10px;
+                    animation: fadeTop 1s cubic-bezier(.77,0,.175,1) 1;
                     @include bp-medium {
                         margin:0;    
+                        
                     }
                 }
                 .drink-names{
@@ -67,6 +107,7 @@
                     font-size: 26px;
                     margin-left: 15px;
                     align-self: center;
+                    font-weight:600;
                     @include bp-medium {
                         margin-left:0;
                         text-align: center;
@@ -78,118 +119,148 @@
     .home-craft{
         display:flex;
         flex-direction: row;
-        @include bp-medium {
+        @include bp-large {
             flex-direction: column;
             .hand-crafted{
                 order:2;
             }
             .home-pressure-img{
                 order:1;
-                background-size: cover;
                 height: 500px;
-                width: fit-content;
             }
-
         }
-       
         .hand-crafted{
             background-color: #4d5f8a;
             width:50%;
             padding: 150px 0 150px 200px;
-            @include bp-medium {
+            @include bp-large {
                 width: 100%;
                 padding: 60px 40px;
             }
             .craft{
-                font-family: 'Aleo',Georgia,"Times New Roman",serif;
-                font-weight: 700;
-                font-size: 35px;
-                color: #ffffff!important;
-                letter-spacing: 1px;
-                line-height: 1.7em;
+                color: #ffffff;
                 padding: 0 40px;
-
+                @include bp-medium{
+                    padding:0;
+                }
             }
             .craft-p{
-                font-family: 'Noto Sans JP';
-                font-weight: 300;
-                font-size: 18px;
-                letter-spacing: 1px;
                 padding: 0 0 20px 0;
-                margin-bottom: 10px!important;
+                margin-bottom: 10px;
                 padding: 0 40px;
-                line-height: 2;
-                letter-spacing: 1px;
+                @include bp-medium{
+                    padding:0;
+                }
             }
         }
         .home-pressure-img{
+            background-image: url(../img/images/brewery-homepage.png); 
             width: 50%;
-            background-repeat: no-repeat;
-            background-size: 100%;
-
-            .pressure{
-                height: 100%;
-                max-width: unset;
-            }
-        }
-      
+            @include bp-large {
+                width: 100%;
+            } 
+        } 
     }
     .home-celebration{
-
         display:flex;
         flex-direction: row;
+        @include bp-large {
+            flex-direction: column
+        }
         .home-wheel{
+            background-image: url(../img/images/american_gin.png); 
             width: 50%;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            .wheel-house{
-                height: 100%;
-                max-width: unset;
-
+            @include bp-large {
+                width: 100%;
+                height: 500px;
             }
         }
         .home-sacramento{
             width:50%;
             background-color: white;
-           
+            @include bp-large {
+                width: 100%;
+                padding: 0 40px;
+            }
             .home-top-divi, .home-bottom-divi{
                 height: 50px;
                 width: 300px;
-                margin: 60px auto;
+                margin: 60px auto;  
             }
             .sac {
                 color: #4d5f8a;
-                font-family: 'Aleo',Georgia,"Times New Roman",serif;
-                font-weight: 700;
-                font-size: 35px;
-                color: #4d5f8a!important;
-                letter-spacing: 1px;
-                line-height: 1.7em;
                 padding: 0 40px;
                 padding-right: 200px;
+                @include bp-large {
+                    width: 100%;
+                    padding: 0;
+                     
+                }
             }
             .sac-p{
                 color: black;
-                font-family: 'Noto Sans JP';
-                font-weight: 300;
-                font-size: 18px;
-                letter-spacing: 1px;
                 padding: 0 0 20px 0;
-                margin-bottom: 10px!important;
+                margin-bottom: 10px;
                 padding: 0 40px;
-                line-height: 2;
-                letter-spacing: 1px;
                 padding-right: 200px;
+                @include bp-large {
+                    width: 100%;
+                    padding: 0;
+                    
+                }
             }
            
         }
        
     }
     .tasting-room{
-        background-image: linear-gradient(180deg,rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url("../img/background/wiskeyglasses.png")!important;
-        height: 400px;
-        background-repeat: no-repeat;
-        background-size: 100%;
+        background-image: linear-gradient(180deg,rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url("../img/background/wineglassesbw.png");
+        width: 100%;
+        height: 520px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .tasting{
+            max-width: 50%;
+            text-align: center;
+            @include bp-medium{
+                max-width: 100%;
+            }
+            .tasting-header{
+                font-family: 'Aleo',Georgia,"Times New Roman",serif;
+                font-weight: 700;
+                font-size: 28px;
+                color: #ffffff!important;
+                letter-spacing: 1px;
+                line-height: 1.7em;
+                padding: 0 90px; 
+                text-align: center;
+                @include bp-medium{
+                    padding: 0 90px;
+                }
+                @include bp-small{
+                    font-size: 32px;
+                }
+            }
+    
+                .tasting-content{
+                    font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+                    color: #e7b560;
+                    letter-spacing: 1px;
+                    line-height: 1.6em;
+                    margin-bottom: 40px;
+                    font-weight: 500;
+                    @include bp-medium{
+                        padding: 0 40px;
+                    }
+                    @include bp-small{
+                        font-size: 14px;
+                    }
+                }
+            
+        }
+        
+        
     }
     .home-insta{
         background-color: #4d5f8a;
@@ -206,14 +277,12 @@
             }
             .header{
                 margin:0 10px;
-                font-family: 'Aleo',Georgia,"Times New Roman",serif;
-    font-weight: 700;
-    font-size: 28px;
-    color: #ffffff!important;
-    letter-spacing: 1px;
-    line-height: 1.5em;
-    text-align: center;
-    max-width: 550px;
+                font-size: 28px;
+                color: #ffffff;
+                letter-spacing: 1px;
+                line-height: 1.5em;
+                text-align: center;
+                max-width: 550px;
             }
 
         }
@@ -222,13 +291,8 @@
             flex-direction: row;
             justify-content: space-evenly;
             .img-container{
-
                 width: 167px;
-                height:  215px;
-                .insta-photo{
-                    height: 100%;
-                    max-width: unset;
-                }
+                height:  215px;    
             }
             
         }

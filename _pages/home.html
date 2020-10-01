@@ -45,8 +45,8 @@ insta:
    
 ---
 <div id="home">
-    <div class='bio'>
-        <p class='intro'><span class='gold-heading'>{{ page.intro.header }}</span>{{ page.intro.content}}</p>
+    <div class='bio background-image'>
+       <div> <p class='intro'> <span class='gold-heading font-header'>{{ page.intro.header }} </span>{{ page.intro.content}}</p></div>
             <div class='spirits-logo'>
                     {% for spirit in page.served-spirits.list %}
                     <div class='spirit' >
@@ -59,24 +59,20 @@ insta:
 
     <div class='home-craft'>
         <div class='hand-crafted'>
-            <h2 class='craft'>{{ page.craft.header }}</h2>
-            <p class='craft-p'>{{ page.craft.content }}</p>
+            <h2 class='craft font-header'>{{ page.craft.header }}</h2>
+            <p class='craft-p font-paragraph' >{{ page.craft.content }}</p>
         </div>
-        <div class='home-pressure-img'>
-            <img alt='bottle icon' class='pressure' src='{{ page.craft.img | relative_url }}'>
-        </div>
+        <div class='home-pressure-img background-image'></div>
     </div>
 
     <div class='home-celebration'>
-        <div class=home-wheel>
-            <img class='wheel-house' alt='wheel house' src='{{ page.celebration.img | relative_url }}'>
-        </div>
+        <div class='home-wheel background-image'></div>
         <div class='home-sacramento'>
             <div class='home-top-divi'>
                 <img src='{{ page.celebration.img-top | relative_url }}'>
             </div>
-            <h1 class='sac'>{{ page.celebration.header }}</h1>
-            <p class='sac-p'>{{ page.celebration.content }}</p>
+            <h2 class='sac font-header'>{{ page.celebration.header }}</h2>
+            <p class='sac-p font-paragraph'>{{ page.celebration.content }}</p>
             <button>Button</button>
             <div class='home-bottom-divi'>
                 <img src='{{ page.celebration.img-top | relative_url }}'>
@@ -85,16 +81,18 @@ insta:
         
     </div>
 
-    <div  class='tasting-room'>
-        <h1>{{ page.tasting-room.header}}</h1>
-        <p class='p-home-tasting'>{{ page.tasting-room.content }}</p>
-        <button>Button</button>
+    <div  class='tasting-room background-image'>
+        <div class='tasting'>
+            <h1 class='tasting-header'>{{ page.tasting-room.header}}</h1>
+            <p class='tasting-content'>{{ page.tasting-room.content }}</p>
+            <button>Button</button>
+        </div>
     </div>
 
     <div class='home-insta'>
         <div class='header-insta'>
             <div class='line'></div>
-            <h1 class='header'>{{ page.insta.header }}</h1>
+            <h1 class='header font-header'>{{ page.insta.header }}</h1>
             <div  class='line'></div>
         </div>
        
