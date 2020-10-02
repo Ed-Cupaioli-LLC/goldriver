@@ -3,15 +3,59 @@
 
 #tasting-info-page{
 //repeatng elements
+color: white;
+-webkit-font-smoothing: antialiased;
 .background-image{
     background-size:cover; 
     background-position:center; 
     background-repeat:no-repeat; 
+
+   
 }
 .header-image{
-    background-image: url("../img/tasting-room/wiskeyglasses.png");
+    background-image:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/tasting-room/wiskeyglasses.png");
     height: 540px;
+    display: flex;
+    align-items: center;
+    @include bp-medium{
+        height: 470px;
     }
+    @include bp-small{
+        height: 370px;
+    }
+    
+    .yellow-border{
+        border: solid 1px #dbb778;
+        height: 95%;
+        width: 98%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        @include bp-medium{
+            width: 95%;
+        }
+        .white-border{
+            border: solid 2px white;
+            height: 96%;
+            width: 98%;
+            margin: auto;
+            display: flex;
+            align-items: flex-end;
+            align-content: flex-end;
+            @include bp-medium{
+                width: 96%;
+            }
+            .tasting-logo{
+                width: 420px;
+                margin: 0;
+                padding: 10px;
+            }
+
+        }
+    }
+    
+}
+    
 .covid{
     font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
     display: flex;
@@ -20,10 +64,11 @@
     background-image: linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url("../img/background/black-background.png")!important;
     padding: 60px 10%;
     background-size: cover;
+   
     .intro{
         font-size: 19px;
         font-weight: 300;
-        padding: 60px 0;
+        padding: 80px 0;
         border-top: white solid 1px;
         border-bottom: white solid 1px;
         line-height: 2;
@@ -35,17 +80,79 @@
             color: #e7b560;
             font-size: 48px;
             font-family: 'Aleo',Georgia,"Times New Roman",serif;
+            font-weight: 800;
+            line-height: 0;
             @include bp-large{
                 display: block; 
+                line-height: 1;
             }
-            @include bp-medium{
-                font-size: 42px; 
-            }
-            @include bp-small{
-                font-size: 26px;
-            }
+            
         }
     } 
+}
+.tasting-room{
+    display: flex;
+    flex-direction: row;
+    @include bp-medium{
+        flex-direction: column;
+        .content{
+            order: 2;
+        }
+        .map-view{
+            order:1;
+        }
+    }
+    .content{
+        padding: 150px 0 150px 200px;
+        width:50%;
+        background-color: #4d5f8a;
+        @include bp-medium{
+           width:100%;
+           padding: 40px;
+        }
+        .hours{
+            margin: 50px 0;
+            padding-bottom: 20px; 
+            .header{
+                font-family: 'Aleo',Georgia,"Times New Roman",serif;
+                font-size: 35px;
+                line-height: 1.7em;
+                font-weight: 800;
+                padding-right: 40px;
+                @include bp-small{
+                    font-size:23px;
+                }
+            }
+            .info{
+                font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+                font-weight: 300;
+                font-size: 18px;
+                letter-spacing: 1px;
+                padding-right: 40px;
+                line-height: 2;
+            }
+            
+        }
+        .directions{
+            background-color: unset;
+            width: 253px;
+            height: 50px;
+            box-shadow: unset;
+            border: white 2px solid;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+  
+    .map-view{
+        background-image: url("../img/tasting-room/map-location.png");
+        width:50%;
+        @include bp-medium{
+            width:100%;
+            height: 450px;
+        }
+
+    }
 }
 } 
 
