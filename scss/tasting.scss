@@ -93,7 +93,7 @@ color: white;
 .tasting-room{
     display: flex;
     flex-direction: row;
-    @include bp-medium{
+    @include bp-large{
         flex-direction: column;
         .content{
             order: 2;
