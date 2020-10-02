@@ -1,0 +1,145 @@
+
+//borders for all header images
+.header-image{
+    position:relative;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @include bp-medium{
+        height: 470px;
+    }
+    @include bp-small{
+        height: 370px;
+    }
+
+    
+}
+.yellow-border{
+    border: solid 1px #dbb778;
+    height: 98%;
+    width: 98%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.white-border{
+    border: solid 2px white;
+    height: 96%;
+    width: 98%;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    position:absolute;
+    @include bp-large{
+        width: 96%;
+    }
+    @include bp-small{
+        height:94%;
+    }
+}
+.top-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.top-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bottom-left{
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+.bottom-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+.dot {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    margin: 10px;
+    }
+    .header-img-logo{
+        width: 420px;
+        margin: 0;
+        padding: 10px;
+    }
+
+//image setup background
+.background-image{
+    background-size:cover; 
+    background-position:center; 
+    background-repeat:no-repeat; 
+
+}
+
+//intro div to page 
+
+.intro-banner{
+    font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 10%;
+    background-size: cover;
+}
+.intro{
+    font-size: 19px;
+    font-weight: 300;
+    padding: 80px 0;
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #666;
+    text-align: left;
+    color: #ffffff;
+
+}
+.gold-heading{
+    color: #e7b560;
+    font-size: 48px;
+    line-height: 0;
+    @include bp-large{
+        display: block; 
+        line-height: 1;
+    }
+    @include bp-medium{
+        font-size: 42px; 
+    }
+    @include bp-small{
+        font-size: 26px;
+    }
+}
+
+//elemets font
+.font-header{
+    font-family: 'Aleo',Georgia,"Times New Roman",serif;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    @include bp-medium{
+        font-size: 26px;
+    }
+}
+.font-paragraph{
+    font-family: 'Noto Sans JP';
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2;
+    letter-spacing: 1px;
+
+}
