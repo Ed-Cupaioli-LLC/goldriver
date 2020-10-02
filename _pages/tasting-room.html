@@ -34,7 +34,11 @@ button: 'https://www.google.com/maps/place/Gold+River+Distillery,+11460+Sunrise+
     <div class='header-image background-image' >
         <div class='yellow-border'>
         <div class=white-border>
-            <img class='tasting-logo' src='{{ page.tasting-room-img  | relative_url }}' />
+            <div class='top-right dot'></div>
+            <div class='top-left dot'></div>
+            <div class='bottom-right dot'></div>
+            <div class='bottom-left dot'></div>
+            <img class='header-img-logo' src='{{ page.tasting-room-img  | relative_url }}' />
         </div>
     </div>
        
@@ -43,7 +47,7 @@ button: 'https://www.google.com/maps/place/Gold+River+Distillery,+11460+Sunrise+
        
 
 
-    <div class='covid'>
+    <div class='intro-banner'>
             <p class='intro'><span class='gold-heading font-header'>{{ page.covid.header }}</span>{{ page.covid.content }}</p>       
     </div>
 
