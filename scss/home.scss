@@ -23,8 +23,7 @@
     .header-image{
         background-image:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/tasting-room/wiskeyglasses.png");   
     }
-    .intro-banner{
-        background-image: linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url("../img/background/black-background.png");
+    
         .spirits-logo{
             display: flex;
             justify-content: space-between;
@@ -66,7 +65,7 @@
                 }
             }
         }
-    }
+    
     .home-craft{
         display:flex;
         flex-direction: row;
