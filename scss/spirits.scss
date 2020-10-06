@@ -5,4 +5,35 @@
     .header-image{
         background-image:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/spirits/spirits-pour.png");   
     }
+    .products{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        .image{
+            width: 50%;
+        }
+        .description{
+            width: 50%;
+            .curbside-button{
+                align-self: center;;
+            }
+        }
+        @include bp-large {
+            flex-direction: column;
+            .image{
+                width: 100%;
+            }
+            .description{
+                width: 100%;
+                padding: 0 40px;
+                .p-bold{
+                    text-align: center;
+                }
+                
+    
+        }
+    }
+    }
+   
 }
