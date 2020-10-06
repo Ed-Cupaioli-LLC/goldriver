@@ -11,12 +11,12 @@ about:
     content: is proud to be the first legal distillery in Sacramento County since Prohibition. We're a small-batch micro distillery located in Northern California, just outside of the city of Sacramento. Our Wheel House spirits are available in a growing number of stores through out California. Find where you can buy our spirits by visiting our retail locations page.
 
 spirit-list:
-    lisst:
+    list:
     - title: WHEEL HOUSE AMERICAN DRY GIN
       content: Wheel House American Dry Gin is an award-winning gin distinguished by a complex yet gentile bouquet of juniper, citrus, and coriander. The first sip reveals a remarkably smooth texture uncommon in other gins. Wheel House opens strong with smooth juniper up front immediately followed by a bold array of botanicals and a spicy finish as its smooth texture becomes crisp, cleansing your palate for the next sip.
       price: $32.00
       button: curbside pickup
-      img: 
+      img: '/img/spirits/gin.png'
 
 ---
 <div id="spirits">
@@ -36,4 +36,16 @@ spirit-list:
         <div> <p class='intro'> <span class='gold-heading font-header'>{{ page.about.header }} </span>{{ page.about.content}}</p>
     </div>
      </div>
+     <div class=products>
+        {% for product in page.spirit-list.list %}
+         <div class='image'> <img src={{product.img}} ></div>
+         <div class='description'>
+             <h1>{{ product.title }}</h1>
+             <p>{{ product.content }}</p>
+             <p>{{ product.price }}</p>
+             <button>{{ product.button }}</button>
+         </div>
+         {% endfor %}   
+     </div>
+
 <div>
