@@ -1,0 +1,14 @@
+@import "vars.scss";
+@import "mixins.scss";
+
+#where-to-buy{
+    .brewery-type{
+        padding: 0 20%;
+        @include bp-small{
+            padding: 0 10%;
+        }
+        .details{
+            margin-bottom: 20px;
+        }
+}
+}

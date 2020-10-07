@@ -228,3 +228,16 @@
     }
 
 }
+.details{
+    font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #666;
+    text-align: left;
+    color: black;
+    @include bp-small{
+        font-size: 14px;
+    }
+}
