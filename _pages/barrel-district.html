@@ -1,0 +1,130 @@
+---
+title: Barrel District
+layout: default
+permalink: /barrel-district
+css: barrel-district
+
+
+intro: 
+    header: RANCHO CORDOVA, CA, 
+    content: is home to the fast growing Barrel District. Comprised of micro distilleries, craft breweries, and a meadery (honey wine), the Barrel District is the best place to sample local libations at their finest.<br>
+        Whether you’re looking for a unique date night activity or a new adventure with friends, the Barrel District offers a fresh take on the local scene.<br>
+        Stop by the Gold River Distillery tasting room for a complimentary taste and to pick up your map and information about the inaugural grand opening celebration of the Barrel District scheduled for Saturday, October 6, 2018.
+
+brewery-locations: 
+    micro-distillery: 
+        title: MICRO DISTILLERIES
+        list:
+        - name: GOLD RIVER DISTILLERY 
+          location: 1160 Sunrise Gold Circle, Suite C <br>
+           (916) 476-3868 
+          site: GoldRiverDistillery.com
+          hours:  'Hours: Wednesday By Appointment Only, Friday 4 – 7PM, Saturday 11AM – 3PM'
+        - name: J.J. PFISTER DISTILLING COMPANY 
+          location: 9819 Business Park Drive 
+          site: JJPfister.com 
+          hours: 'Hours: Friday 3 – 6PM, Saturday 12 – 6PM'
+
+    craft-breweries: 
+        title: CRAFT BREWERIES
+        list: 
+        - name: CLAIMSTAKE BREWING
+          location: 11366 Monier Park Place <br>
+            (916) 661-5249
+          site: ClaimstakeBrewing.com
+          hours: 'Hours: Wednesday and Thursday 4 – 8PM, Friday 2 – 8PM, Saturday 12 – 8PM, Sunday 12 – 6PM'
+        - name: FORT ROCK BREWING
+          location: 12401 Folsom Boulevard, Suite 110 <br>
+           (916) 936-4616
+          site: FortRockBrewing.com
+          hours: 'Hours: Monday – Sunday 11AM – 11PM'
+        - name: OLD HANGTOWN BEER WORKS
+          location: 11327 Trade Center Drive, Suite 350 <br>
+           (530) 919-5166
+          site: Facebook.com/Old-Hangtown-Beer-Works
+          hours: 'Hours: Monday – Friday 4 – 8PM, Saturday 12 – 4PM'
+        - name: THIN LINE BREWING COMPANY
+          location: 11354 White Rock Road <br>
+           (530) 919-5166
+          site: ThinLineBrewing.com
+          hours: 'Hours: Wednesday and Thursday 4 – PM, Friday 2-8PM, Saturday 12 – 8PM, Sunday 12 – 6'
+        - name: OL' REPUBLIC BREWERY
+          location: 11151 Trade Center Drive <br>
+           (530) 919-5166
+          site: OlRepublicBewery.com
+          hours: 'Hours: Monday – Thursday 3 – 9PM, Friday 3- 10PM, Saturday 11 – 10PM, Sunday 11 – 9PM <br>
+                 Hours are subject to change, please check website for the most current hours.'
+        - name: BURNING BARREL BREWING COMPANY - COMING SOON
+          location: 11210 Sun Center Drive, Suite B <br>
+            (916)382-4846
+          site: BurningBarrelBrewCo.com
+          hours: 'Monday – Friday, 12 – 7 PM <br>
+                    Hours: Saturday – Sunday 11 AM – 7 PM'
+    meadery:
+        title: MEADERY
+        list:
+        - name: STRAD MEADERY
+          location: 2539 Mercentile Drive <br>
+            (916) 849-6323
+          site: StradMead.com
+---
+
+<div id='barrel-district'>
+    <div class='header-image background-image'>
+        <div class='yellow-border'>
+            <div class=white-border>
+                <div class='top-right dot'></div>
+                <div class='top-left dot'></div>
+                <div class='bottom-right dot'></div>
+                <div class='bottom-left dot'></div>
+                <img class='header-img-logo' />
+            </div>
+        </div>
+    </div>
+    <div class='intro-banner-white'>
+        <p class='intro-black-font'> <span class='blue-heading font-header'>{{ page.intro.header }} </span>{{ page.intro.content }}</p>
+    </div>
+
+<div>
+    <h1> {{ page.brewery-locations.micro-distillery.title }}</h1>
+    
+    {% for item in page.brewery-locations.micro-distillery.list %}
+    <div>
+    <h2> {{ item.name }}</h2>
+    <p>{{ item.location }}</p>
+    <p>{{ item.site }}</p>
+    <p>{{ item.hours}}</p>
+
+    </div>
+  
+    {% endfor %}    
+</div>
+<div>
+    <h1> {{ page.brewery-locations.craft-breweries.title }}</h1>
+    
+    {% for item in page.brewery-locations.craft-breweries.list %}
+    <div>
+    <h2> {{ item.name }}</h2>
+    <p>{{ item.location }}</p>
+    <p>{{ item.site }}</p>
+    <p>{{ item.hours}}</p>
+
+    </div>
+  
+    {% endfor %}    
+</div>
+<div>
+    <h1> {{ page.brewery-locations.meadery.title }}</h1>
+    
+    {% for item in page.brewery-locations.meadery.list %}
+    <div>
+    <h2> {{ item.name }}</h2>
+    <p>{{ item.location }}</p>
+    <p>{{ item.site }}</p>
+    <p>{{ item.hours}}</p>
+
+    </div>
+  
+    {% endfor %}    
+</div>
+</div>

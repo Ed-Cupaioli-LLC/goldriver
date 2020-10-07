@@ -95,6 +95,13 @@
     padding: 60px 10%;
     background-size: cover;
 }
+.intro-banner-white {
+    font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 10%;
+}
 .intro{
     font-size: 19px;
     font-weight: 300;
@@ -108,8 +115,37 @@
     color: #ffffff;
 
 }
+.intro-black-font{
+    font-size: 19px;
+    font-weight: 300;
+    padding: 80px 0;
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #666;
+    text-align: left;
+    color: black;
+
+
+}
 .gold-heading{
     color: #e7b560;
+    font-size: 48px;
+    line-height: 0;
+    @include bp-large{
+        display: block; 
+        line-height: 1;
+    }
+    @include bp-medium{
+        font-size: 42px; 
+    }
+    @include bp-small{
+        font-size: 26px;
+    }
+}
+.blue-heading{
+    color:#4d5f8a ;
     font-size: 48px;
     line-height: 0;
     @include bp-large{
@@ -150,7 +186,6 @@
 .blue-header{
         color: #4d5f8a;
         padding: 0 40px;
-        padding-right: 200px;
         @include bp-large {
             width: 100%;
             padding: 0;
@@ -162,7 +197,6 @@
     padding: 0 0 20px 0;
     margin-bottom: 10px;
     padding: 0 40px;
-    padding-right: 200px;
     @include bp-large {
         width: 100%;
         padding: 0;   
