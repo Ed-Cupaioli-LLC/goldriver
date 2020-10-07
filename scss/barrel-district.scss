@@ -1,2 +1,35 @@
 @import "vars.scss";
 @import "mixins.scss";
+
+#barrel-district{
+    h2{
+        margin:0;
+    }
+    button{
+        margin-bottom: 40px;
+
+    }
+    .brewery-type{
+        padding: 0 10%;
+        .blue-heading{
+            margin-top: 50px;
+            padding: 10px 0;
+        }
+        .brewery-contact-info{
+            margin: 20px 0;
+            padding: 10px 0;
+            .details{
+                font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+                font-size: 19px;
+                font-weight: 300;
+                line-height: 2;
+                letter-spacing: 0.5px;
+                color: #666;
+                text-align: left;
+                color: black;
+            
+            
+            }
+        }
+    }
+}
