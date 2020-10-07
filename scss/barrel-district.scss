@@ -5,19 +5,38 @@
     h2{
         margin:0;
     }
+    .header-image{
+        background-image:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/barrel-district/barrel-district-image.png");   
+}
     button{
         margin-bottom: 40px;
 
     }
     .brewery-type{
         padding: 0 20%;
+        @include bp-small{
+            padding: 0 10%;
+        }
         .blue-heading{
             margin-top: 50px;
             padding: 10px 0;
+            @include bp-small{
+                font-size: 22px;
+            }
         }
         .brewery-contact-info{
             margin: 20px 0;
             padding: 10px 0;
+            .sub-header{
+                color: black;
+                font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+                font-size: 29px;
+                padding-bottom: 10px;
+                @include bp-small{
+                    font-size: 20px;
+                }
+
+            }
             .details{
                 font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
                 font-size: 19px;
@@ -27,8 +46,15 @@
                 color: #666;
                 text-align: left;
                 color: black;
+                @include bp-small{
+                    font-size: 14px;
+                }
             
             
+            }
+            .link{
+                color:#4d5f8a ;
+                font-weight: 500;
             }
         }
     }

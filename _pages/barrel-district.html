@@ -91,9 +91,9 @@ brewery-locations:
     
     {% for item in page.brewery-locations.micro-distillery.list %}
     <div class='brewery-contact-info'>
-        <h2> {{ item.name }}</h2>
+        <h2 class='sub-header'> {{ item.name }}</h2>
         <p class='details'>{{ item.location }}</p>
-        <p class='details'>{{ item.site }}</p>
+        <p class='details link'>{{ item.site }}</p>
         <p class='details'>{{ item.hours }}</p>
     </div>
   
@@ -104,9 +104,9 @@ brewery-locations:
     
     {% for item in page.brewery-locations.craft-breweries.list %}
     <div class='brewery-contact-info'>
-    <h2> {{ item.name }}</h2>
+    <h2 class='sub-header'> {{ item.name }}</h2>
     <p class='details'>{{ item.location }}</p>
-    <p class='details'>{{ item.site }}</p>
+    <p class='details link'>{{ item.site }}</p>
     <p class='details'>{{ item.hours}}</p>
 
     </div>
@@ -118,9 +118,9 @@ brewery-locations:
     
     {% for item in page.brewery-locations.meadery.list %}
     <div class='brewery-contact-info'>
-    <h2> {{ item.name }}</h2>
+    <h2 class='sub-header'> {{ item.name }}</h2>
     <p class='details'>{{ item.location }}</p>
-    <p class='details'>{{ item.site }}</p>
+    <p class='details link'>{{ item.site }}</p>
     <p class='details'>{{ item.hours}}</p>
 
     </div>
