@@ -18,6 +18,22 @@ spirit-list:
       button: curbside pickup
       img: '/img/spirits/gin.png'
 
+buy: WHERE TO BUY
+buy-info: Gold River Distillery spirits are available at several locations. Click learn more to find a full list of where you can buy our products.
+
+medals: 
+    title: MORE EXCITING SPIRITS ARE IN THE PROCESS OF DEVELOPMENT!
+    list:
+    - medal-img: 
+      name: WHEEL HOUSE AMERICAN DRY GIN
+      type: Gold Medal <br>The Fifty Best Gin <br>2015
+    
+    - medal-img: 
+      name: WHEEL HOUSE SACRAMENTO VODKA
+      type: Silver Medal <br>The Fifty Best Vodka <br>2015
+
+
+
 ---
 <div id="spirits">
     <div class='header-image background-image'> 
@@ -36,16 +52,31 @@ spirit-list:
         <div> <p class='intro'> <span class='gold-heading font-header'>{{ page.about.header }} </span>{{ page.about.content}}</p>
     </div>
      </div>
-     <div class=products>
+     <div class='products'>
         {% for product in page.spirit-list.list %}
          <div class='image'> <img src={{product.img}} ></div>
          <div class='description'>
-             <h1>{{ product.title }}</h1>
-             <p>{{ product.content }}</p>
-             <p>{{ product.price }}</p>
-             <button>{{ product.button }}</button>
+             <h1 class='blue-header font-header'>{{ product.title }}</h1>
+             <p class='paragraph-p font-paragraph'>{{ product.content }}</p>
+             <p class='p-bold font-paragraph'>{{ product.price }}</p>
+             <button class='curside-button'>{{ product.button }}</button>
          </div>
          {% endfor %}   
      </div>
+     <div class='buy'>
+        <h1>{{ page.buy }}</h1>
+        <p> {{ page.buy-info }}</p>
+     </div>
+
+    <div class='medals'>
+        <h1>{{ page.medals.title }}</h1>
+        {% for medal in page.medals.list %}
+        <div class='medal'>
+            <h1>{{ medal. name }}</h1>
+            <div> {{ medal.type }}</div>
+        </div>
+        {% endfor %}   
+
+    </div>
 
 <div>
