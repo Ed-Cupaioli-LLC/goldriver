@@ -108,16 +108,15 @@
             width: 50%;
             @include bp-large {
                 width: 100%;
-            } 
+            }
         } 
     }
     .home-celebration{
         display:flex;
         flex-direction: row;
-        padding: 150px 0 150px 200px;
+        
         @include bp-large {
             flex-direction: column;
-            padding: 60px 40px;
         }
         .home-wheel{
             background-image: url(../img/images/american_gin.png); 
@@ -130,9 +129,10 @@
         .home-sacramento{
             width:50%;
             background-color: white;
+            padding: 150px 200px 150px 0;
             @include bp-large {
                 width: 100%;
-                padding: 60px 40px;
+                padding: 60px 80px;
             }
             .sac {
                 color: #4d5f8a;
