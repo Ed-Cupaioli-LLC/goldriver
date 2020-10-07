@@ -161,6 +161,16 @@
         font-size: 30px;
     }
 }
+.blue-heading-main{
+    color:#4d5f8a ;
+    margin-top: 50px;
+    padding: 10px 0;
+    line-height:0;
+    font-size: 48px;;
+    @include bp-small{
+        font-size: 30px;
+    }
+}
 
 //elemets font
 .font-header{
