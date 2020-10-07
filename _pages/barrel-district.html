@@ -7,8 +7,8 @@ css: barrel-district
 
 intro: 
     header: RANCHO CORDOVA, CA, 
-    content: is home to the fast growing Barrel District. Comprised of micro distilleries, craft breweries, and a meadery (honey wine), the Barrel District is the best place to sample local libations at their finest.<br>
-        Whether you’re looking for a unique date night activity or a new adventure with friends, the Barrel District offers a fresh take on the local scene.<br>
+    content: is home to the fast growing Barrel District. Comprised of micro distilleries, craft breweries, and a meadery (honey wine), the Barrel District is the best place to sample local libations at their finest.<br><br>
+        Whether you’re looking for a unique date night activity or a new adventure with friends, the Barrel District offers a fresh take on the local scene.<br><br>
         Stop by the Gold River Distillery tasting room for a complimentary taste and to pick up your map and information about the inaugural grand opening celebration of the Barrel District scheduled for Saturday, October 6, 2018.
 
 brewery-locations: 
@@ -83,24 +83,24 @@ brewery-locations:
     </div>
     <div class='intro-banner-white'>
         <p class='intro-black-font'> <span class='blue-heading font-header'>{{ page.intro.header }} </span>{{ page.intro.content }}</p>
+        <button>Button</button>
     </div>
 
-<div>
-    <h1> {{ page.brewery-locations.micro-distillery.title }}</h1>
+<div class='brewery-type'>
+    <h1 class='blue-heading font-header'> {{ page.brewery-locations.micro-distillery.title }}</h1>
     
     {% for item in page.brewery-locations.micro-distillery.list %}
-    <div>
-    <h2> {{ item.name }}</h2>
-    <p>{{ item.location }}</p>
-    <p>{{ item.site }}</p>
-    <p>{{ item.hours}}</p>
-
+    <div class='brewery-contact-info'>
+        <h2> {{ item.name }}</h2>
+        <p class='details'>{{ item.location }}</p>
+        <p class='details'>{{ item.site }}</p>
+        <p class='details'>{{ item.hours }}</p>
     </div>
   
     {% endfor %}    
 </div>
-<div>
-    <h1> {{ page.brewery-locations.craft-breweries.title }}</h1>
+<div class='brewery-type'>
+    <h1 class='blue-heading font-header'> {{ page.brewery-locations.craft-breweries.title }}</h1>
     
     {% for item in page.brewery-locations.craft-breweries.list %}
     <div>
@@ -113,8 +113,8 @@ brewery-locations:
   
     {% endfor %}    
 </div>
-<div>
-    <h1> {{ page.brewery-locations.meadery.title }}</h1>
+<div class='brewery-type'>
+    <h1 class='blue-heading font-header'> {{ page.brewery-locations.meadery.title }}</h1>
     
     {% for item in page.brewery-locations.meadery.list %}
     <div>
