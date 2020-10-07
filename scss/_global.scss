@@ -101,6 +101,9 @@
     flex-direction: column;
     align-items: center;
     padding: 60px 20%;
+    @include bp-small{
+        padding: 60px 10%;
+    }
 }
 .intro{
     font-size: 19px;
