@@ -114,8 +114,10 @@
     .home-celebration{
         display:flex;
         flex-direction: row;
+        padding: 150px 0 150px 200px;
         @include bp-large {
-            flex-direction: column
+            flex-direction: column;
+            padding: 60px 40px;
         }
         .home-wheel{
             background-image: url(../img/images/american_gin.png); 
@@ -130,12 +132,7 @@
             background-color: white;
             @include bp-large {
                 width: 100%;
-                padding: 0 40px;
-            }
-            .home-top-divi, .home-bottom-divi{
-                height: 50px;
-                width: 300px;
-                margin: 60px auto;  
+                padding: 60px 40px;
             }
             .sac {
                 color: #4d5f8a;
