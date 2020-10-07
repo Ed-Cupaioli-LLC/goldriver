@@ -103,11 +103,11 @@ brewery-locations:
     <h1 class='blue-heading font-header'> {{ page.brewery-locations.craft-breweries.title }}</h1>
     
     {% for item in page.brewery-locations.craft-breweries.list %}
-    <div>
+    <div class='brewery-contact-info'>
     <h2> {{ item.name }}</h2>
-    <p>{{ item.location }}</p>
-    <p>{{ item.site }}</p>
-    <p>{{ item.hours}}</p>
+    <p class='details'>{{ item.location }}</p>
+    <p class='details'>{{ item.site }}</p>
+    <p class='details'>{{ item.hours}}</p>
 
     </div>
   
@@ -117,11 +117,11 @@ brewery-locations:
     <h1 class='blue-heading font-header'> {{ page.brewery-locations.meadery.title }}</h1>
     
     {% for item in page.brewery-locations.meadery.list %}
-    <div>
+    <div class='brewery-contact-info'>
     <h2> {{ item.name }}</h2>
-    <p>{{ item.location }}</p>
-    <p>{{ item.site }}</p>
-    <p>{{ item.hours}}</p>
+    <p class='details'>{{ item.location }}</p>
+    <p class='details'>{{ item.site }}</p>
+    <p class='details'>{{ item.hours}}</p>
 
     </div>
   
