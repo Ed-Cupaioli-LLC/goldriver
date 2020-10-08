@@ -35,5 +35,29 @@
         }
     }
     }
+    .buy{
+        background-color: #4d5f8a;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        height: 200px;
+        padding: 60px 25px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .buy-header{
+         font-size:35px;
+         font-family: 'Aleo',Georgia,"Times New Roman",serif;
+         font-weight: 700;
+         letter-spacing: 1px;
+         line-height: 0.8em;
+
+        }
+        .buy-content{
+         font-size: 18px;
+         font-family: 'Noto Sans JP';
+         width: 72px;
+        }
+    }
    
 }
