@@ -279,6 +279,41 @@
         }
     }
 }
+.button-blue{
+    background: #4d5f8a;
+    border: 3px solid #4d5f8a;
+    color: white;
+    padding: 0;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    .button-layout{
+        display: flex;
+        flex-direction: row;
+        .button-image{
+            width: 40px;
+            background-color: white;
+            border-radius: 15% 0 0 15%;
+            margin-left: 3px;
+            .interior-cart-image{
+                padding: 5px;  
+            }   
+        }
+        .custom{
+            align-self: center;    
+            border-color: transparent white;
+            border-style: solid;
+            border-width: 6px 0px 6px 6px;
+            height: 4px;
+        }
+        .button-text{
+            margin: auto;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
 .button-white{
     background: white ;
     border: 3px solid white ;

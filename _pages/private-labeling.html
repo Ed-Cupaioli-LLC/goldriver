@@ -13,7 +13,8 @@ intro:
     independent parties under their own labels. We offer guidance and consultation regarding 
     federal guidelines and other laws applicable to the state of California. <br>
     Contact us to learn more about how to make your spirit come to life.
-
+    
+button-image: '/img/logos-icons/button2.png'
 ---
 
 <div id='private-labeling'>
@@ -30,7 +31,15 @@ intro:
     </div>
     <div class='intro-banner-white'>
         <p class='intro-black-font'> <span class='blue-heading-main font-header'>{{ page.intro.header }} </span>{{ page.intro.content }}</p>
-        <button>Button</button>
+        <button class='button-blue'>
+            <div class='button-layout'>
+               <div class='button-image'> 
+                   <img class='interior-cart-image' src='{{ page.button-image | relative_url }}'> 
+               </div>
+               <div class='custom'></div>
+               <div class='button-text'>contact us</div>
+           </div>
+       </button>
     </div>
 
 </div>
