@@ -16,9 +16,6 @@
         }
         .description{
             width: 50%;
-            .curbside-button{
-                align-self: center;;
-            }
         }
         @include bp-large {
             flex-direction: column;
@@ -67,6 +64,14 @@
              max-width: 100%;
              margin-bottom: 20px;
          }
+        }
+        .where-to-buy-button{
+            background: #e7b560;
+            border: 3px solid #e7b560;
+            color: white;
+            padding: 0;
+            width: 250px;
+
         }
     }
     .medals{

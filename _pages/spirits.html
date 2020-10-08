@@ -17,8 +17,10 @@ spirit-list:
       price: $32.00
       button: curbside pickup
       img: '/img/spirits/gin.png'
+      button-img: '/img/logos-icons/cart.png'
 
 buy: WHERE TO BUY
+button-image: '/img/logos-icons/bottle-white.png'
 buy-info: Gold River Distillery spirits are available at several locations. Click learn more to find a full list of where you can buy our products.
 
 medals: 
@@ -61,14 +63,30 @@ medals:
              <h1 class='blue-header font-header'>{{ product.title }}</h1>
              <p class='paragraph-p font-paragraph'>{{ product.content }}</p>
              <p class='p-bold font-paragraph'>{{ product.price }}</p>
-             <button class='curside-button'>{{ product.button }}</button>
+             <button class='button-yellow'>
+                 <div class='button-layout'>
+                    <div class='button-image'> 
+                        <img class='interior-cart-image' src='{{ product.button-img | relative_url }}'> 
+                    </div>
+                    <div class='custom'></div>
+                    <div class='button-text'>{{ product.button }} </div>
+                </div>
+            </button>
          </div>
          {% endfor %}   
      </div>
      <div class='buy'>
         <h1 class='buy-header'>{{ page.buy }}</h1>
         <p class='buy-content'> {{ page.buy-info }}</p>
-        <button>Where to Buy</button>
+        <button class='button-white'>
+            <div class='button-layout'>
+               <div class='button-image'> 
+                   <img class='interior-cart-image' src='{{ page.button-image | relative_url }}'> 
+               </div>
+               <div class='custom'></div>
+               <div class='button-text'> learn more</div>
+           </div>
+       </button>
      </div>
 
     <div class='medals header-image background-image'>
