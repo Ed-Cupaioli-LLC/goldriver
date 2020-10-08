@@ -27,10 +27,12 @@ medals:
     - medal-img: 
       name: WHEEL HOUSE AMERICAN DRY GIN
       type: Gold Medal <br>The Fifty Best Gin <br>2015
+      img: '/img/spirits/bestgin.png'
     
     - medal-img: 
       name: WHEEL HOUSE SACRAMENTO VODKA
       type: Silver Medal <br>The Fifty Best Vodka <br>2015
+      img: '/img/spirits/silvervodka.png'
 
 
 
@@ -69,14 +71,20 @@ medals:
         <button>Where to Buy</button>
      </div>
 
-    <div class='medals'>
-        <h1>{{ page.medals.title }}</h1>
+    <div class='medals header-image background-image'>
+        <h1 class='medals-header'>{{ page.medals.title }}</h1>
+        <div class='main-medals-layout'>
         {% for medal in page.medals.list %}
         <div class='medal'>
-            <h1>{{ medal. name }}</h1>
-            <div> {{ medal.type }}</div>
+            <h1 class='medal-name'>{{ medal. name }}</h1>
+            <div class='medal-type'> {{ medal.type }}</div>
+            <div class='medal-img'><img src="{{ medal.img | relative_url }}"></div>
+             
         </div>
-        {% endfor %}   
+        {% endfor %}  
+    </div>
+    
+       
 
     </div>
 

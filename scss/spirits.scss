@@ -2,6 +2,7 @@
 @import "mixins.scss";
 
 #spirits{
+    -webkit-font-smoothing: antialiased;
     .header-image{
         background-image:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/spirits/spirits-pour.png");   
     }
@@ -29,9 +30,7 @@
                 padding: 0 40px;
                 .p-bold{
                     text-align: center;
-                }
-                
-    
+                }    
         }
     }
     }
@@ -40,23 +39,94 @@
         display: flex;
         flex-direction: column;
         color: white;
-        height: 200px;
+        height: 320px;
         padding: 60px 25px;
         justify-content: center;
         align-items: center;
         align-content: center;
+        @include bp-small{
+            height: 356px;
+        }
         .buy-header{
          font-size:35px;
          font-family: 'Aleo',Georgia,"Times New Roman",serif;
          font-weight: 700;
          letter-spacing: 1px;
          line-height: 0.8em;
-
         }
         .buy-content{
          font-size: 18px;
-         font-family: 'Noto Sans JP';
+         font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+         font-weight: 300;
+         text-align: center;
+         letter-spacing: 1px;
+         line-height: 2em;
+         max-width: 60%;
+         margin-bottom: 30px;
+         @include bp-medium{
+             max-width: 100%;
+             margin-bottom: 20px;
+         }
         }
+    }
+    .medals{
+        background-image:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/background/wineglassesbw.png");   
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 100px 0;
+        @include bp-large{
+            height: 1150px;
+        }
+        .medals-header{
+            max-width: 80%;
+            padding-bottom: 10px;
+            font-size: 38px;
+        }
+        .main-medals-layout{
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            @include bp-large{
+                flex-direction: column;
+            }
+            .medal{
+                display:grid;
+                max-width: 80%;
+                padding: 20px 0;
+                .medal-name{
+                    font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+                    padding-left: 20px;
+                    line-height: 1em;
+                    font-weight: 500;
+                    font-size: 26px;
+                    grid-column: 2/ span 2;
+                    grid-row: 1 / 2;
+                    align-self: end;
+                }
+                .medal-type{
+                    padding-left: 20px;
+                    grid-column: 2/ span 2;
+                    font-weight: 300;
+                    font-size: 21px;
+                    line-height: 2.1em;
+                }
+                .medal-img{
+                   width: 150px;
+                   grid-column: 1/ span 1;
+                   grid-row: 1 / 3;
+                   align-self: center;
+                   @include bp-large{
+                       width:250px;
+                   }
+                   @include bp-small{
+            
+                    width: 100px;
+                }
+                }
+            }
+        }   
+
     }
    
 }
