@@ -28,6 +28,8 @@ celebration:
     header: IN CELEBRATION OF THE RICH HISTORY OF THE SACRAMENTO AREA
     content: "the first spirit we introduced was a gin, one of the more popular spirits during the time of prohibition. Wheel House American Dry Gin was received with high praise, as many were excited for an alternative to the more juniper-heavy style of a London Dry gin. In response to popular demand, we have produced several more products in the Wheel House spirit family: Wheel House Sacramento Vodka, Wheel House Absinthe Verte, Wheel House Drowning Oak Corn Whiskey, Wheel House California Bourbon and Wheel House Malted Rice Whiskey." 
     img: "/img/images/american_gin.png"
+button-image: '/img/logos-icons/button2.png'
+button-image-yellow: '/img/logos-icons/yellow-bottle.png'
     
 
 tasting-room:
@@ -83,7 +85,15 @@ insta:
         <div class='home-sacramento'>
             <h2 class='blue-header font-header'>{{ page.celebration.header }}</h2>
             <p class='paragraph-p font-paragraph'>{{ page.celebration.content }}</p>
-            <button>Button</button>
+            <button class='button-blue'>
+                <div class='button-layout'>
+                   <div class='button-image'> 
+                       <img class='interior-cart-image' src='{{ page.button-image | relative_url }}'> 
+                   </div>
+                   <div class='custom'></div>
+                   <div class='button-text'> learn more</div>
+               </div>
+           </button>
         
         </div>
         
@@ -93,7 +103,15 @@ insta:
         <div class='tasting'>
             <h1 class='tasting-header blue-header'>{{ page.tasting-room.header}}</h1>
             <p class='tasting-content paragraph-p'>{{ page.tasting-room.content }}</p>
-            <button>Button</button>
+            <button class='button-yellow'>
+                <div class='button-layout'>
+                   <div class='button-image'> 
+                       <img class='interior-cart-image' src='{{ page.button-image-yellow | relative_url }}'> 
+                   </div>
+                   <div class='custom'></div>
+                   <div class='button-text'> learn more</div>
+               </div>
+           </button>
         </div>
     </div>
 

@@ -10,7 +10,7 @@ intro:
     content: is home to the fast growing Barrel District. Comprised of micro distilleries, craft breweries, and a meadery (honey wine), the Barrel District is the best place to sample local libations at their finest.<br><br>
         Whether you’re looking for a unique date night activity or a new adventure with friends, the Barrel District offers a fresh take on the local scene.<br><br>
         Stop by the Gold River Distillery tasting room for a complimentary taste and to pick up your map and information about the inaugural grand opening celebration of the Barrel District scheduled for Saturday, October 6, 2018.
-
+button-image: '/img/logos-icons/button2.png'
 brewery-locations: 
     micro-distillery: 
         title: MICRO DISTILLERIES
@@ -83,7 +83,15 @@ brewery-locations:
     </div>
     <div class='intro-banner-white'>
         <p class='intro-black-font'> <span class='blue-heading-main font-header'>{{ page.intro.header }} </span>{{ page.intro.content }}</p>
-        <button>Button</button>
+        <button class='button-blue'>
+                <div class='button-layout'>
+                   <div class='button-image'> 
+                       <img class='interior-cart-image' src='{{ page.button-image | relative_url }}'> 
+                   </div>
+                   <div class='custom'></div>
+                   <div class='button-text'>download map</div>
+               </div>
+           </button>
     </div>
 
 <div class='brewery-type'>

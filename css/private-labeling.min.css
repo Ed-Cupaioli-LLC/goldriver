@@ -1,1 +1,5 @@
-#private-labeling .header-image{background-image:-webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.48))),url(../img/private-label/bottles.png);background-image:linear-gradient(180deg,transparent 0,rgba(0,0,0,.48) 100%),url(../img/private-label/bottles.png)}
+#private-labeling .header-image {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.48) 100%), url("../img/private-label/bottles.png");
+}
+
+/*# sourceMappingURL=private-labeling.min.css.map */
