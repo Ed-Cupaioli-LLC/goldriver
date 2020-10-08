@@ -1,1 +1,63 @@
-#where-to-buy .header-image{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.6)),to(rgba(0,0,0,.6))),url(../img/where-to-buy/american_gin.jpg);background-image:linear-gradient(180deg,rgba(0,0,0,.6) 0,rgba(0,0,0,.6) 100%),url(../img/where-to-buy/american_gin.jpg)}#where-to-buy .blue-heading-main{line-height:1}#where-to-buy .ledger{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}@media only screen and (max-width:1024px){#where-to-buy .ledger{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}#where-to-buy .ledger .details-spirit{padding:10px 0}#where-to-buy .ledger .spirit{padding:10px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}#where-to-buy .ledger .spirit .img-container{width:70px}#where-to-buy .ledger .spirit .spirit-hub{max-width:100%;height:auto}#where-to-buy .ledger .spirit .spirit-info{padding-left:20px}#where-to-buy .brewery-type{padding:0 20%;margin:20px 0;padding-top:10px;padding-bottom:10px}@media only screen and (max-width:568px){#where-to-buy .brewery-type{padding:0 10%}}#where-to-buy .brewery-type .sub-header{font-family:Noto Sans JP,Helvetica,Arial,Lucida,sans-serif;margin-bottom:0;padding-bottom:10px;font-weight:700}@media only screen and (max-width:768px){#where-to-buy .brewery-type .sub-header{font-size:20px}}@media only screen and (max-width:768px){#where-to-buy .brewery-type .details{font-size:14px}}
+#where-to-buy .header-image {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/where-to-buy/american_gin.jpg");
+}
+#where-to-buy .blue-heading-main {
+  line-height: 1;
+}
+#where-to-buy .ledger {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1024px) {
+  #where-to-buy .ledger {
+    flex-direction: column;
+  }
+}
+#where-to-buy .ledger .details-spirit {
+  padding: 10px 0;
+}
+#where-to-buy .ledger .spirit {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+#where-to-buy .ledger .spirit .img-container {
+  width: 70px;
+}
+#where-to-buy .ledger .spirit .spirit-hub {
+  max-width: 100%;
+  height: auto;
+}
+#where-to-buy .ledger .spirit .spirit-info {
+  padding-left: 20px;
+}
+#where-to-buy .brewery-type {
+  padding: 0 20%;
+  margin: 20px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 568px) {
+  #where-to-buy .brewery-type {
+    padding: 0 10%;
+  }
+}
+#where-to-buy .brewery-type .sub-header {
+  font-family: "Noto Sans JP", Helvetica, Arial, Lucida, sans-serif;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  #where-to-buy .brewery-type .sub-header {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #where-to-buy .brewery-type .details {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=where-to-buy.min.css.map */

@@ -54,7 +54,7 @@ medals:
      </div>
      <div class='products'>
         {% for product in page.spirit-list.list %}
-         <div class='image'> <img src={{product.img}} ></div>
+         <div class='image'> <img src='{{ product.img | relative_url }}' ></div>
          <div class='description'>
              <h1 class='blue-header font-header'>{{ product.title }}</h1>
              <p class='paragraph-p font-paragraph'>{{ product.content }}</p>
