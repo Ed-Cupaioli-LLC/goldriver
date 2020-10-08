@@ -2,13 +2,62 @@
 @import "mixins.scss";
 
 #where-to-buy{
+    .header-image{
+        background-image:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/where-to-buy/american_gin.jpg");   
+    }
+    .blue-heading-main{
+        line-height: 1;
+    }
+    .ledger{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        @include bp-large{
+            flex-direction: column;
+        }
+        .details-spirit{
+            padding: 10px 0;
+        }
+        .spirit{
+            padding: 10px 0;
+            display: flex;
+            flex-direction: row;
+            .img-container{
+                width: 70px;
+            }
+            .spirit-hub{
+                max-width: 100%;
+                height: auto;
+            }
+            .spirit-info{
+                padding-left: 20px;
+            }
+        }
+       
+
+    }
+        
     .brewery-type{
         padding: 0 20%;
+        margin: 20px 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
         @include bp-small{
             padding: 0 10%;
         }
+        .sub-header{
+           font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+           margin-bottom: 0px;
+           padding-bottom: 10px;
+           font-weight: 700;
+           @include bp-medium{
+            font-size: 20px;
+           }
+        }
         .details{
-            margin-bottom: 20px;
+            @include bp-medium{
+                font-size: 14px;
+            }
         }
 }
 }
