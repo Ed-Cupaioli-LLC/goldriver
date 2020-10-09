@@ -1,1 +1,247 @@
-#home{font-family:Noto Sans JP,sans-serif;color:white;-webkit-font-smoothing:antialiased}@-webkit-keyframes fadeTop{0%{opacity:0;-webkit-transform:translateY(-10%);transform:translateY(-10%)}100%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes fadeTop{0%{opacity:0;-webkit-transform:translateY(-10%);transform:translateY(-10%)}100%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}#home .header-image .video-container{padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden}#home .header-image .video-container iframe,#home .header-image .video-container object,#home .header-image .video-container embed{position:absolute;top:0;left:0;width:100%;height:100%}#home .spirits-logo{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;padding-top:50px}#home .spirits-logo .spirit{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin:30px}@media only screen and (max-width:768px){#home .spirits-logo .spirit{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-line-pack:center;align-content:center}}@media only screen and (max-width:568px){#home .spirits-logo .spirit{margin:10px}}#home .spirits-logo .spirit .bottle-icon{max-width:100px;height:100px;-ms-flex-item-align:center;align-self:center;padding-bottom:10px;-webkit-animation:fadeTop 1s cubic-bezier(.77,0,.175,1) 1;animation:fadeTop 1s cubic-bezier(.77,0,.175,1) 1}@media only screen and (max-width:768px){#home .spirits-logo .spirit .bottle-icon{margin:0}}#home .spirits-logo .spirit .drink-names{text-transform:uppercase;font-size:26px;margin-left:15px;-ms-flex-item-align:center;align-self:center;font-weight:600}@media only screen and (max-width:768px){#home .spirits-logo .spirit .drink-names{margin-left:0;text-align:center}}#home .home-craft{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}@media only screen and (max-width:1024px){#home .home-craft{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#home .home-craft .hand-crafted{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}#home .home-craft .home-pressure-img{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;height:500px}}#home .home-craft .hand-crafted{background-color:#4d5f8a;width:50%;padding:150px 0 150px 200px}@media only screen and (max-width:1024px){#home .home-craft .hand-crafted{width:100%;padding:60px 40px}}#home .home-craft .hand-crafted .craft{color:#fff;padding:0 40px}@media only screen and (max-width:768px){#home .home-craft .hand-crafted .craft{padding:0}}#home .home-craft .hand-crafted .craft-p{padding:0 0 20px;margin-bottom:10px;padding:0 40px}@media only screen and (max-width:768px){#home .home-craft .hand-crafted .craft-p{padding:0}}#home .home-craft .home-pressure-img{background-image:url(../img/images/brewery-homepage.png);width:50%}@media only screen and (max-width:1024px){#home .home-craft .home-pressure-img{width:100%}}#home .home-celebration{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}@media only screen and (max-width:1024px){#home .home-celebration{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}#home .home-celebration .home-wheel{background-image:url(../img/images/american_gin.png);width:50%}@media only screen and (max-width:1024px){#home .home-celebration .home-wheel{width:100%;height:500px}}#home .home-celebration .home-sacramento{width:50%;background-color:white;padding:150px 200px 150px 0}@media only screen and (max-width:1024px){#home .home-celebration .home-sacramento{width:100%;padding:60px 80px}}#home .home-celebration .home-sacramento .sac{color:#4d5f8a;padding:0 40px;padding-right:200px}@media only screen and (max-width:1024px){#home .home-celebration .home-sacramento .sac{width:100%;padding:0}}#home .home-celebration .home-sacramento .sac-p{color:black;padding:0 0 20px;margin-bottom:10px;padding:0 40px;padding-right:200px}@media only screen and (max-width:1024px){#home .home-celebration .home-sacramento .sac-p{width:100%;padding:0}}#home .tasting-room{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.8)),to(rgba(0,0,0,.8))),url(../img/background/wineglassesbw.png);background-image:linear-gradient(180deg,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%),url(../img/background/wineglassesbw.png);width:100%;height:520px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#home .tasting-room .tasting{max-width:50%;text-align:center}@media only screen and (max-width:768px){#home .tasting-room .tasting{max-width:100%}}#home .tasting-room .tasting .tasting-header{font-family:Aleo,Georgia,Times New Roman,serif;font-weight:700;font-size:28px;color:#fff!important;letter-spacing:1px;line-height:1.7em;padding:0 90px;text-align:center}@media only screen and (max-width:768px){#home .tasting-room .tasting .tasting-header{padding:0 90px}}@media only screen and (max-width:568px){#home .tasting-room .tasting .tasting-header{font-size:32px}}#home .tasting-room .tasting .tasting-content{font-family:Noto Sans JP,Helvetica,Arial,Lucida,sans-serif;color:#e7b560;letter-spacing:1px;line-height:1.6em;margin-bottom:40px;font-weight:500}@media only screen and (max-width:768px){#home .tasting-room .tasting .tasting-content{padding:0 40px}}@media only screen and (max-width:568px){#home .tasting-room .tasting .tasting-content{font-size:14px}}#home .home-insta .layout{padding:40px 0}
+#home {
+  font-family: "Noto Sans JP", sans-serif;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+@keyframes fadeTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+#home .header-image .video-container {
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+#home .header-image .video-container iframe, #home .header-image .video-container object, #home .header-image .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#home .spirits-logo {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding-top: 50px;
+}
+#home .spirits-logo .spirit {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+@media only screen and (max-width: 768px) {
+  #home .spirits-logo .spirit {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+@media only screen and (max-width: 568px) {
+  #home .spirits-logo .spirit {
+    margin: 10px;
+  }
+}
+#home .spirits-logo .spirit .bottle-icon {
+  max-width: 100px;
+  height: 100px;
+  align-self: center;
+  padding-bottom: 10px;
+  animation: fadeTop 1s cubic-bezier(0.77, 0, 0.175, 1) 1;
+}
+@media only screen and (max-width: 768px) {
+  #home .spirits-logo .spirit .bottle-icon {
+    margin: 0;
+  }
+}
+#home .spirits-logo .spirit .drink-names {
+  text-transform: uppercase;
+  font-size: 26px;
+  margin-left: 15px;
+  align-self: center;
+  font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  #home .spirits-logo .spirit .drink-names {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+#home .home-craft {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 1024px) {
+  #home .home-craft {
+    flex-direction: column;
+  }
+  #home .home-craft .hand-crafted {
+    order: 2;
+  }
+  #home .home-craft .home-pressure-img {
+    order: 1;
+    height: 500px;
+  }
+}
+#home .home-craft .hand-crafted {
+  background-color: #4d5f8a;
+  width: 50%;
+  padding: 150px 0 150px 200px;
+}
+@media only screen and (max-width: 1024px) {
+  #home .home-craft .hand-crafted {
+    width: 100%;
+    padding: 60px 40px;
+  }
+}
+#home .home-craft .hand-crafted .craft {
+  color: #ffffff;
+  padding: 0 40px;
+}
+@media only screen and (max-width: 768px) {
+  #home .home-craft .hand-crafted .craft {
+    padding: 0;
+  }
+}
+#home .home-craft .hand-crafted .craft-p {
+  padding: 0 0 20px 0;
+  margin-bottom: 10px;
+  padding: 0 40px;
+}
+@media only screen and (max-width: 768px) {
+  #home .home-craft .hand-crafted .craft-p {
+    padding: 0;
+  }
+}
+#home .home-craft .home-pressure-img {
+  background-image: url(../img/images/brewery-homepage.png);
+  width: 50%;
+}
+@media only screen and (max-width: 1024px) {
+  #home .home-craft .home-pressure-img {
+    width: 100%;
+  }
+}
+#home .home-celebration {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 1024px) {
+  #home .home-celebration {
+    flex-direction: column;
+  }
+}
+#home .home-celebration .home-wheel {
+  background-image: url(../img/images/american_gin.png);
+  width: 50%;
+}
+@media only screen and (max-width: 1024px) {
+  #home .home-celebration .home-wheel {
+    width: 100%;
+    height: 500px;
+  }
+}
+#home .home-celebration .home-sacramento {
+  width: 50%;
+  background-color: white;
+  padding: 150px 200px 150px 0;
+}
+@media only screen and (max-width: 1024px) {
+  #home .home-celebration .home-sacramento {
+    width: 100%;
+    padding: 60px 80px;
+  }
+}
+#home .home-celebration .home-sacramento .sac {
+  color: #4d5f8a;
+  padding: 0 40px;
+  padding-right: 200px;
+}
+@media only screen and (max-width: 1024px) {
+  #home .home-celebration .home-sacramento .sac {
+    width: 100%;
+    padding: 0;
+  }
+}
+#home .home-celebration .home-sacramento .sac-p {
+  color: black;
+  padding: 0 0 20px 0;
+  margin-bottom: 10px;
+  padding: 0 40px;
+  padding-right: 200px;
+}
+@media only screen and (max-width: 1024px) {
+  #home .home-celebration .home-sacramento .sac-p {
+    width: 100%;
+    padding: 0;
+  }
+}
+#home .tasting-room {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/background/wineglassesbw.png");
+  width: 100%;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .tasting-room .tasting {
+  max-width: 50%;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  #home .tasting-room .tasting {
+    max-width: 100%;
+  }
+}
+#home .tasting-room .tasting .tasting-header {
+  font-family: "Aleo", Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #ffffff !important;
+  letter-spacing: 1px;
+  line-height: 1.7em;
+  padding: 0 90px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  #home .tasting-room .tasting .tasting-header {
+    padding: 0 90px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  #home .tasting-room .tasting .tasting-header {
+    font-size: 32px;
+  }
+}
+#home .tasting-room .tasting .tasting-content {
+  font-family: "Noto Sans JP", Helvetica, Arial, Lucida, sans-serif;
+  color: #e7b560;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+  #home .tasting-room .tasting .tasting-content {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  #home .tasting-room .tasting .tasting-content {
+    font-size: 14px;
+  }
+}
+#home .home-insta .layout {
+  padding: 40px 0;
+  background-color: #4d5f8a;
+}
+
+/*# sourceMappingURL=home.min.css.map */
