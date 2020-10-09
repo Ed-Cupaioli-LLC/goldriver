@@ -18,29 +18,23 @@
 }
 .yellow-border{
     border: solid 1px #dbb778;
-    height: 95%;
-    width: 95%;
+    height: 100%;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    padding: 15px;
 }
 .white-border{
     border: solid 2px white;
-    height: 96%;
-    width: 98%;
+    height: 100%;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: flex-end;
     align-content: flex-end;
-    position:absolute;
-    @include bp-large{
-        width: 96%;
-    }
-    @include bp-small{
-        height:94%;
-    }
+    position:relative;
 }
 .top-right{
     position: absolute;
@@ -81,6 +75,7 @@
     background-size:cover; 
     background-position:center; 
     background-repeat:no-repeat; 
+    padding: 15px;
 
 }
 
