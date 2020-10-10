@@ -15,13 +15,20 @@ scripts:
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     {% endif %}
+    <!---nav --->
     {% include nav.html %}
+    <!-----Ovelay-->
+    {% include prompt-overlay.html %}
+    <!---Content-->
     {{ content }}
+    <!-----Footer-->
     {% include footer.html %}
     <!-- Scripts -->
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Cookies -->
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <!-- Layout -->
     {% if layout.scripts %}
     {% for script in layout.scripts %}
