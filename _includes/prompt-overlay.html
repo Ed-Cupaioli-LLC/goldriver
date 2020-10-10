@@ -1,0 +1,35 @@
+<div id="prompt-overlay">
+    <div class="close-prompt">&times;</div>
+    
+    <div class="prompt-content">
+      <div class="site-logo">
+          <img  class='logo' src='../img/logos-icons/gr_logo.png'>
+      </div>
+      <div class="age-gate prompt-modal active">
+        <h4>Are you over 21 years of age?</h4>
+        <div class="btn-row">
+            <button class='button-yellow'>
+               
+                <div class='button-layout'>
+                   <div class='button-image'> 
+                       <img class='interior-cart-image' src='../img/logos-icons/checkmark.png'> 
+                   </div>
+                   <div class='custom'></div>
+                   <div class='button-text'> {% include button.html link="#yes" text="Yes" color="white" %} </div>
+               </div>
+           </button>
+
+           <button class='button-yellow'>
+                <div class='button-layout'>
+                    <div class='button-image'> 
+                        <img class='interior-cart-image' src=' ../img/logos-icons/x-mark.png'> 
+                    </div>
+                <div class='custom'></div>
+               <div class='button-text'>  {% include button.html link="#no" text="No" color="white" %}</div>
+            </div>
+        </button>
+            
+        </div>
+      </div>
+    </div>
+  </div>
