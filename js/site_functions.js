@@ -16,7 +16,7 @@ $(function(){
   });
 
 
-    $(".button").click(function() {
+    $(".hamburger").click(function() {
         var val = $(this).attr('id');
         if (val == 0) {
             $("ul").hide();
