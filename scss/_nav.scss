@@ -5,7 +5,8 @@ nav{
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 0
+      
 }
 .button{
     border: none;
@@ -17,36 +18,40 @@ nav{
         width: 32px;
 }
 
-ul{
-    display: none;
-    list-style-type: none;
+ul{ 
+    z-index: 1;
+    right: 0;
+    top: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
     position: absolute;
-    left: 0;
-    padding: 5%;
-    margin-left: 10%;
-    margin-top: 25px;
-    background: #fff;
-    width: 80%;
-    visibility: visible;
-    opacity: 1;
-    z-index: 9999;
-    border-top: 3px solid #2ea3f2;
+    width: 50vw;
+    height: 100vh;
+    margin:0;
+    list-style-type: none;
 }
 li a {
-    color: #000;
+    color:white;
+    text-transform: uppercase;
     text-decoration: none;
+   text-align: center;
+    transition: 0.3s;
 }
 li {
     padding: 8px 16px;
-    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    
 }
-
-li:hover {
-    background-color: #e5e5e5;
-    color: white;
+li:hover{
+    font-size: 22px;
 }
-
 
 .nav-logo{
     width: 100px;
+}
+.exit{
+    color: white;
+    font-size: 40px;
 }

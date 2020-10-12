@@ -1,8 +1,9 @@
 <nav>
-    <div>{% include nav-logo.html %}</div>
-    <div class='dropdown-menu'>
+    <div class='button'>{% include nav-logo.html %}</div>
+    <div class='dropdown-menu' id='sidenav'>
         <div>{% include hamburger.html %}</div>
-        <ul>
+        <ul style='display:none' >
+           <a class="exit" id='1'> &times</a> 
             <li><a href="{{ base }}/">Gold River Distillery</a></li> 
             <li> <a href="{{ base }}/tasting/">Tasting Room </a></li> 
             <li><a href="{{ base }}/spirits/">Spirits</a></li> 

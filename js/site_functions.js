@@ -14,6 +14,8 @@ $(function(){
       window.location = "https://estreet.co";
     }
   });
+
+
     $(".button").click(function() {
         var val = $(this).attr('id');
         if (val == 0) {
@@ -26,16 +28,15 @@ $(function(){
 
     });
 
-    //Mouse click on setting button and ul list
-    $("ul, .button").mouseup(function() {
-        return false;
-    });
+    $(".exit").click(function() {
+      var val = $(this).attr('id');
+      if (val == 1) {
+          $("ul").hide();
+          $(this).attr('id', '1');
+          $('.button').attr('id', '1');
+      } 
 
-    //Document Click
-    $(document).mouseup(function() {
-        $("ul").hide();
-        $(".button").attr('id', '0');
-    });
+  });
     
   
 });
