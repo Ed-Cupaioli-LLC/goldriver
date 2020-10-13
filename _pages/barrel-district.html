@@ -19,10 +19,12 @@ brewery-locations:
           location: 1160 Sunrise Gold Circle, Suite C <br>
            (916) 476-3868 
           site: GoldRiverDistillery.com
+          url: https://goldriverdistillery.com/
           hours:  'Hours: Wednesday By Appointment Only, Friday 4 – 7PM, Saturday 11AM – 3PM'
         - name: J.J. PFISTER DISTILLING COMPANY 
           location: 9819 Business Park Drive 
           site: JJPfister.com 
+          url: https://www.jjpfister.com/
           hours: 'Hours: Friday 3 – 6PM, Saturday 12 – 6PM'
 
     craft-breweries: 
@@ -32,32 +34,38 @@ brewery-locations:
           location: 11366 Monier Park Place <br>
             (916) 661-5249
           site: ClaimstakeBrewing.com
+          url: https://www.claimstakebrewing.com/index.html
           hours: 'Hours: Wednesday and Thursday 4 – 8PM, Friday 2 – 8PM, Saturday 12 – 8PM, Sunday 12 – 6PM'
         - name: FORT ROCK BREWING
           location: 12401 Folsom Boulevard, Suite 110 <br>
            (916) 936-4616
           site: FortRockBrewing.com
+          url: https://www.fortrockbrewing.com/
           hours: 'Hours: Monday – Sunday 11AM – 11PM'
         - name: OLD HANGTOWN BEER WORKS
           location: 11327 Trade Center Drive, Suite 350 <br>
            (530) 919-5166
           site: Facebook.com/Old-Hangtown-Beer-Works
+          url: https://www.facebook.com/Old-Hangtown-Beer-Works-112091415508385/
           hours: 'Hours: Monday – Friday 4 – 8PM, Saturday 12 – 4PM'
         - name: THIN LINE BREWING COMPANY
           location: 11354 White Rock Road <br>
            (530) 919-5166
           site: ThinLineBrewing.com
+          url: https://www.thinlinebrewing.com/
           hours: 'Hours: Wednesday and Thursday 4 – PM, Friday 2-8PM, Saturday 12 – 8PM, Sunday 12 – 6'
         - name: OL' REPUBLIC BREWERY
           location: 11151 Trade Center Drive <br>
            (530) 919-5166
           site: OlRepublicBewery.com
+          url: https://www.olrepublicbrewery.com/
           hours: 'Hours: Monday – Thursday 3 – 9PM, Friday 3- 10PM, Saturday 11 – 10PM, Sunday 11 – 9PM <br>
                  Hours are subject to change, please check website for the most current hours.'
         - name: BURNING BARREL BREWING COMPANY - COMING SOON
           location: 11210 Sun Center Drive, Suite B <br>
             (916)382-4846
           site: BurningBarrelBrewCo.com
+          url: https://burningbarrel.square.site/
           hours: 'Monday – Friday, 12 – 7 PM <br>
                     Hours: Saturday – Sunday 11 AM – 7 PM'
     meadery:
@@ -67,6 +75,7 @@ brewery-locations:
           location: 2539 Mercentile Drive <br>
             (916) 849-6323
           site: StradMead.com
+          url: https://www.stradmead.com/
 ---
 
 <div id='barrel-district'>
@@ -83,15 +92,16 @@ brewery-locations:
     </div>
     <div class='intro-banner-white'>
         <p class='intro-black-font'> <span class='blue-heading-main font-header'>{{ page.intro.header }} </span>{{ page.intro.content }}</p>
-        <button class='button-blue'>
+        <button class='button-blue' href='https://goldriverdistillery.com/wp-content/uploads/2020/07/map_of_the_barrel_district.pdf'>
+          
                 <div class='button-layout'>
                    <div class='button-image'> 
                        <img class='interior-cart-image' src='{{ page.button-image | relative_url }}'> 
                    </div>
                    <div class='custom'></div>
-                   <div class='button-text'>download map</div>
+                   <div class='button-text'><a href='https://goldriverdistillery.com/wp-content/uploads/2020/07/map_of_the_barrel_district.pdf' target="_blank">download map</a></div>
                </div>
-           </button>
+              </button>
     </div>
 
 <div class='brewery-type'>
@@ -114,7 +124,7 @@ brewery-locations:
     <div class='brewery-contact-info'>
     <h2 class='sub-header'> {{ item.name }}</h2>
     <p class='details'>{{ item.location }}</p>
-    <p class='details link'>{{ item.site }}</p>
+    <a class='details link' href='{{ item.url }}'>{{ item.site }}</a>
     <p class='details'>{{ item.hours}}</p>
 
     </div>
