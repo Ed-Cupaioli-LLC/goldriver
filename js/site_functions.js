@@ -15,7 +15,7 @@ $(function(){
     }
   });
 
-
+//hamburger dropdown menu
     $(".hamburger").click(function() {
         var val = $(this).attr('id');
         if (val == 0) {
