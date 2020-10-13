@@ -37,13 +37,13 @@
         display: flex;
         flex-direction: column;
         color: white;
-        height: 320px;
+        height: 340px;
         padding: 60px 25px;
         justify-content: center;
         align-items: center;
         align-content: center;
         @include bp-small{
-            height: 380px;
+            height: 395px;
         }
         .buy-header{
          font-size:35px;
