@@ -25,6 +25,7 @@
         overflow-x: hidden;
         transition: opacity 2s linear;
         padding-top: 60px;
+        padding-left:0px;
         position: absolute;
         width: 50vw;
         height: 100vh;
@@ -38,16 +39,15 @@
         .exit{
             color: white;
             font-size: 40px;  
+            padding-left: 40px;
         }
         li {
-            padding: 8px 16px;
-            text-align: center;  
+            padding: 15px;
+            font-size:20px;
+            text-align: center; 
+            text-transform: uppercase; 
             li a {
                 color:white;
-                text-transform: uppercase;
-                text-decoration: none;
-               text-align: center;
-                transition: 0.3s;
             } 
         } 
         li:hover{

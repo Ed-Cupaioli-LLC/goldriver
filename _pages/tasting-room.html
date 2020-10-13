@@ -48,13 +48,13 @@ button: 'https://www.google.com/maps/place/Gold+River+Distillery,+11460+Sunrise+
 
 
     <div class='intro-banner'>
-            <p class='intro'><span class='gold-heading font-header'>{{ page.covid.header }}</span>{{ page.covid.content }}</p>       
+            <p class='header-p'><span class='gold-heading '>{{ page.covid.header }}</span>{{ page.covid.content }}</p>       
     </div>
 
     <div class=tasting-room>
         <div class='content'>
         <div class='hours'>
-            <h1 class='header'> {{ page.tasting-room.header }} </h1>
+            <h1> {{ page.tasting-room.header }} </h1>
             <div>
              {% for day in page.tasting-room.list %}
                 <p class='info'> {{ day.time }}</p>
@@ -62,7 +62,7 @@ button: 'https://www.google.com/maps/place/Gold+River+Distillery,+11460+Sunrise+
         </div>
         </div>
         <div class='hours'>
-            <h1 class='header'> {{ page.tasting-room.header2 }} </h1>
+            <h1> {{ page.tasting-room.header2 }} </h1>
             <div >
              {% for loc in page.tasting-room.list-location %}
                 <p class='info'> {{ loc.location }}</p>
