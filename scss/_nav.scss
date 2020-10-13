@@ -21,39 +21,90 @@
         z-index: 1;
         right: 0;
         top: 0;
-        background-color: #111;
+        background-color:$black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         overflow-x: hidden;
         transition: opacity 2s linear;
         padding-top: 60px;
+        padding-bottom:60px;
         padding-left:0px;
         position: absolute;
-        width: 50vw;
+        width: 100vw;
         height: 100vh;
         margin:0;
         list-style-type: none;
         position: fixed;
         animation: slidein 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-        @include bp-medium{
-            width: 100vw;
-        }  
-        .exit{
-            color: white;
-            font-size: 40px;  
-            padding-left: 40px;
+
+        .header-links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .exit{
+                color:$white;
+                font-size: 40px;  
+                line-height: .5;
+                &:hover{
+                    color: $yellow;
+                }
+            }
+            .image-container{
+                width:300px;
+                @include bp-small{
+                    width:200px;
+                }
+            }
+            .shopping-cart{
+                width: 32px;
+            }
+            
+
         }
-        li {
-            padding: 15px;
-            font-size:20px;
-            text-align: center; 
-            text-transform: uppercase; 
-            li a {
-                color:white;
+        .link{
+            padding-top: 40px;
+            li {
+                font-family: 'Aleo',Georgia,"Times New Roman",serif;
+                padding: 15px;
+                font-size:30px;
+                text-align: center; 
+                text-transform: uppercase; 
+                @include bp-small{
+                    font-size:20px;
+                }
+                li a {
+                    color:white;
+                } 
+                &:hover{
+                    a{
+                    color: $yellow;
+                    }
+                    font-size: 33px;
+                    @include bp-small{
+                        font-size: 22px;
+    
+                    }
+                }
             } 
-        } 
-        li:hover{
-            font-size: 22px;
+            
+
         }
-          
+        .social-links{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 40px;
+            .social-bottom{
+                width: 40px;
+                margin: 0 5px;
+                &:hover{
+                    width:45px;
+                }
+            }
+           
+
+        }
     }
 
 }

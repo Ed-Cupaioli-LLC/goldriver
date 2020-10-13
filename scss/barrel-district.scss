@@ -56,9 +56,9 @@
                 font-weight: 300;
                 line-height: 2;
                 letter-spacing: 0.5px;
-                color: #666;
                 text-align: left;
                 color: $black;
+                margin:0;
                 @include bp-small{
                     font-size: 14px;
                 }

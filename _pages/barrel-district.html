@@ -111,7 +111,7 @@ brewery-locations:
     <div class='brewery-contact-info'>
         <h2 class='sub-header'> {{ item.name }}</h2>
         <p class='details'>{{ item.location }}</p>
-        <p class='details link'>{{ item.site }}</p>
+        <a class='details link' href='{{ item.url }}'>{{ item.site }}</a>
         <p class='details'>{{ item.hours }}</p>
     </div>
   
@@ -138,7 +138,7 @@ brewery-locations:
     <div class='brewery-contact-info'>
     <h2 class='sub-header'> {{ item.name }}</h2>
     <p class='details'>{{ item.location }}</p>
-    <p class='details link'>{{ item.site }}</p>
+    <a class='details link' href='{{ item.url }}'>{{ item.site }}</a>
     <p class='details'>{{ item.hours}}</p>
 
     </div>
