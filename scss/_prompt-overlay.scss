@@ -38,7 +38,7 @@
   
       .prompt-modal {
         display: none;
-        color: white;
+        color: $white;
         text-align: center;
         margin: 2rem auto 0;
         h4 {
@@ -59,7 +59,7 @@
           .button-yellow{
             margin: 20px;
             .button-a{
-              color: white;
+              color: $white;
               font-size: 20px;
             }
           

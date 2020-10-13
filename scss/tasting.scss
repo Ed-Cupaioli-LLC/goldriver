@@ -1,9 +1,9 @@
 @import "vars.scss";
 @import "mixins.scss";
+@import "global.scss";
 
 #tasting-info-page{
-//repeatng elements
-color: white;
+
 
 
 .header-image{
@@ -24,7 +24,7 @@ color: white;
     .content{
         padding: 150px 0 150px 200px;
         width:50%;
-        background-color: #4d5f8a;
+        background-color: $blue;
         @include bp-large{
            width:100%;
            padding: 40px;
@@ -43,12 +43,14 @@ color: white;
                 }
             }
             .info{
-                font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
                 font-weight: 300;
                 font-size: 18px;
                 letter-spacing: 1px;
                 padding-right: 40px;
                 line-height: 2;
+                @include bp-small{
+                    font-size: 14px;
+                }
             }
             
         }

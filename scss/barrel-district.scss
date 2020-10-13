@@ -1,5 +1,6 @@
 @import "vars.scss";
 @import "mixins.scss";
+@import "global.scss";
 
 #barrel-district{
     h2{
@@ -28,12 +29,19 @@
                 font-size: 22px;
             }
         }
+        .font-header{
+            font-size: 35px;
+            @include bp-medium{
+                font-size: 26px;
+            }
+        }
+        
         
         .brewery-contact-info{
             margin: 20px 0;
             padding: 10px 0;
             .sub-header{
-                color: black;
+                color: $black;
                 font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
                 font-size: 29px;
                 padding-bottom: 10px;
@@ -50,7 +58,7 @@
                 letter-spacing: 0.5px;
                 color: #666;
                 text-align: left;
-                color: black;
+                color: $black;
                 @include bp-small{
                     font-size: 14px;
                 }
@@ -58,7 +66,7 @@
             
             }
             .link{
-                color:#4d5f8a ;
+                color: $blue ;
                 font-weight: 500;
             }
         }
