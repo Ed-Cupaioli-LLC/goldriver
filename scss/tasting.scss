@@ -48,9 +48,6 @@
                 letter-spacing: 1px;
                 padding-right: 40px;
                 line-height: 2;
-                @include bp-small{
-                    font-size: 14px;
-                }
             }
             
         }

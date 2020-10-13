@@ -11,26 +11,29 @@
         padding-top: 60px;
         padding-bottom: 60px;
         display: flex;
-        flex-direction: row;
-        .image{
-            width: 50%;
-        }
-        .description{
-            width: 50%;
-        }
-        @include bp-large {
-            flex-direction: column;
+        flex-direction: column;
+        .product-layout{
+            display:flex;
+            flex-direction:row;
             .image{
-                width: 100%;
+                width: 50%;
             }
             .description{
-                width: 100%;
-                padding: 0 40px;
-                .p-bold{
-                    text-align: center;
-                }    
+                width: 50%;
+            }
+            @include bp-large{
+                flex-direction:row;
+                image{
+                    width: 100%;
+                }
+                .description{
+                    width: 100%;
+                }
+    
+            }
+
         }
-    }
+    
     } 
     .buy{
         background-color: $blue;
