@@ -13,25 +13,34 @@
         display: flex;
         flex-direction: column;
         .product-layout{
-            display:flex;
+            display: flex;
             flex-direction:row;
+            padding: 60px 40px;
+            @include bp-large{
+                flex-direction:column;
+            }
             .image{
-                width: 50%;
+                width:400px;
+                align-self:center;
+                @include bp-large{
+                    width:350px;
+                    padding-bottom: 20px;
+                }
             }
             .description{
                 width: 50%;
-            }
-            @include bp-large{
-                flex-direction:row;
-                image{
+                align-self: center;
+                @include bp-large{
                     width: 100%;
                 }
-                .description{
-                    width: 100%;
+                .button-yellow{
+                    margin-left: 40px;
+                    @include bp-large{
+                        margin-left: 0;
+                    }
                 }
-    
             }
-
+            
         }
     
     } 
@@ -48,20 +57,8 @@
         @include bp-small{
             height: 395px;
         }
-        .buy-header{
-         font-size:35px;
-         font-family: 'Aleo',Georgia,"Times New Roman",serif;
-         font-weight: 700;
-         letter-spacing: 1px;
-         line-height: 0.8em;
-        }
         .buy-content{
-         font-size: 18px;
-         font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
-         font-weight: 300;
          text-align: center;
-         letter-spacing: 1px;
-         line-height: 2em;
          max-width: 60%;
          margin-bottom: 30px;
          @include bp-medium{
@@ -69,14 +66,7 @@
              margin-bottom: 20px;
          }
         }
-        .where-to-buy-button{
-            background: $yellow;
-            border: 3px solid $yellow;
-            color: $white;
-            padding: 0;
-            width: 250px;
-
-        }
+        
     }
     .medals{
         background-image:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/background/wineglassesbw.png");   
