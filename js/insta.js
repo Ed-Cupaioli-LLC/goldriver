@@ -68,7 +68,6 @@ var fetchInstagramPhotos = async (account) => {
       
       
       a.appendChild(img)
-   
       container.appendChild(a)
      
       
