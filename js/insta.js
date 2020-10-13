@@ -1,3 +1,5 @@
+//--------------------------------API call from Instagram in case the code below will fail------------------------
+
 // $(function(){
 //     var arr = ['p/B_frooMAdGx','p/CFz9bHXHIxw','p/CFsN2mnnfcZ','p/CBOQqJmnFv8','p/CDkCs1xohWr','p/CByslopA2kt','p/CCpJG09Jv2W']
 //     for(var i=0; i<arr.length; i++){
@@ -18,18 +20,26 @@
 //     }
    
 // })
-var instagramRegExp = new RegExp(/<script type="text\/javascript">window\._sharedData = (.*);<\/script>/)
 
-var fetchInstagramPhotos = async (accountUrl) => {
-  var response = await axios.get(accountUrl)
-  var json = JSON.parse(response.data.match(instagramRegExp)[1])
+
+
+//--------------------------------Graph QL solution without API call ----------------------------->
+
+
+var regExp = new RegExp(/<script type="text\/javascript">window\._sharedData = (.*);<\/script>/)
+
+var fetchInstagramPhotos = async (account) => {
+  var response = await axios.get(account)
+  var json = JSON.parse(response.data.match(regExp)[1])
+  //how many images will be displayed
   var edges = json.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges.splice(0, 12)
+  console.log
   var photos = edges.map(({ node }) => {
     return {
       url: `https://www.instagram.com/p/${node.shortcode}/`,
       thumbnailUrl: node.thumbnail_src,
       displayUrl: node.display_url,
-      caption: node.edge_media_to_caption.edges[0].node.text
+      caption: node.edge_media_to_caption.edges.length > 0 ? node.edge_media_to_caption.edges[0].node.text : ""
     }
   })
   return photos
@@ -38,22 +48,30 @@ var fetchInstagramPhotos = async (accountUrl) => {
 (async () => {
   try {
     var photos = await fetchInstagramPhotos('https://www.instagram.com/goldriverdistillery/')
-    var container = document.getElementById('instagram-photos')
+    var container = document.getElementById('instagram-grid')
+    var postCaption = document.getElementById('post-caption')
+    
+    
     console.log(photos)
     photos.forEach(el => {
+    
       var a = document.createElement('a')
       var img = document.createElement('img')
-
+      var p = document.createElement('p').innerText=(el.caption)
+      console.log(p)
+ 
       a.setAttribute('href', el.url)
-      a.setAttribute('target', '_blank')
-      a.setAttribute('rel', 'noopener noreferrer')
       a.classList.add('instagram-photo')
-
       img.setAttribute('src', el.thumbnailUrl)
       img.setAttribute('alt', el.caption)
+      img.setAttribute('text',el.caption)
+      
       
       a.appendChild(img)
+   
       container.appendChild(a)
+     
+      
     })
   } catch (e) {
     console.error('Fetching Instagram photos failed', e)
