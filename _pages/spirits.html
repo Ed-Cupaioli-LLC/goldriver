@@ -3,6 +3,8 @@ title: Home Page
 layout: default
 permalink: /spirits
 css: spirits
+scripts: 
+- shop
 
 header:
     img: "/img/spirits/spiritslogo.png"
@@ -14,10 +16,30 @@ spirit-list:
     list:
     - title: WHEEL HOUSE AMERICAN DRY GIN
       content: Wheel House American Dry Gin is an award-winning gin distinguished by a complex yet gentile bouquet of juniper, citrus, and coriander. The first sip reveals a remarkably smooth texture uncommon in other gins. Wheel House opens strong with smooth juniper up front immediately followed by a bold array of botanicals and a spicy finish as its smooth texture becomes crisp, cleansing your palate for the next sip.
-      price: $32.00
+      price: '32.00'
       button: curbside pickup
       img: '/img/spirits/gin.png'
       button-img: '/img/logos-icons/cart.png'
+    - title: VODKA
+      content: Wheel House Sacramento Vodka is an award-winning distilled from a mix of corn and wheat malt, giving it a distinctive sweet and malty savoriness unlike most vodkas. Drink Wheel House Sacramento Vodka straight, or use in your favorite mix!
+      price: '26.00'
+      button: curbside pickup
+      img: '/img/spirits/gin.png'
+      button-img: '/img/logos-icons/cart.png'
+    - title: WHEEL HOUSE ABSINTHE VERTE
+      content: Wheel House Absinthe Verte is a true absinthe distilled from the holy trinity which includes Grande Wormwood, Anise and Fennel macerated in neutral grain spirit for maximum flavor. Additional botanicals used for our absinthe include lavender, star, anise, cinnamon, and spearmint among others using a double maceration method with distillation to achieve flavor and color. Our absinthe is naturally colored with roman worm-wood like the absinthe of days past with a well rounded flavor that works with any mixed drink or by itself. Our absinthe louches perfectly and will satisfy any absinthe connoisseur. Enjoy our absinthe traditionally with ice water, or in your favorite mix.
+      price: '55.00'
+      button: curbside pickup
+      img: '/img/spirits/gin.png'
+      button-img: '/img/logos-icons/cart.png'
+    - title: WHEEL HOUSE CALIFORNIA BOURBON
+      content: Wheel House California Bourbon is a small batched bourbon aged to perfection in 15 gallon oak barrels. This hand crafted sprint has notes of caramel and spice with a creamy mouth feel.<br>
+        <b>Available exclusively in our tasting room.</b>
+      price: '55.00'
+      button: curbside pickup
+      img: '/img/spirits/gin.png'
+      button-img: '/img/logos-icons/cart.png'
+
 
 buy: WHERE TO BUY
 button-image: '/img/logos-icons/bottle-white.png'
@@ -56,14 +78,22 @@ medals:
         <div> <p class='header-p'> <span class='gold-heading'>{{ page.about.header }} </span>{{ page.about.content}}</p>
     </div>
      </div>
+     <div class='content'>
      <div class='products'>
         {% for product in page.spirit-list.list %}
+        <div class='product-layout'>
          <div class='image'> <img src='{{ product.img | relative_url }}' ></div>
          <div class='description'>
              <h1 class='blue-header font-header'>{{ product.title }}</h1>
              <p class='paragraph-p font-paragraph'>{{ product.content }}</p>
-             <p class='p-bold font-paragraph'>{{ product.price }}</p>
-             <button class='button-yellow'>
+             <p class='p-bold font-paragraph'>${{ product.price }}</p>
+             <button class='snipcart-add-item button-yellow'
+             data-item-id="{{ product.title }}"
+             data-item-price="{{ product.price }}"
+             data-item-url="{{ product.img | relative_url }}"
+             data-item-image="{{ product.img | relative_url }}"
+             data-item-description="{{ product.content }}"
+             data-item-name="{{ product.title }}">
                  <div class='button-layout'>
                     <div class='button-image'> 
                         <img class='interior-cart-image' src='{{ product.button-img | relative_url }}'> 
@@ -73,8 +103,10 @@ medals:
                 </div>
             </button>
          </div>
+        </div>
          {% endfor %}   
      </div>
+    </div>
      <div class='buy'>
         <h1 class='buy-header'>{{ page.buy }}</h1>
         <p class='buy-content'> {{ page.buy-info }}</p>
@@ -88,6 +120,10 @@ medals:
            </div>
        </button>
      </div>
+    
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.22/default/snipcart.css" />
+<script async src="https://cdn.snipcart.com/themes/v3.0.22/default/snipcart.js"></script>
+<div id="snipcart" data-api-key="YjZjNjkyMTQtZDY3OC00ZjhmLWJiZTItMDU3NWQ5ZGRlODViNjM3MzgxNzg2NzUyMzI1OTA2" hidden></div>
 
     <div class='medals header-image background-image'>
         <h2 class='medals-header'>{{ page.medals.title }}</h2>
