@@ -177,35 +177,73 @@
         
  }
     .home-insta{
-            padding-top: 60px;
-            background-color: $blue;
-            .insta-header{
-                text-align:center;
-                padding-bottom: 30px;
-            }
-            .instagram-photos {
-                display: flex;
-                flex-wrap: wrap;
-              .instagram-photo {
-                flex: 1 0 auto;
-                position: relative;
-                width: calc(100% / 6 - (8px * 2));
-                @include bp-large{
-                    width: calc(100% / 4 - (8px * 2));
-                }
-                @include bp-medium {
-                    width: calc(100% / 2 - (8px * 2));
+        .image{
+            width:200px;
+            height:200px;
+            overflow: hidden;
+        }
+        .hidden{
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        }
+    //         padding: 100px 10px 10px 10px;
+            // background-color:$blue;
+            // .insta-image{
+            //     #pop-up{
+            //             visibility: hidden;
+            //             width: 160px;
+            //             background-color: #555;
+            //             color: #fff;
+            //             text-align: center;
+            //             border-radius: 6px;
+            //             padding: 8px 0;
+            //             position: absolute;
+            //             z-index: 1;
+            //             bottom: 125%;
+            //             left: 50%;
+            //             margin-left: -80px;
+            //             .show {
+            //                 visibility: visible;
+            //                 -webkit-animation: fadeIn 1s;
+            //                 animation: fadeIn 1s
+            //               }
+
+            //     }
+            // }
+            // .insta-header{
+            //     color:$white;
+            //     text-align:center;
+            //     padding-bottom: 30px;
+            //     max-width:80%;
+            //     margin: 0 auto;
+            // }
+            // .instagram-photos {
+            //     display: flex;
+            //     flex-wrap: wrap;
+            //   .instagram-photo {
+            //     flex: 1 0 auto;
+            //     position: relative;
+            //     padding: 10px;
+                
+            //     width: calc(100% / 6 - (8px * 2));
+            //     @include bp-large{
+            //         width: calc(100% / 4 - (8px * 2));
+            //         padding: 5px;
+            //     }
+            //     @include bp-small {
+            //         width: calc(100% / 2 - (8px * 2));
                   
-                }
-                img{
-                    filter: brightness(100%)
-                }
-                img:hover {
-                    filter: brightness(10%)    
-                }
+            //     }
+            //     img{
+            //         filter: brightness(100%)
+            //     }
+            //     img:hover {
+            //         filter: brightness(10%)    
+            //     }
                
-              }
-            }
+            //   }
+            // }
              
         
     }
