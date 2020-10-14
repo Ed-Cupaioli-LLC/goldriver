@@ -6,7 +6,8 @@ css: private-labeling
 
 hero: 
   img: '/img/private-label/alcohol-bottles-private-label.png'
-
+header:
+  img: "/img/logos-icons/privatelabel.png"
 intro: 
   header: IN ADDITION 
   content: to our own line of Wheel House Spirits, Gold River Distillery also produces spirits for 
@@ -25,7 +26,7 @@ button-image: '/img/logos-icons/button2.png'
                 <div class='top-left dot'></div>
                 <div class='bottom-right dot'></div>
                 <div class='bottom-left dot'></div>
-                <img class='header-img-logo' />
+                <img class='header-img-logo' src='{{ page.header.img | relative_url }}' />
             </div>
         </div>
     </div>

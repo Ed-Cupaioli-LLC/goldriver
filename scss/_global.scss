@@ -148,9 +148,13 @@ p{
     margin: 10px;
     }
     .header-img-logo{
-        width: 420px;
-        margin: 0;
-        padding: 10px;
+        position: absolute;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        width: 450px;
+        @include bp-small{
+            width: 250px;
+        }
     }
 
 
