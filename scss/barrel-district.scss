@@ -17,6 +17,9 @@
         margin-bottom: 40px;
 
     }
+    a{
+        color: $black;
+    }
     .brewery-type{
         padding: 0 20%;
         @include bp-small{
