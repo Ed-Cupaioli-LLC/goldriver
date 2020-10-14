@@ -3,6 +3,7 @@ title: Home Page
 layout: default
 permalink: /
 css: home
+js: insta.js
 header:
     img: "/img/tasting-room/'wiskeyglasses.png"
 intro:
@@ -49,7 +50,7 @@ insta:
 <div id="home">
     
             <div class='video-container'>
-                <div class='yellow-border'>
+            <div class='yellow-border'>
             <div class=white-border>
                 <div class='top-right dot'></div>
                 <div class='top-left dot'></div>
@@ -59,7 +60,10 @@ insta:
             </div>
             
         </div>
-        <iframe src="https://www.youtube.com/embed/3rnt4hv_Qv4?rel=0&autoplay=1&mute=1&loop=1&playlist=3rnt4hv_Qv4" frameborder="0"  allowfullscreen></iframe>
+        <div id="yt-wrap">
+            <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+            <div id="ytplayer"></div>
+        </div>
         </div>
         
 
