@@ -18,6 +18,11 @@
             padding: 60px 40px;
             @include bp-large{
                 flex-direction:column;
+                padding: 60px 100px;
+            }
+            @include bp-small{
+                flex-direction:column;
+                padding: 60px 40px;
             }
             .image{
                 width:400px;
