@@ -3,10 +3,22 @@
 @import "global.scss";
 #home{
     .video-container{
-        height: 540px;
+        height: 80vh;
         position: relative;
         overflow: hidden;
         padding: 15px;
+        @include bp-small{
+            height: 50vh;
+        }
+        .goldriver-logo{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: 10px;
+            margin-right: 10px;
+            display: flex;
+            align-self: center;
+        }
         #yt-wrap iframe{
                 position: absolute;
                 filter: brightness(50%);

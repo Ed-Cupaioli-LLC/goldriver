@@ -5,7 +5,9 @@ permalink: /
 css: home
 js: insta.js
 header:
-    img: "/img/tasting-room/'wiskeyglasses.png"
+    img: "/img/tasting-room/wiskeyglasses.png"
+logo:
+    img: "/img/logos-icons/gr_logo.png"
 intro:
     header: GOLD RIVER DISTILLERY
     content: is proud to be the first legal distillery in Sacramento County since Prohibition. We're a small-batch micro distillery located in Northern California, just outside of the city of Sacramento. Our Wheel House spirits are available in a growing number of stores through out California. Find where you can buy our spirits by visiting our retail locations page.
@@ -45,7 +47,7 @@ insta:
     - img: "/img/images/wheelhousedrink.png"
     - img: "/img/images/yellowdrink.png"
     - img: "/img/images/barrelroom.png"
-   
+  
 ---
 <div id="home">
     
@@ -57,8 +59,12 @@ insta:
                 <div class='bottom-right dot'></div>
                 <div class='bottom-left dot'></div>
                 <img class='header-img-logo'/>
+                <div class='goldriver-logo'>
+                    <img src= '{{ page.logo.img | relative_url }}'>
+                </div>
+                
             </div>
-            
+           
         </div>
         <div id="yt-wrap">
             <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
