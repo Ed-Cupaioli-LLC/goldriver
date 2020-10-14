@@ -2,7 +2,7 @@
 
 $(function(){
  
-    var arr = ['p/B_frooMAdGx','p/CFz9bHXHIxw','p/CFsN2mnnfcZ','p/CBOQqJmnFv8','p/CDkCs1xohWr','p/CByslopA2kt','p/CCpJG09Jv2W', 'p/CARNYS2JOgJ',]
+    var arr = ['p/B_frooMAdGx','p/CFz9bHXHIxw','p/CFsN2mnnfcZ','p/CBOQqJmnFv8','p/CDkCs1xohWr','p/CByslopA2kt','p/CCpJG09Jv2W', 'p/CARNYS2JOgJ', 'p/B5lHDEqJ25N','p/B0HQc6CgJnH','p/BvCVcnDjFky','p/BvNArPllWep']
     for(var i=0; i<arr.length; i++){
             $.ajax({
             // url: 'https://graph.facebook.com/v8.0/instagram_oembed?url=https://www.instagram.com/'+arr[i]+'&maxwidth=320&html&fields=thumbnail_url%2Cauthor_name%2Cprovider_name%2Cprovider_url%_html&access_token=401728117501247|5b862f9602225228ae6addaf22183941',
