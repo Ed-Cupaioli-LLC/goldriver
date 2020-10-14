@@ -183,13 +183,15 @@
             display: flex;
             flex-wrap: wrap;
             .image{
-                width:200px;
+                max-width:200px;
                 height:200px;
                 overflow: hidden;
-                flex: 1 0 auto;
                 position: relative;
                 padding: 10px;
-                width: calc(100% / 4 );
+                width: calc(100% / 6 );
+                @include bp-large{
+                    width: calc(100% / 4 );
+                }
                  @include bp-small {
                         width: calc(100% / 2 );
             }
