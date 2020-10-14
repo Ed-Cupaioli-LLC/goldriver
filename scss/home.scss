@@ -177,16 +177,30 @@
         
  }
     .home-insta{
-        .image{
-            width:200px;
-            height:200px;
-            overflow: hidden;
+        .insta-image{
+            display: flex;
+            flex-wrap: wrap;
+            .image{
+                width:200px;
+                height:200px;
+                overflow: hidden;
+                flex: 1 0 auto;
+                position: relative;
+                padding: 10px;
+                width: calc(100% / 4 );
+                 @include bp-small {
+                        width: calc(100% / 2 );
+            }
+
         }
         .hidden{
-            display: flex;
+
+            display: none;
             align-self: center;
             justify-content: center;
         }
+    }
+     
     //         padding: 100px 10px 10px 10px;
             // background-color:$blue;
             // .insta-image{
