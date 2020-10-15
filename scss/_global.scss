@@ -108,6 +108,8 @@ p{
     align-items: center;
     justify-content: center;
     padding: 15px;
+    position: relative;
+    z-index: 1;
 }
 .white-border{
     border: solid 2px $white;
@@ -118,6 +120,7 @@ p{
     align-items: flex-end;
     align-content: flex-end;
     position:relative;
+    z-index: 1;
 }
 .top-right{
     position: absolute;

@@ -1,9 +1,12 @@
 ---
-title: WHEEL HOUSE CALIFORNIA BOURBON
-content: Wheel House California Bourbon is a small batched bourbon aged to perfection in 15 gallon oak barrels. This hand crafted sprint has notes of caramel and spice with a creamy mouth feel.
-price: '55.00'
-img: '/img/spirits/bourbon.png'
+
+title: WHEEL HOUSE DROWNING OAK CORN WHISKEY
+content: Wheel House Drowning Oak Corn Whiskey is sold along with two oak spirals for a unique aging experience. For centuries the world’s most celebrated distillers have known charred oak barrels are essiential for aging the best spirits. Now, you have the ability to achieve similar results directly in the bottle – adding color, complexity, smoothness and subtle overtones with Wheel House Drowning Oak Corn Whiskey. Age the oak spirals in our corn whiskey for at least a month, then filter it through a water filtration system 2+ times and enjoy.
+price: '26.00'
+img: '/img/spirits/drowningoakwhiskey.png'
 button-img: '/img/logos-icons/cart.png'
 button: curbside pickup
 ---
- Wheel House California Bourbon is a small batched bourbon aged to perfection in 15 gallon oak barrels. This hand crafted sprint has notes of caramel and spice with a creamy mouth feel. <br> <b>Available exclusively in our tasting room.</b>
+Wheel House Drowning Oak Corn Whiskey is sold along with two oak spirals for a unique aging experience. For centuries the world’s most celebrated distillers have known charred oak barrels are essiential for aging the best spirits. Now, you have the ability to achieve similar results directly in the bottle – adding color, complexity, smoothness and subtle overtones with Wheel House Drowning Oak Corn Whiskey. Age the oak spirals in our corn whiskey for at least a month, then filter it through a water filtration system 2+ times and enjoy.
+<br> <b>Available exclusively in our tasting room.</b>
+
