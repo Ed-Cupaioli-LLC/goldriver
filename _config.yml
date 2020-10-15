@@ -42,9 +42,10 @@ collections:
   terms:
     output: true
   pages: 
-    output: true 
+    output: true  
   products:
-    output: true 
+    output: true
+ 
 defaults:
 - scope:
     path: ''
