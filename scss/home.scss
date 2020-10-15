@@ -1,294 +1,312 @@
 @import "vars.scss";
 @import "mixins.scss";
 @import "global.scss";
-#home{
-    .video-container{
-        height: 80vh;
-        position: relative;
-        overflow: hidden;
-        padding: 15px;
-        @include bp-small{
-            height: 50vh;
-        }
-        .goldriver-logo{
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin-left: 10px;
-            margin-right: 10px;
-            display: flex;
-            align-self: center;
-        }
-        #yt-wrap iframe{
-                position: absolute;
-                filter: brightness(50%);
-                top: 50%;
-                left: 50%;
-                width: 100vw;
-                height: 100vh;
-                transform: translate(-50%, -50%);
-                z-index:-1;
-                @media (max-aspect-ratio: 16/9){
-                        width: 177.78vh;
-  
-            }
-        }
+#home {
+  .video-container {
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    background-image: url(../img/images/goldriver-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba($black,0.7);
     }
-        .spirits-logo{
-            display: flex;
-            justify-content: space-between;
-            flex-flow: row wrap;
-            padding-top: 50px;
-            .spirit{
-                display: flex;
-                flex-direction: row;
-                margin: 30px;
-                @include bp-medium {
-                    width: 140px;
-                    flex-direction:column;
-                    align-content: center;   
-                }
-                @include bp-small {
-                    margin:5px;
-                }
-                .bottle-icon{
-                    max-width: 100px;
-                    height: 100px;
-                    align-self: center;
-                    padding-bottom: 10px;
-                    animation: fadeTop 1s cubic-bezier(.77,0,.175,1) 1;
-                    @include bp-medium {
-                        margin:0;    
-                        
-                    }
-                }
-                .drink-names{
-                    text-transform: uppercase;
-                    font-size: 26px;
-                    margin-left: 15px;
-                    align-self: center;
-                    font-weight:600;
-                    color: $white;
-                    @include bp-medium {
-                        margin-left:0;
-                        text-align: center;
-                        
-
-                    }
-                    @include bp-small{
-                        font-size: 20px;
-
-                    }
-                }
-            }
-        }
-    
-    .home-craft{
-        display:flex;
-        flex-direction: row;
-        @include bp-large {
-            flex-direction: column;
-            .hand-crafted{
-                order:2;
-            }
-            .home-pressure-img{
-                order:1;
-                height: 500px;
-            }
-        }
-        .hand-crafted{
-            background-color: $blue;
-            width:50%;
-            padding: 150px 0 150px 200px;
-            @include bp-large {
-                width: 100%;
-                padding: 60px 40px;
-            }
-            .craft-header{
-                padding: 0 40px;
-                @include bp-medium{
-                    padding:0;
-                }
-            }
-            .craft-p{
-                padding: 0 0 20px 0;
-                margin-bottom: 10px;
-                padding: 0 40px;
-                @include bp-medium{
-                    padding:0;
-                }
-            }
-        }
-        .home-pressure-img{
-            background-image: url(../img/images/brewery-homepage.png); 
-            width: 50%;
-            @include bp-large {
-                width: 100%;
-            }
-        } 
+    @include bp-small {
+      height: 50vh;
+      background-image: url(../img/images/goldriver-hero-mobile.jpg);
     }
-    .home-celebration{
-        display:flex;
-        flex-direction: row;
-        @include bp-large {
-            flex-direction: column;
-        }
-        .home-wheel{
-            background-image: url(../img/images/american_gin.png); 
-            width: 50%;
-            @include bp-large {
-                width: 100%;
-                height: 500px;
-            }
-        }
-        .home-sacramento{
-            width:50%;
-            background-color: $white;
-            padding: 150px 200px 150px 0;
-            @include bp-large {
-                width: 100%;
-                padding: 60px 40px;
-            }
-            .button-blue{
-                margin-left:40px;
-                margin-top: 20px;
-                @include bp-large{
-                margin-left: 0;
-                margin-top: 20px;
-                }
-            } 
-        }
-       
+    .goldriver-logo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+      display: flex;
+      align-self: center;
+      z-index: 1;
     }
-    .tasting-room{
-        background-image: linear-gradient(180deg,rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url("../img/background/wineglassesbw.png");
+    #yt-wrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      opacity: 0;
+      @include transition(opacity);
+      &.active {
+        opacity: 1;
+        
+      }
+      #ytplayer {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 520px;
-        display: flex;
+        height: 100%;
+        pointer-events: none; 
+        @media (min-aspect-ratio: 16/9) {
+           height: 300%; top: -100%; 
+        }
+        @media (max-aspect-ratio: 16/9) {
+           width: 300%; left: -100%; 
+        }
+      }
+    }
+  }
+  .spirits-logo {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding-top: 50px;
+    .spirit {
+      display: flex;
+      flex-direction: row;
+      margin: 30px;
+      @include bp-medium {
+        width: 140px;
+        flex-direction: column;
+        align-content: center;
+      }
+      @include bp-small {
+        margin: 5px;
+      }
+      .bottle-icon {
+        max-width: 100px;
+        height: 100px;
+        align-self: center;
+        padding-bottom: 10px;
+        animation: fadeTop 1s cubic-bezier(0.77, 0, 0.175, 1) 1;
+        @include bp-medium {
+          margin: 0;
+        }
+      }
+      .drink-names {
+        text-transform: uppercase;
+        font-size: 26px;
+        margin-left: 15px;
+        align-self: center;
+        font-weight: 600;
+        color: $white;
+        @include bp-medium {
+          margin-left: 0;
+          text-align: center;
+        }
+        @include bp-small {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .home-craft {
+    display: flex;
+    flex-direction: row;
+    @include bp-large {
+      flex-direction: column;
+      .hand-crafted {
+        order: 2;
+      }
+      .home-pressure-img {
+        order: 1;
+        height: 500px;
+      }
+    }
+    .hand-crafted {
+      background-color: $blue;
+      width: 50%;
+      padding: 150px 0 150px 200px;
+      @include bp-large {
+        width: 100%;
+        padding: 60px 40px;
+      }
+      .craft-header {
+        padding: 0 40px;
+        @include bp-medium {
+          padding: 0;
+        }
+      }
+      .craft-p {
+        padding: 0 0 20px 0;
+        margin-bottom: 10px;
+        padding: 0 40px;
+        @include bp-medium {
+          padding: 0;
+        }
+      }
+    }
+    .home-pressure-img {
+      background-image: url(../img/images/brewery-homepage.png);
+      width: 50%;
+      @include bp-large {
+        width: 100%;
+      }
+    }
+  }
+  .home-celebration {
+    display: flex;
+    flex-direction: row;
+    @include bp-large {
+      flex-direction: column;
+    }
+    .home-wheel {
+      background-image: url(../img/images/american_gin.png);
+      width: 50%;
+      @include bp-large {
+        width: 100%;
+        height: 500px;
+      }
+    }
+    .home-sacramento {
+      width: 50%;
+      background-color: $white;
+      padding: 150px 200px 150px 0;
+      @include bp-large {
+        width: 100%;
+        padding: 60px 40px;
+      }
+      .button-blue {
+        margin-left: 40px;
+        margin-top: 20px;
+        @include bp-large {
+          margin-left: 0;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .tasting-room {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url("../img/background/wineglassesbw.png");
+    width: 100%;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .tasting {
+      max-width: 50%;
+      text-align: center;
+      @include bp-medium {
+        max-width: 100%;
+      }
+
+      .tasting-content {
+        color: $yellow;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 500;
+        @include bp-medium {
+          padding: 0 40px;
+        }
+        @include bp-small {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .home-insta {
+    .insta-image {
+      display: flex;
+      flex-wrap: wrap;
+      .image {
+        max-width: 200px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        padding: 10px;
+        width: calc(100% / 6);
+        @include bp-large {
+          width: calc(100% / 4);
+        }
+        @include bp-small {
+          width: calc(100% / 2);
+        }
+      }
+      .hidden {
+        display: none;
+        align-self: center;
         justify-content: center;
-        align-items: center;
-        .tasting{
-            max-width: 50%;
-            text-align: center;
-            @include bp-medium{
-                max-width: 100%;
-            }
-          
-                .tasting-content{
-                    color: $yellow;
-                    text-align:center;
-                    margin-bottom: 40px;
-                    font-weight: 500;
-                    @include bp-medium{
-                        padding: 0 40px;
-                    }
-                    @include bp-small{
-                        font-size: 14px;
-                    }
-                }    
-            }
-        
-        
- }
-    .home-insta{
-        .insta-image{
-            display: flex;
-            flex-wrap: wrap;
-            .image{
-                max-width:200px;
-                height:200px;
-                overflow: hidden;
-                position: relative;
-                padding: 10px;
-                width: calc(100% / 6 );
-                @include bp-large{
-                    width: calc(100% / 4 );
-                }
-                 @include bp-small {
-                        width: calc(100% / 2 );
-            }
-
-        }
-        .hidden{
-
-            display: none;
-            align-self: center;
-            justify-content: center;
-        }
+      }
     }
-     
+
     //         padding: 100px 10px 10px 10px;
-            // background-color:$blue;
-            // .insta-image{
-            //     #pop-up{
-            //             visibility: hidden;
-            //             width: 160px;
-            //             background-color: #555;
-            //             color: #fff;
-            //             text-align: center;
-            //             border-radius: 6px;
-            //             padding: 8px 0;
-            //             position: absolute;
-            //             z-index: 1;
-            //             bottom: 125%;
-            //             left: 50%;
-            //             margin-left: -80px;
-            //             .show {
-            //                 visibility: visible;
-            //                 -webkit-animation: fadeIn 1s;
-            //                 animation: fadeIn 1s
-            //               }
+    // background-color:$blue;
+    // .insta-image{
+    //     #pop-up{
+    //             visibility: hidden;
+    //             width: 160px;
+    //             background-color: #555;
+    //             color: #fff;
+    //             text-align: center;
+    //             border-radius: 6px;
+    //             padding: 8px 0;
+    //             position: absolute;
+    //             z-index: 1;
+    //             bottom: 125%;
+    //             left: 50%;
+    //             margin-left: -80px;
+    //             .show {
+    //                 visibility: visible;
+    //                 -webkit-animation: fadeIn 1s;
+    //                 animation: fadeIn 1s
+    //               }
 
-            //     }
-            // }
-            // .insta-header{
-            //     color:$white;
-            //     text-align:center;
-            //     padding-bottom: 30px;
-            //     max-width:80%;
-            //     margin: 0 auto;
-            // }
-            // .instagram-photos {
-            //     display: flex;
-            //     flex-wrap: wrap;
-            //   .instagram-photo {
-            //     flex: 1 0 auto;
-            //     position: relative;
-            //     padding: 10px;
-                
-            //     width: calc(100% / 6 - (8px * 2));
-            //     @include bp-large{
-            //         width: calc(100% / 4 - (8px * 2));
-            //         padding: 5px;
-            //     }
-            //     @include bp-small {
-            //         width: calc(100% / 2 - (8px * 2));
-                  
-            //     }
-            //     img{
-            //         filter: brightness(100%)
-            //     }
-            //     img:hover {
-            //         filter: brightness(10%)    
-            //     }
-               
-            //   }
-            // }
-             
-        
-    }
-    
+    //     }
+    // }
+    // .insta-header{
+    //     color:$white;
+    //     text-align:center;
+    //     padding-bottom: 30px;
+    //     max-width:80%;
+    //     margin: 0 auto;
+    // }
+    // .instagram-photos {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //   .instagram-photo {
+    //     flex: 1 0 auto;
+    //     position: relative;
+    //     padding: 10px;
+
+    //     width: calc(100% / 6 - (8px * 2));
+    //     @include bp-large{
+    //         width: calc(100% / 4 - (8px * 2));
+    //         padding: 5px;
+    //     }
+    //     @include bp-small {
+    //         width: calc(100% / 2 - (8px * 2));
+
+    //     }
+    //     img{
+    //         filter: brightness(100%)
+    //     }
+    //     img:hover {
+    //         filter: brightness(10%)
+    //     }
+
+    //   }
+    // }
+  }
 }
 @keyframes fadeTop {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-10%);
-        transform: translateY(-10%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }

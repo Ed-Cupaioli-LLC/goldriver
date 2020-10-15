@@ -27,16 +27,21 @@ $(function(){
 var player;
   function onYouTubePlayerAPIReady() {
   player = new YT.Player('ytplayer', {
-  width: '100%',
-  height: '100%',
+  width: 1280,
+  height: 720,
   videoId: '3rnt4hv_Qv4',
   playerVars: {
     'autoplay': 1,
+    'autohide': 1,
+    'disablekb': 1, 
     'showinfo': 0,
     'autohide': 1,
+    'playsinline': 1,
     'loop': 1,
     'controls': 0,
     'modestbranding': 1,
+    'rel': 0,
+    'enablejsapi': 1,
     'vq': 'hd1080'
 },
 events: {
@@ -50,14 +55,17 @@ events: {
 function onPlayerReady(event) {
 event.target.playVideo();
 player.mute(); // comment out if you don't want the auto played video muted
+
 }
 
 // 5. The API calls this function when the player's state changes.
 // The function indicates that when playing a video (state=1),
 // the player should play for six seconds and then stop.
 function onPlayerStateChange(event) {
+  $('#yt-wrap').addClass('active');
 if (event.data == YT.PlayerState.ENDED) {
 player.seekTo(0);
+
 player.playVideo();
 }
 }
