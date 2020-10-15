@@ -43,6 +43,7 @@ var player;
     'rel': 0,
     'enablejsapi': 1,
     'vq': 'hd1080'
+
 },
 events: {
 'onReady': onPlayerReady,
