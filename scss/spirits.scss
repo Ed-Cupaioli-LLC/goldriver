@@ -5,7 +5,7 @@
 #spirits{
     -webkit-font-smoothing: antialiased;
     .header-image{
-        background-image:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/spirits/spirits-pour.png");   
+        background-image: linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.82) 100%), url("../img/spirits/spirits-pour.png");   
     }
     .products{
         padding-top: 60px;
@@ -18,6 +18,11 @@
             padding: 60px 40px;
             @include bp-large{
                 flex-direction:column;
+                padding: 60px 100px;
+            }
+            @include bp-small{
+                flex-direction:column;
+                padding: 60px 40px;
             }
             .image{
                 width:400px;
