@@ -37,7 +37,8 @@ var player;
     'loop': 1,
     'controls': 0,
     'modestbranding': 1,
-    'vq': 'hd1080'
+    'vq': 'hd1080',
+    'playsinline': 1
 },
 events: {
 'onReady': onPlayerReady,
