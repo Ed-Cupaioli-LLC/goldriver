@@ -43,6 +43,9 @@ collections:
     output: true
   pages: 
     output: true  
+  products:
+    output: true
+  
 defaults:
 - scope:
     path: ''
