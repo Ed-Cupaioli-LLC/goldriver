@@ -3,7 +3,17 @@ layout: default
 css: product
 ---
 <div id='product'>
-<section>
+    <div class='header-image background-image'> 
+        <div class='yellow-border'>
+            <div class=white-border>
+                <div class='top-right dot'></div>
+                <div class='top-left dot'></div>
+                <div class='bottom-right dot'></div>
+                <div class='bottom-left dot'></div>
+                <img class='header-img-logo' />
+            </div>
+        </div>
+    </div>
 <div class='products'>
     {% assign product = page %}
       <div class='product-layout'>
@@ -31,7 +41,7 @@ css: product
           </button>
        </div>
       </div>
-       {% endfor %}   
+      
    </div>
-</section>
+
 </div>

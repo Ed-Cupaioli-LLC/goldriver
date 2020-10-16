@@ -51,15 +51,17 @@
         width: 100%;
         height: 100%;
         pointer-events: none; 
-        @media (min-aspect-ratio: 16/9) {
+        @media (min-aspect-ratio: 10/9) {
            height:  300%; top: -100%; 
         }
-        @media (max-aspect-ratio: 10/9) {
+        @media (max-aspect-ratio: 16/9) {
            width: 300%; left: -100%; 
+        }
+
         }
       }
     }
-  }
+  
   .spirits-logo {
     display: flex;
     justify-content: space-between;

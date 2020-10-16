@@ -53,6 +53,7 @@ medals:
      <div class='products'>
         {% assign products = site.products %}
         {% for product in products %}
+        <div>{{ site.url }}{{ product.url }}</div>
         <div class='product-layout'>
          <div class='image'> <img src='{{ product.img | relative_url }}' ></div>
          <div class='description'>
