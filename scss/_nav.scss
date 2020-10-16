@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     padding: 20px 0;
     .button{
@@ -13,6 +13,40 @@
             width: 100px;
         }
     }
+    .dropdown-menu{
+        display: none;
+    }
+        .link-large{
+            display: flex;
+            flex-direction:row;
+            li{
+             list-style-type: none;
+             padding: 10px;
+             .large-link{
+                color: $black;
+                text-transform: uppercase; 
+                &:hover{
+                    color: $yellow;
+                }
+                
+            }
+            }
+            .shopping-cart-large{
+                width: 20px
+
+            }
+          
+        }
+   
+    @include bp-large{
+    width: 85%;
+   
+    .large-nav{
+        display: none;
+    }
+    .dropdown-menu{
+        display: block;
+  
     .hamburger{
         height: 32px;
         width: 32px;
@@ -106,6 +140,7 @@
 
         }
     }
+}
 
 }
 
@@ -128,6 +163,9 @@
               filter: blur(0);
       opacity: 1;
     }
+
+    }
+    
   }
 
 //   @keyframes slideout {

@@ -1,5 +1,18 @@
 <nav id='nav'>
     <div class='button'>{% include nav-logo.html %}</div>
+    <div class='large-nav'>
+        <div class='link-large'>
+            <li ><a class='large-link'href="{{ '/' | relative_url }}">Gold River Distillery</a></li> 
+            <li > <a class='large-link'href="{{ '/tasting' | relative_url }}">Tasting Room </a></li> 
+            <li ><a class='large-link' href="{{ '/spirits' | relative_url }}">Spirits</a></li> 
+            <li ><a class='large-link' href="{{ '/barrel-district' | relative_url }}">Barrel District</a></li> 
+            <li ><a class='large-link' href="{{ '/private-labeling' | relative_url }}">Private Labeling</a></li> 
+            <li ><a class='large-link' href="{{ '/where-to-buy' | reltaive_url }}">Where to Buy</a></li> 
+            <div ><a href="#"><img class='shopping-cart-large' src= "{{ '/img/logos-icons/shopping-cart-black.png' | relative_url }}"></a></div>
+           </div>
+
+    </div>
+    
     <div class='dropdown-menu' id='sidenav'>
         <div>{% include hamburger.html %}</div>
         <ul style='display:none' >
