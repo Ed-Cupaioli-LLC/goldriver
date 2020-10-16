@@ -32,9 +32,12 @@ scripts:
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <script async defer src="https://www.instagram.com/embed.js"></script>
     <script src="https://www.youtube.com/player_api"></script>
-    <script src='../js/insta.js'></script>
     <!-- Cookies -->
-	<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <!-- Slick js -->
+    {% if page.slick == true %}
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    {% endif %}
     <!-- Layout -->
     {% if layout.scripts %}
     {% for script in layout.scripts %}

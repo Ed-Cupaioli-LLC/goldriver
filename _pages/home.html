@@ -3,7 +3,9 @@ title: Home Page
 layout: default
 permalink: /
 css: home
-js: insta.js
+slick: true
+scripts: 
+- insta
 header:
   img: "/img/tasting-room/wiskeyglasses.png"
 logo:
@@ -33,26 +35,57 @@ celebration:
   img: "/img/images/american_gin.png"
 button-image: "/img/logos-icons/button2.png"
 button-image-yellow: "/img/logos-icons/yellow-bottle.png"
-
 tasting-room:
   header: STOP BY OUR TASTING ROOM
   content: "to check out our hand-crafted still, try our famous spirits, and pick up a few bottles for your friends and family."
   background-img: "img/background/wiskeyglasses.png"
-
 insta:
-  header: FOLLOW US ON INSTAGRAM
+  header: Follow us on Instagram
   list:
-    - img: "/img/images/greendrink.png"
-    - img: "/img/images/wheelhousedrink.png"
-    - img: "/img/images/yellowdrink.png"
-    - img: "/img/images/barrelroom.png"
+  - text: |-
+      Here's this week's #drinkoftheweek - Death in the Afternoon<br>
+      <br>
+      In a champagne flute add:<br>
+      1.5 oz Wheel House Absinthe<br>
+      5 oz Sparkling wine<br>
+      Garnish with a lemon rind<br>
+      <br>
+      #itsGRDtime #drinkingresponsibly #visitranchocordova #craftspirits #hemingway #cocktails
+    image: /img/images/greendrink.png
+    link: B_frooMAdGx
+  - text: |-
+      Thank you for you patiences as we work hard to make more hand sanitizer. Our sanitizer is available, and can purchased in our tasting room from 4-7 pm today, Saturday from 11-3 and Sunday from Noon-4 pm. We have a limited quantity on hand, and ask that customers limited their purchase to 5 bottles or less.<br>
+      #togetherapart #flattenthecurve #handsanitizer #visitranchocordova #itsGRDtime #itsCleanHandstime
+    image: /img/images/wheelhousedrink.png
+    link: B_XqJnupU9Q
+  - text: |- 
+      #Drinkoftheweek - "shelter in" Manhattan.<br>
+      In a cocktail shaker filled w/ ice add<br>
+      2 oz Wheel House Malted Rice Whiskey<br>
+      0.5 oz sweet vermouth<br>
+      0.5 oz dry vermouth<br>
+      2 dashes bitters<br>
+      <br>
+      Shake, strain & garnish w/ an Orange twist & Cherry<br>
+      <br>
+      #itsGRDtime #togetherapart #visitranchocordova
+    image: /img/images/yellowdrink.png
+    link: B_N7x8eghOS
+  - text: |-
+      Thank you for your continued support! We're working hard to keep up with the demand of our spirits and hand sanitizer.<br>
+      Thank you for the kind words and support. Please check our social media posts for updates.<br>
+      <br>
+      #togetherapart #flattenthecurve #doingourpart #itsGRDtime
+    image: /img/images/barrelroom.png
+    link: B_BHrKlHHyf
+
 ---
 
 <div id="home">
   <div class="video-container">
     <div id="yt-wrap">
-        <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="ytplayer"></div>
+      <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+      <div id="ytplayer"></div>
     </div>
     <div class="yellow-border">
       <div class="white-border">
@@ -66,9 +99,7 @@ insta:
         </div>
       </div>
     </div>
-    
   </div>
-
   <div class="intro-banner background-image">
     <div>
       <p class="header-p">
@@ -85,7 +116,6 @@ insta:
       {% endfor %}
     </div>
   </div>
-
   <div class="home-craft">
     <div class="hand-crafted">
       <h1 class="craft-header">{{ page.craft.header }}</h1>
@@ -93,7 +123,6 @@ insta:
     </div>
     <div class="home-pressure-img background-image"></div>
   </div>
-
   <div class="home-celebration">
     <div class="home-wheel background-image"></div>
     <div class="home-sacramento">
@@ -115,7 +144,6 @@ insta:
       </button>
     </div>
   </div>
-
   <div class="tasting-room background-image">
     <div class="tasting">
       <h1>{{ page.tasting-room.header}}</h1>
@@ -136,15 +164,36 @@ insta:
       </button>
     </div>
   </div>
-
-  <div class="home-insta">
-    <img class="instaimage" />
-    <div class="insta-image"></div>
-
-    <!-- <div class='EmbededMedia'></div>
-        <div class=></div>
-        <h1 class='insta-header'>Follow Us On Instagram</h1>
-        <div id="instagram-grid" class="instagram-photos">
-        </div> -->
+  <div id="insta-section">
+		<h1>{{ page.insta.header }}</h1>
+    <div class="insta-slider api">
+			
+    </div>
+    <div class="insta-slider backup hidden">
+      {% for slide in page.insta.list %}
+      <div class="insta-slide" data-imagefull="{{slide.image | relative_url }}" data-shortcode="{{ slide.link }}">
+        <img src="{{slide.image | relative_url }}" />
+        <div class="slide-text hidden">{{ slide.text }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="post-embed-container">
+			
+			<div class="close-embed">&times;</div>
+      <div class="embed-body">
+        
+        <div class="insta-embed">
+					<div class="image-col">
+						<a class="insta-link" href=""><img  class="insta-image" src="" alt="" /></a>
+					</div>
+					<div class="text-col">
+						<div class="insta-caption"></div>
+						<a class="insta-link" href=""><i class="fab fa-instagram"></i>View on Instagram</a>
+					</div>
+					
+					
+				</div>
+      </div>
+    </div>
   </div>
 </div>
