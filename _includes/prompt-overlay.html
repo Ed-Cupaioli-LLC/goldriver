@@ -3,7 +3,7 @@
     
     <div class="prompt-content">
       <div class="site-logo">
-          <img  class='logo' src='/img/logos-icons/gr_logo.png'>
+          <img  class='logo' src="{{ '/img/logos-icons/gr_logo.png' | relative_url }}">
       </div>
       <div class="age-gate prompt-modal active">
         <h4>Are you over 21 years of age?</h4>
@@ -12,7 +12,7 @@
                 <div class='button-layout'>
                    
                    <div class='button-image'> 
-                       <img class='interior-cart-image' src='/img/logos-icons/checkmark.png'> 
+                       <img class='interior-cart-image' src="{{ '/img/logos-icons/checkmark.png' | relative_url }}"> 
                    </div>
                    <div class='custom'></div>
                    <div class='button-text'>  {% include button.html link="#yes" text="Yes" color="white" %} </div>
@@ -22,7 +22,7 @@
            <button class='button-yellow'>
                 <div class='button-layout'>
                     <div class='button-image'> 
-                        <img class='interior-cart-image' src=' /img/logos-icons/x-mark.png'> 
+                        <img class='interior-cart-image' src= "{{ '/img/logos-icons/x-mark.png' | relative_url }}"> 
                     </div>
                 <div class='custom'></div>
                <div class='button-text'>  {% include button.html link="#no" text="No" color="white" %}</div>

@@ -5,21 +5,21 @@
         <ul style='display:none' >
             <div class='header-links'>
                 <div><a class="exit" id='1'> &times</a></div>
-                <div class='image-container'><img src='/img/logos-icons/gr_logo.png'></div>
-                <div ><a href="#"><img class='shopping-cart' src='/img/logos-icons/shopping-cart-white.png'></a></div>
+                <div class='image-container'><img src="{{ '/img/logos-icons/gr_logo.png' | relative_url }}"></div>
+                <div ><a href="#"><img class='shopping-cart' src= "{{ '/img/logos-icons/shopping-cart-white.png' | relative_url }}"></a></div>
             </div>
            <div class='link'>
-            <li><a href="{{ base }}/">Gold River Distillery</a></li> 
-            <li> <a href="{{ base }}/tasting/">Tasting Room </a></li> 
-            <li><a href="{{ base }}/spirits/">Spirits</a></li> 
-            <li><a href="{{ base }}/barrel-district/">Barrel District</a></li> 
-            <li><a href="{{ base }}/private-labeling/">Private Labeling</a></li> 
-            <li><a href="{{ base }}/where-to-buy/">Where to Buy</a></li> 
+            <li><a href="{{ '/' | relative_url }}">Gold River Distillery</a></li> 
+            <li> <a href="{{ '/tasting/' | relative_url }}">Tasting Room </a></li> 
+            <li><a href="{{ '/spirits/' | relative_url }}">Spirits</a></li> 
+            <li><a href="{{ '/barrel-district/' | relative_url }}">Barrel District</a></li> 
+            <li><a href="{{ '/private-labeling/' | relative_url }}">Private Labeling</a></li> 
+            <li><a href="{{ '/where-to-buy/' | reltaive_url }}">Where to Buy</a></li> 
            </div>
             <div class='social-links'>
-            <div><a href="https://twitter.com/goldrdistillery"><img class='social-bottom' src='/img/logos-icons/twitter.png'></a></div> 
-            <div><a href="https://www.instagram.com/goldriverdistillery/"><img class='social-bottom' src='/img/logos-icons/instagram.png'></a></div> 
-            <div><a href="https://www.instagram.com/goldriverdistillery/"><img class='social-bottom' src='/img/logos-icons/facebook.png'></a></div> 
+            <div><a href="https://twitter.com/goldrdistillery"><img class='social-bottom' src="{{ '/img/logos-icons/twitter.png' | relative_url }}"></a></div> 
+            <div><a href="https://www.instagram.com/goldriverdistillery/"><img class='social-bottom' src="{{ '/img/logos-icons/instagram.png' | relative_url }}"></a></div> 
+            <div><a href="https://www.instagram.com/goldriverdistillery/"><img class='social-bottom' src="{{ '/img/logos-icons/facebook.png' |relative_url }}"></a></div> 
             </div>
         </ul>
 
