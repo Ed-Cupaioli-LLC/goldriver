@@ -209,7 +209,7 @@ p {
   line-height: 2;
   letter-spacing: 0.5px;
   text-align: left;
-  color: black;
+  color: #000;
 }
 
 .blue-heading-main {
@@ -247,7 +247,7 @@ p {
 }
 
 .paragraph-p {
-  color: black;
+  color: #000;
   padding: 0 0 20px 0;
   margin-bottom: 10px;
   padding: 0 40px;
@@ -281,7 +281,7 @@ p {
   letter-spacing: 0.5px;
   color: #666;
   text-align: left;
-  color: black;
+  color: #000;
 }
 @media only screen and (max-width: 568px) {
   .details {
@@ -415,7 +415,7 @@ a {
   margin-bottom: 40px;
 }
 #barrel-district a {
-  color: black;
+  color: #000;
 }
 #barrel-district .brewery-type {
   padding: 0 20%;
@@ -447,7 +447,7 @@ a {
   padding: 10px 0;
 }
 #barrel-district .brewery-type .brewery-contact-info .sub-header {
-  color: black;
+  color: #000;
   font-family: "Noto Sans JP", Helvetica, Arial, Lucida, sans-serif;
   font-size: 29px;
   padding-bottom: 10px;
@@ -464,7 +464,7 @@ a {
   line-height: 2;
   letter-spacing: 0.5px;
   text-align: left;
-  color: black;
+  color: #000;
   margin: 0;
 }
 @media only screen and (max-width: 568px) {

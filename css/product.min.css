@@ -209,7 +209,7 @@ p {
   line-height: 2;
   letter-spacing: 0.5px;
   text-align: left;
-  color: black;
+  color: #000;
 }
 
 .blue-heading-main {
@@ -247,7 +247,7 @@ p {
 }
 
 .paragraph-p {
-  color: black;
+  color: #000;
   padding: 0 0 20px 0;
   margin-bottom: 10px;
   padding: 0 40px;
@@ -281,7 +281,7 @@ p {
   letter-spacing: 0.5px;
   color: #666;
   text-align: left;
-  color: black;
+  color: #000;
 }
 @media only screen and (max-width: 568px) {
   .details {
@@ -403,7 +403,7 @@ a {
 }
 
 #product p {
-  color: black;
+  color: #000;
   padding: 0 0 20px 0;
   margin-bottom: 10px;
   padding: 0 40px;
