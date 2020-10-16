@@ -42,15 +42,18 @@
             text-align: left;
             display: flex;
             flex-direction: column;
-            color: white;
+            color: $white;
             @include bp-large{
                 padding: 20px 0;
                 text-align: center;
                 margin-right: 0;
             }
                 a{
-                    color: white;
+                    color: $white;
                     font-weight: 400;
+                    &:hover{
+                        color: $yellow;
+                    }
                 }
         }
         .location{
@@ -94,7 +97,8 @@
             padding-top: 40px;
             line-height: 1.7em;
             font-weight: 500;
-            color: #666;
+            color: $white;
+            opacity: 50%;
             font-weight: 300;
             padding-bottom: 50px;
         }
