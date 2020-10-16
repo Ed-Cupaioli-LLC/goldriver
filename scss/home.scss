@@ -54,7 +54,7 @@
         @media (min-aspect-ratio: 16/9) {
            height:  300%; top: -100%; 
         }
-        @media (max-aspect-ratio: 16/9) {
+        @media (max-aspect-ratio: 10/9) {
            width: 300%; left: -100%; 
         }
       }
