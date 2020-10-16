@@ -1,4 +1,3 @@
-//--------------------------------API call from Instagram in case the code below will fail------------------------
 
 $(function(){ 
     //insta feed
@@ -29,6 +28,7 @@ $(function(){
         }
         instaSlide('api');     
       }, error: function(data) {
+        //failsafe
         $('.insta-slider.api').addClass('hidden');
         $('.insta-slider.backup').removeClass('hidden');
         instaSlide('backup');
