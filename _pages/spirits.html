@@ -52,7 +52,7 @@ medals:
      <div class='content'>
      <div class='products'>
         {% assign products = site.products %}
-        {% for product in products | sort: list %}
+        {% for product in products | sort: "list" %}
 
         <div>{{ product.list }}</div>
         <div class='product-layout'>
