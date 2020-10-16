@@ -51,3 +51,8 @@ defaults:
     path: ''
   values:
     layout: default
+- scope:
+    type: products
+  values:
+    layout: product
+    permalink: /product/:title
