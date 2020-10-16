@@ -34,15 +34,12 @@ $(function(){
         instaSlide('backup');
       }
     });
-
-    //test 
     $('.close-embed').click(function() {
       $('.post-embed-container,body,html').removeClass('active');
       $('.insta-image').attr('src','');
       $('.insta-caption').html('');
       $('.insta-link').attr('href','');
     });
-
     function instaSlide(slider) {
       $('.insta-slider.'+slider).slick({
         slidesToShow: 4,
@@ -91,6 +88,7 @@ var player;
     'rel': 0,
     'enablejsapi': 1,
     'vq': 'hd1080'
+
 },
 events: {
 'onReady': onPlayerReady,
@@ -121,60 +119,4 @@ function stopVideo() {
 player.stopVideo();
 }
 
-
-
-
-//--------------------------------Graph QL solution without API call ----------------------------->
-
-
-// var regExp = new RegExp(/<script type="text\/javascript">window\._sharedData = (.*);<\/script>/)
-
-// var fetchInstagramPhotos = async (account) => {
-//   var response = await axios.get(account)
-//   var json = JSON.parse(response.data.match(regExp)[1])
-//   //how many images will be displayed
-//   var edges = json.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges.splice(0, 12)
-//   console.log
-//   var photos = edges.map(({ node }) => {
-//     return {
-//       url: `https://www.instagram.com/p/${node.shortcode}/`,
-//       thumbnailUrl: node.thumbnail_src,
-//       displayUrl: node.display_url,
-//       caption: node.edge_media_to_caption.edges.length > 0 ? node.edge_media_to_caption.edges[0].node.text : ""
-//     }
-//   })
-//   return photos
-// }
-
-// (async () => {
-//   try {
-//     var photos = await fetchInstagramPhotos('https://www.instagram.com/goldriverdistillery/')
-//     var container = document.getElementById('instagram-grid')
-//     var postCaption = document.getElementById('post-caption')
-    
-    
-//     console.log(photos)
-//     photos.forEach(el => {
-    
-//       var a = document.createElement('a')
-//       var img = document.createElement('img')
-//       var p = document.createElement('p').innerText=(el.caption)
-//       console.log(p)
- 
-//       a.setAttribute('href', el.url)
-//       a.classList.add('instagram-photo')
-//       img.setAttribute('src', el.thumbnailUrl)
-//       img.setAttribute('alt', el.caption)
-//       img.setAttribute('text',el.caption)
-      
-      
-//       a.appendChild(img)
-//       container.appendChild(a)
-     
-      
-//     })
-//   } catch (e) {
-//     console.error('Fetching Instagram photos failed', e)
-//   }
-// })()
 
