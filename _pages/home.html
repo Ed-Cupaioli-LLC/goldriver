@@ -18,11 +18,15 @@ served-spirits:
   list:
     - title: Dry Gin
       logo: "/img/logos-icons/bottle_icon.png"
+      href: "/spirits/#gin"
     - title: Absinthe
       logo: "/img/logos-icons/bottle_icon.png"
+      href: "/spirits/#absinthe"
     - title: Bourbon
       logo: "/img/logos-icons/bottle_icon.png"
+      href: "/spirits/#bourbon"
     - title: Whiskey
+      href: "/spirits/#whiskey"
       logo: "/img/logos-icons/bottle_icon.png"
 craft:
   header: OUR HAND-CRAFTED STILL
@@ -109,10 +113,12 @@ insta:
     </div>
     <div class="spirits-logo">
       {% for spirit in page.served-spirits.list %}
+      <a href='{{ spirit.href }}'>
       <div class="spirit">
         <img class="bottle-icon" src="{{ spirit.logo  | relative_url }}" />
         <span class="drink-names">{{ spirit.title }} </span>
       </div>
+    </a>
       {% endfor %}
     </div>
   </div>
