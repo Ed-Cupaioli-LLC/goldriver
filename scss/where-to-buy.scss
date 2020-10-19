@@ -9,9 +9,16 @@
     .header-image{
         background-image:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/where-to-buy/american_gin.jpg");   
     }
-    .blue-heading-main{
+    .header{
+       padding: 60px 20% 0 20%;
+       @include bp-small{
+        padding: 60px 10% 0 10%;
+       }
+       .blue-heading-main{
         line-height: 1;
     }
+    }
+    
     .ledger{
         display: flex;
         flex-direction: row;
@@ -60,6 +67,7 @@
            }
         }
         .details{
+            margin-top:0px;
             @include bp-medium{
                 font-size: 14px;
             }

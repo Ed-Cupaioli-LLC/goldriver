@@ -51,10 +51,11 @@ medals:
      </div>
      <div class='content'>
      <div class='products'>
-        {% assign products = site.products %}
-        {% for product in products | sort: "list" %}
-
-        <div>{{ product.list }}</div>
+        {% assign products = site.products | group_by:"list" %}
+        <!-- <div>{{ products }}</div> -->
+        {% for list in products %}
+        <dt id='{{ list.name }}' style='visibility:hidden'>{{ list.name }}</dt>
+        {% for product in list.items %}
         <div class='product-layout'>
          <div class='image'> <img src='{{ product.img | relative_url }}' ></div>
          <div class='description'>
@@ -81,7 +82,7 @@ medals:
          </div>
         </div>
        
-        
+        {% endfor %}
          {% endfor %}   
      </div>
     </div>

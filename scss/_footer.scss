@@ -34,7 +34,7 @@
                 margin-right: 0;
             }
             .footer_logo{
-                max-width: 300px;
+                max-width: 250px;
             }
         }
         .links{
@@ -53,6 +53,8 @@
                     font-weight: 400;
                     &:hover{
                         color: $yellow;
+                        font-size: 18px;
+                        font-weight: bold;
                     }
                 }
         }

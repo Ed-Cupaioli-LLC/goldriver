@@ -13,6 +13,7 @@ intro:
   spirit-hub-logo: 'img/where-to-buy/SH_Logo.png'
   info: Now Available in <br>
     IL,FL, and NE with SpiritHub
+  link: 'https://www.spirithub.com/catalog/spirits'
 
 
 location: 
@@ -155,6 +156,13 @@ location:
       Roco Wine and Spirits (G V) 2200 Lake Washington Blvd., West Sacramento, CA 95691 (916) 375-0466
   - name: WOODLAND, CA
     location: Nugget Market (V) 157 Main Street, Woodland, CA 95695 (916) 662-5479
+
+ledger: '(G) = Carries Wheel House American Dry Gin <br>
+  (V) = Carries Wheel House 916 Sacramento Vodka <br> <br>
+  Wheel House products are distributed by <b>Epic Wines and Spirits</b><br>
+  200 Concourse Blvd, Santa Rosa, CA 95403 <br>
+  (707) 708-8140 <br>
+  <b>info@epic-wineandspirits.com</b>'
 ---
 
 <div id='where-to-buy'>
@@ -169,13 +177,13 @@ location:
             </div>
         </div>
     </div>
-    <div style='    padding: 60px 20% 0 20%;'>
+    <div class='header'>
          <span class='blue-heading-main font-header'>{{ page.intro.title }} </span>
     </div>
     <div class='ledger brewery-type'>
         <div class='details details-spirit'>{{ page.intro.ledger }}</div>
         <div class='spirit'>
-            <div class='img-container'><img  class='spirit-hub' src=' {{ page.intro.spirit-hub-logo | relative_url }}'></div>
+            <a href='{{ page.intro.link }}'><div class='img-container'><img  class='spirit-hub' src=' {{ page.intro.spirit-hub-logo | relative_url }}'></div></a>
             <div  class='details spirit-info'>{{ page.intro.info }}</div>
         </div>
     </div>
@@ -191,5 +199,8 @@ location:
       
         {% endfor %}    
         
+    </div>
+    <div class='brewery-type'>
+      <p class='details'>{{ page.ledger }}</p>
     </div>
 </div>
