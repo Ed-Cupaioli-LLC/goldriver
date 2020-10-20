@@ -8,13 +8,13 @@
         background-image: linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.82) 100%), url("../img/spirits/spirits-pour.png");   
     }
     .products{
-        padding-top: 60px;
-        padding-bottom: 60px;
+      
         display: flex;
         flex-direction: column;
         .product-layout{
             display: flex;
             flex-direction:row;
+            justify-content: center;
             padding: 60px 40px;
             @include bp-large{
                 flex-direction:column;
@@ -25,11 +25,14 @@
                 padding: 60px 40px;
             }
             .image{
-                width:400px;
+                width:500px;
                 align-self:center;
                 @include bp-large{
-                    width:350px;
-                    padding-bottom: 20px;
+                    width:600px;
+                    padding-bottom: 50px;
+                }
+                @include bp-small{
+                    width:300px;
                 }
             }
             .description{
@@ -37,6 +40,12 @@
                 align-self: center;
                 @include bp-large{
                     width: 100%;
+                }
+                .p-bold{
+                    padding: 20px 40px;
+                    @include bp-large{
+                        text-align:center;
+                    }
                 }
                 .button-yellow{
                     margin-left: 40px;
