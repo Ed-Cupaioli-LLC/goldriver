@@ -27,7 +27,6 @@
                 text-transform: uppercase; 
                 &:hover{
                     color: $yellow;
-                    font-size: 20px;
                 }    
             }
             }
@@ -77,6 +76,7 @@
     }
     ul{ 
         z-index: 2;
+        overflow-y: hidden;
         right: 0;
         top: 0;
         background-color:$black;
@@ -142,7 +142,7 @@
         .link{
             padding-top: 40px;
             li {
-                font-family: 'Aleo',Georgia,"Times New Roman",serif;
+                font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
                 padding: 15px;
                 font-size:30px;
                 text-align: center; 
@@ -156,11 +156,6 @@
                 &:hover{
                     a{
                     color: $yellow;
-                    }
-                    font-size: 33px;
-                    @include bp-small{
-                        font-size: 22px;
-    
                     }
                 }
             } 

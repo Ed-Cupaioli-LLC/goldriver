@@ -24,11 +24,12 @@ h1, h2, h3, h4, h5 {
 a {
 	font-weight: bold;
 	text-decoration: none;
-	color: $primary_color;
-	@include transition(color);
-	&:hover, &:active, &:focus {
-		color: darken($primary_color,15%);
-	}
+	color: $white;
+	font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+	// @include transition(color);
+	// &:hover, &:active, &:focus {
+	// 	color: darken($primary_color,15%);
+	// }
 } 
 //Images 
 img {
