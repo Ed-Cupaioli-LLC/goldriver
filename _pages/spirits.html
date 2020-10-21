@@ -103,12 +103,12 @@ medals:
     
 
     <div class='medals header-image background-image'>
-        <h2 class='medals-header'>{{ page.medals.title }}</h2>
+        <h1 class='medals-header'>{{ page.medals.title }}</h1>
         <div class='main-medals-layout'>
         {% for medal in page.medals.list %}
         <div class='medal'>
             <h1 class='medal-name'>{{ medal. name }}</h1>
-            <div class='medal-type'> {{ medal.type }}</div> `
+            <div class='medal-type'> {{ medal.type }}</div> 
             <div class='medal-img'><img src="{{ medal.img | relative_url }}"></div>
              
         </div>

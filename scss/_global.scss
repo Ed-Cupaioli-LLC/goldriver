@@ -299,6 +299,9 @@ p{
     width: 250px;
     height: auto;
     border-radius: 10px;
+    &:hover {
+        background-color: darken($yellow, 15%);
+     }
     .button-layout{
         display: flex;
         flex-direction: row;
@@ -335,6 +338,9 @@ p{
     width: 250px;
     height: auto;
     border-radius: 10px;
+    &:hover {
+        background-color: darken($blue, 15%);
+     }
     .button-layout{
         display: flex;
         flex-direction: row;
@@ -370,6 +376,9 @@ p{
     width: 250px;
     height: auto;
     border-radius: 10px;
+    &:hover {
+        background-color: darken($white, 15%);
+     }
     .button-layout{
         display: flex;
         flex-direction: row;

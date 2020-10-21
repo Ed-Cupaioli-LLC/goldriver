@@ -95,6 +95,12 @@
             max-width: 80%;
             padding-bottom: 10px;
             font-size: 38px;
+            @include bp-small{
+                max-width: 80%;
+                padding-bottom: 10px;
+                font-size: 34px;
+                margin: 0 12% 30px;
+            }
         }
         .main-medals-layout{
             display: flex;
@@ -134,7 +140,7 @@
                    }
                    @include bp-small{
             
-                    width: 100px;
+                    width: 111px;
                 }
                 }
             }
