@@ -107,7 +107,7 @@ insta:
   <div class="intro-banner background-image">
     <div>
       <p class="header-p">
-        <span class="gold-heading">{{ page.intro.header }} </span>{{
+        <span class="gold-heading span-header">{{ page.intro.header }} </span>{{
         page.intro.content}}
       </p>
     </div>
@@ -116,7 +116,7 @@ insta:
       <a href='{{ spirit.href }}'>
       <div class="spirit">
         <img class="bottle-icon" src="{{ spirit.logo  | relative_url }}" />
-        <span class="drink-names">{{ spirit.title }} </span>
+        <span class="drink-names span-header">{{ spirit.title }} </span>
       </div>
     </a>
       {% endfor %}
@@ -134,7 +134,7 @@ insta:
     <div class="home-sacramento">
       <h1 class="blue-header">{{ page.celebration.header }}</h1>
       <p class="paragraph-p font-paragraph">{{ page.celebration.content }}</p>
-      <button class="button-blue">
+      <a href="{{ base }}/spirits/"><button class="button-blue">
         <div class="button-layout">
           <div class="button-image">
             <img
@@ -144,16 +144,17 @@ insta:
           </div>
           <div class="custom"></div>
           <div class="button-text">
-            <a href="{{ base }}/spirits/">Spirits</a>
+            Spirits
           </div>
         </div>
-      </button>
+      </button></a>
     </div>
   </div>
   <div class="tasting-room background-image">
     <div class="tasting">
       <h1>{{ page.tasting-room.header}}</h1>
       <p class="tasting-content">{{ page.tasting-room.content }}</p>
+      <a href="{{ base }}/tasting/">
       <button class="button-yellow">
         <div class="button-layout">
           <div class="button-image">
@@ -164,10 +165,11 @@ insta:
           </div>
           <div class="custom"></div>
           <div class="button-text">
-            <a href="{{ base }}/tasting/">Tasting Room </a>
+            Tasting Room
           </div>
         </div>
       </button>
+    </a>
     </div>
   </div>
   <div id="insta-section">
