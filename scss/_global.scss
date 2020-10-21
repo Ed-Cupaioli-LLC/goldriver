@@ -16,7 +16,7 @@ h1{
         font-size: 26px;
     }
 }
-span{
+.span-header{
     font-family: 'Aleo',Georgia,"Times New Roman",serif;
     font-weight: 700;
     font-size: 35px;
@@ -319,6 +319,7 @@ p{
         }
         .button-text{
             font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+            color: $black;
             margin: auto;
             font-size: 16px;
             font-weight: bold;
