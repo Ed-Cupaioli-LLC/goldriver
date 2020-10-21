@@ -41,5 +41,13 @@ $(function(){
   
 });
 
+function lockScroll() {
+  document.body.classList.add('lock-scroll');
+}
 
+function unlockScroll() {
+  var element = document.getElementsByName("body");
+  element.classList.remove("lock-scroll");
+
+}
   

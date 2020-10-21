@@ -8,16 +8,16 @@
             <li ><a class='large-link' href="{{ '/barrel-district' | relative_url }}">Barrel District</a></li> 
             <li ><a class='large-link' href="{{ '/private-labeling' | relative_url }}">Private Labeling</a></li> 
             <li ><a class='large-link' href="{{ '/where-to-buy' | reltaive_url }}">Where to Buy</a></li> 
-            <div class='snipcart-checkout'><span class='snipcart-items-count'></span><i class="fa fa-shopping-cart "></i></div>
+            <span class='snipcart-checkout'><span class='snipcart-items-count'></span><i class="fa fa-shopping-cart "></i></span>
            </div>
 
     </div>
     
-    <div class='dropdown-menu' id='sidenav'>
+    <div class='dropdown-menu' id='sidenav' onclick="lockScroll()">
         <div>{% include hamburger.html %}</div>
-        <ul style='display:none' >
+        <ul class='disabled'style='display:none' >
             <div class='header-links'>
-                <div><a class="exit" id='1'> &times</a></div>
+                <div onclick="unlockScroll()"><a class="exit" id='1' onclick="unlockScroll()"> &times</a></div>
                 <div class='snipcart-checkout'><span class='snipcart-items-count'></span><i class="fa fa-shopping-cart "></i></div>
                 
             </div>
