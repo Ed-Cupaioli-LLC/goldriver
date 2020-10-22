@@ -61,7 +61,11 @@
         }
       }
     }
-  
+  .link-hover{
+    &:hover{
+      color: $yellow;
+    }
+  }
   .spirits-logo {
     display: flex;
     justify-content: space-between;
