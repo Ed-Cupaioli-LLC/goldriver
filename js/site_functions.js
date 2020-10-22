@@ -45,16 +45,4 @@ $(function(){
   
 });
 
-
-// function lockScroll() {
-//   if( document.body.classList.value === ''){
-//     document.body.classList.add('lock-scroll');
-//     // document.body.classList.add('unlocked-scroll')
-
-//   }
-//   if(document.body.classList.value === 'lock-scroll'){
-//     document.body.classList.remove('lock-scroll')
-//   }
-  
-// }
  
