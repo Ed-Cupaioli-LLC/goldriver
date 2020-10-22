@@ -12,7 +12,7 @@ logo:
   img: "/img/logos-icons/gr_logo.png"
 intro:
   header: GOLD RIVER DISTILLERY
-  content: is proud to be the first legal distillery in Sacramento County since Prohibition. We're a small-batch micro distillery located in Northern California, just outside of the city of Sacramento. Our Wheel House spirits are available in a growing number of stores through out California. Find where you can buy our spirits by visiting our retail locations page.
+  content: is proud to be the first legal distillery in Sacramento County since Prohibition. We're a small-batch micro distillery located in Northern California, just outside of the city of Sacramento. Our Wheel House spirits are available in a growing number of stores through out California. Find where you can buy our spirits by <a href="/where-to-buy/">visiting our retail locations page.</a>
 served-spirits:
   title: Spirits
   list:
@@ -35,7 +35,7 @@ craft:
 
 celebration:
   header: IN CELEBRATION OF THE RICH HISTORY OF THE SACRAMENTO AREA
-  content: "The first spirit we introduced was a gin, one of the more popular spirits during the time of prohibition. Wheel House American Dry Gin was received with high praise, as many were excited for an alternative to the more juniper-heavy style of a London Dry gin. In response to popular demand, we have produced several more products in the Wheel House spirit family: Wheel House Sacramento Vodka, Wheel House Absinthe Verte, Wheel House Drowning Oak Corn Whiskey, Wheel House California Bourbon and Wheel House Malted Rice Whiskey."
+  content: "he first spirit we introduced was a gin, one of the more popular spirits during the time of prohibition. Wheel House American Dry Gin was received with high praise, as many were excited for an alternative to the more juniper-heavy style of a London Dry gin. In response to popular demand, we have produced several more products in the Wheel House spirit family: Wheel House Sacramento Vodka, Wheel House Absinthe Verte, Wheel House Drowning Oak Corn Whiskey, Wheel House California Bourbon and Wheel House Malted Rice Whiskey."
   img: "/img/images/american_gin.png"
 button-image: "/img/logos-icons/button2.png"
 button-image-yellow: "/img/logos-icons/yellow-bottle.png"
@@ -97,9 +97,8 @@ insta:
         <div class="top-left dot"></div>
         <div class="bottom-right dot"></div>
         <div class="bottom-left dot"></div>
-        <img class="header-img-logo" />
         <div class="goldriver-logo">
-          <img src="{{ page.logo.img | relative_url }}" />
+          <img src="{{ page.logo.img | relative_url }}" alt='GR Logo' />
         </div>
       </div>
     </div>
@@ -138,6 +137,7 @@ insta:
         <div class="button-layout">
           <div class="button-image">
             <img
+             alt='bottle logo'
               class="interior-cart-image"
               src="{{ page.button-image | relative_url }}"
             />
@@ -180,7 +180,7 @@ insta:
     <div class="insta-slider backup hidden">
       {% for slide in page.insta.list %}
       <div class="insta-slide" data-imagefull="{{slide.image | relative_url }}" data-shortcode="{{ slide.link }}">
-        <img src="{{slide.image | relative_url }}" />
+        <img  alt='insta image' src="{{slide.image | relative_url }}" />
         <div class="slide-text hidden">{{ slide.text }}</div>
       </div>
       {% endfor %}

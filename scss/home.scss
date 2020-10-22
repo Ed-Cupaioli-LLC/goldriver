@@ -96,6 +96,9 @@
         align-self: center;
         font-weight: 600;
         color: $white;
+        &:hover{
+          color: $yellow;
+        }
         @include bp-medium {
           margin-left: 0;
           text-align: center;
