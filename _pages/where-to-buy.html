@@ -17,8 +17,10 @@ online:
   spirit-hub-logo: 'img/where-to-buy/SH_Logo.png'
   info: Now Available in <br>
     IL,FL, NH, and NE with SpiritHub
-  link: 'https://www.spirithub.com/catalog/spirits'
+  link: 'https://www.spirithub.com/distillery/gold-river-distillery'
+  body: Our craft spirits are also available for purchase online in select locations via Spirit Hub. visit our online storefront to see what products are currently available.
 
+button-image-yellow: "/img/logos-icons/yellow-bottle.png"
 
 location: 
   list: 
@@ -177,25 +179,45 @@ ledger: '(G) = Carries Wheel House American Dry Gin <br>
                 <div class='top-left dot'></div>
                 <div class='bottom-right dot'></div>
                 <div class='bottom-left dot'></div>
-                <img class='header-img-logo' src='{{ page.header.img | relative_url }}' />
+                <h1 class= 'black-arcade-header'>WHERE TO BUY</h1>
             </div>
         </div>
     </div>
+
+    <!-- //----------------Online Store --------------------// -->
     <div class='header'>
          <span class='blue-heading-main font-header span-header'>{{ page.online.title }} </span>
     </div>
     <div class='ledger brewery-type'>
       <div class='spirit'>
-          <a href='{{ page.intro.link }}'><div class='img-container'><img  class='spirit-hub' src=' {{ page.online.spirit-hub-logo | relative_url }}'></div></a>
-          <div  class='details spirit-info'>{{ page.online.info }}</div>
+          <a href='{{ page.online.link }}'><div class='img-container'><img  class='spirit-hub' src=' {{ page.online.spirit-hub-logo | relative_url }}'></div></a>
+          <p  class='details spirit-info'>{{ page.online.info }}</p>
       </div>
+      <p  class='details spirit-info'>{{ page.online.body }}</p>
+      <a href="{{ page.online.link }}">
+        <button style='margin-top: 30px' class="button-yellow">
+          <div class="button-layout">
+            <div class="button-image">
+              <img
+                class="interior-cart-image"
+                src="{{ page.button-image-yellow | relative_url }}"
+              />
+            </div>
+            <div class="custom"></div>
+            <div class="button-text">
+              Shop Now
+            </div>
+          </div>
+        </button>
+      </a>
+    
   </div>
-
+  <!-- --------------------------------Califoria Locations-------------------------- -->
   <div class='header'>
     <span class='blue-heading-main font-header span-header'>{{ page.intro.title }} </span>
   </div>
   <div class='ledger brewery-type'>
-        <div class='details details-spirit'>{{ page.intro.ledger }}</div>
+        <p class='details details-spirit'>{{ page.intro.ledger }}</p>
   </div>
 
     <div class='locations'>
