@@ -64,6 +64,11 @@
                 text-align: center;
                 margin-right: 0;
             }
+            .footer-p{
+                &:hover{
+                    color: $yellow;
+                }
+            }
         }
         .social{
             text-align: left;
@@ -76,9 +81,19 @@
                 display: flex;
                 flex-direction: row;
                 padding: 10px 0 ;
+                
                 @include bp-large{
                     justify-content: center;
                 }
+                a img:last-child {
+                    display: none;  
+                  }
+                  a:hover img:last-child {
+                    display: block;  
+                  }
+                  a:hover img:first-child {
+                    display: none;  
+                  }
                 .social-logo{
                     width: 42px;
                     height:42px;
