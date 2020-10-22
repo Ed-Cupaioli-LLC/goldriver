@@ -95,7 +95,7 @@
         position: fixed;
         animation:  0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         @include bp-small{
-            padding-bottom:4rem;
+            padding-bottom:6rem;
             padding-top: 1rem;
 
         }
