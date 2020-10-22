@@ -19,10 +19,13 @@ $(function(){
     $(".hamburger").click(function() {
         var val = $(this).attr('id');
         if (val == 0) {
+            $('body,html').css('position','fixed');
             $("ul").hide();
             $(this).attr('id', '1');
         } else {
             $("ul").show();
+            
+            $('body,html').css('position','fixed');
             $(this).attr('id', '0');
         }
 
@@ -31,23 +34,27 @@ $(function(){
     $(".exit").click(function() {
       var val = $(this).attr('id');
       if (val == 1) {
+        $('body,html').css('position','unset');
           $("ul").hide();
           $(this).attr('id', '1');
           $('.button').attr('id', '1');
       } 
 
   });
-    
+  
   
 });
 
-function lockScroll() {
-  document.body.classList.add('lock-scroll');
-}
 
-function unlockScroll() {
-  var element = document.getElementsByName("body");
-  element.classList.remove("lock-scroll");
+// function lockScroll() {
+//   if( document.body.classList.value === ''){
+//     document.body.classList.add('lock-scroll');
+//     // document.body.classList.add('unlocked-scroll')
 
-}
+//   }
+//   if(document.body.classList.value === 'lock-scroll'){
+//     document.body.classList.remove('lock-scroll')
+//   }
   
+// }
+ 
