@@ -19,13 +19,13 @@ $(function(){
     $(".hamburger").click(function() {
         var val = $(this).attr('id');
         if (val == 0) {
-            $('body,html').css('position','fixed');
+            // $('body,html').css('position','fixed');
             $("ul").hide();
             $(this).attr('id', '1');
         } else {
             $("ul").show();
             
-            $('body,html').css('position','fixed');
+            // $('body,html').css('position','fixed');
             $(this).attr('id', '0');
         }
 
@@ -34,7 +34,7 @@ $(function(){
     $(".exit").click(function() {
       var val = $(this).attr('id');
       if (val == 1) {
-        $('body,html').css('position','unset');
+        // $('body,html').css('position','unset');
           $("ul").hide();
           $(this).attr('id', '1');
           $('.button').attr('id', '1');
@@ -46,3 +46,9 @@ $(function(){
 });
 
  
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
