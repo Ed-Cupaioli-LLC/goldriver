@@ -61,7 +61,7 @@
           
     }
 //    --------------------------------------------Small Screen Menu for Screens XL and smaller -------------------------//
-    @include bp-x-large{
+    @include bp-medium{
     width: 85%;
     .large-nav{
         display: none;
