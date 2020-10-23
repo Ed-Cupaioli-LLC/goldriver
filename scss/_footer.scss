@@ -1,7 +1,7 @@
 .footer-p{
     padding:0;
     margin:0;
-    font-size:16px;
+    font-size:14px;
     font-weight: 400;
     @include bp-large{
         text-align: center;
@@ -28,17 +28,17 @@
                 align-self: center;
             }
         .logo{
-            margin-right: 55px;
+            margin-right: 40px;
             text-align: left;
             @include bp-large{
                 margin-right: 0;
             }
             .footer_logo{
-                max-width: 250px;
+                max-width: 200px;
             }
         }
         .links{
-            margin-right: 55px;
+            margin-right: 40px;
             text-align: left;
             display: flex;
             flex-direction: column;
@@ -49,15 +49,17 @@
                 margin-right: 0;
             }
                 a{
+                    line-height: 2;
+                    font-size:14px;
+                    font-weight: 300;
                     color: $white;
-                    font-weight: 400;
                     &:hover{
                         color: $yellow;
                     }
                 }
         }
         .location{
-            margin-right: 55px;
+            margin-right: 40px;
             text-align: left;
             @include bp-large{
                 padding: 20px 0;
