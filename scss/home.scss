@@ -71,7 +71,7 @@
     justify-content: space-between;
     flex-flow: row wrap;
     padding-top: 50px;
-    @include bp-xx-large{
+    @media only screen and (max-width: 1500px){
       display: grid;
       width: 100%;
       justify-items: center;
@@ -79,9 +79,11 @@
       row-gap: 15px;
       grid-columns: 1fr 1fr;
       padding-top: 50px;
-
-
+      
     }
+     
+
+
     .spirit {
       display: flex;
       flex-direction: row;
