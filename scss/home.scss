@@ -71,18 +71,13 @@
     justify-content: space-between;
     flex-flow: row wrap;
     padding-top: 50px;
-    @include bp-x-large{
+    @include bp-xx-large{
       display: grid;
       width: 100%;
-      /* width: 100%; */
       justify-items: center;
       grid-template-columns: 1fr 1fr;
-      /* justify-content: stretch; */
-      /* column-gap: 40%; */
       row-gap: 15px;
       grid-columns: 1fr 1fr;
-      /* justify-content: space-between; */
-      /* flex-flow: row wrap; */
       padding-top: 50px;
 
 
