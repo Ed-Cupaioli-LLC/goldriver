@@ -200,18 +200,7 @@ p{
         padding: 60px 10%;
     }
 }
-// .intro{
-//     font-size: 19px;
-//     font-weight: 300;
-//     padding: 50px 0;
-//     border-top: $white solid 1px;
-//     border-bottom: $white solid 1px;
-//     line-height: 2;
-//     letter-spacing: 0.5px;
-//     text-align: left;
-//     color: #ffffff;
 
-// }
 .intro-black-font{
     font-size: 19px;
     font-weight: 300;
@@ -236,15 +225,7 @@ p{
 }
 
 //elemets font
-// .font-header{
-//     font-family: 'Aleo',Georgia,"Times New Roman",serif;
-//     font-weight: 700;
-//     font-size: 35px;
-//     letter-spacing: 1px;
-//     @include bp-medium{
-//         font-size: 26px;
-//     }
-// }
+
 .font-paragraph{
     font-family: 'Noto Sans JP';
     font-weight: 300;
@@ -292,12 +273,11 @@ p{
 
 }
 .details{
-   
     font-size: 19px;
     font-weight: 300;
     line-height: 2;
     letter-spacing: 0.5px;
-    color: #666;
+    color: $black;
     text-align: left;
     color: $black;
     @include bp-small{
@@ -423,6 +403,6 @@ p{
         }
     }
 }
-a{
-    color: $white;
-}
+// a{
+//     color: $white;
+// }
