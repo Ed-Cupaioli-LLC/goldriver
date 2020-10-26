@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: _pages/tasting-room.html
+  label: Tasting Room
+  match: "**/*"
+- type: document
   path: _pages/where-to-buy.html
   label: Where To Buy
 - type: document
