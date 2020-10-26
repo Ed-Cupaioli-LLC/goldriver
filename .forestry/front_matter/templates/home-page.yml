@@ -1,0 +1,72 @@
+---
+label: Home Page
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: css
+  label: css
+- type: field_group
+  name: header
+  label: header
+  fields:
+  - type: file
+    name: img
+    label: img
+- type: field_group
+  name: intro
+  label: intro
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: ledger
+    label: ledger
+- type: field_group
+  name: online
+  label: online
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: file
+    name: spirit-hub-logo
+    label: spirit-hub-logo
+  - type: text
+    name: info
+    label: info
+  - type: text
+    name: link
+    label: link
+  - type: textarea
+    name: body
+    label: body
+- type: file
+  name: button-image-yellow
+  label: button-image-yellow
+- type: field_group
+  name: location
+  label: location
+  fields:
+  - type: field_group_list
+    name: list
+    label: list
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: location
+      label: location
+- type: textarea
+  name: ledger
+  label: ledger
