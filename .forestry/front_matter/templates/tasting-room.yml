@@ -7,13 +7,6 @@ fields:
   name: title
   label: title
 - type: field_group
-  name: header
-  label: header
-  fields:
-  - type: file
-    name: img
-    label: img
-- type: field_group
   name: covid
   label: covid
   fields:
