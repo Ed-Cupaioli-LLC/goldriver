@@ -6,6 +6,10 @@ webhook_url:
 sections:
 - type: document
   path: _pages/home.html
+  label: home page
+  match: "**/*"
+- type: document
+  path: _pages/home.html
   label: Home Page
 - type: document
   path: _pages/tasting-room.html
