@@ -16,9 +16,6 @@ fields:
   - type: textarea
     name: content
     label: content
-- type: file
-  name: tasting-room-img
-  label: tasting-room-img
 - type: field_group
   name: tasting-room
   label: tasting-room
