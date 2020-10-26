@@ -1,14 +1,35 @@
 ---
 label: Home Page
-hide_body: true
-display_field: layout
+hide_body: false
 fields:
 - type: text
   name: title
   label: title
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: css
+  label: css
+- type: boolean
+  name: slick
+  label: slick
+- type: list
+  name: scripts
+  label: scripts
 - type: field_group
   name: header
   label: header
+  fields:
+  - type: file
+    name: img
+    label: img
+- type: field_group
+  name: logo
+  label: logo
   fields:
   - type: file
     name: img
@@ -18,11 +39,102 @@ fields:
   label: intro
   fields:
   - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: content
+    label: content
+  - type: text
     name: title
     label: title
   - type: text
     name: ledger
     label: ledger
+- type: field_group
+  name: served-spirits
+  label: served-spirits
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: field_group_list
+    name: list
+    label: list
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: file
+      name: logo
+      label: logo
+    - type: text
+      name: href
+      label: href
+- type: field_group
+  name: craft
+  label: craft
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: content
+    label: content
+  - type: file
+    name: img
+    label: img
+- type: field_group
+  name: celebration
+  label: celebration
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: content
+    label: content
+  - type: file
+    name: img
+    label: img
+- type: file
+  name: button-image
+  label: button-image
+- type: file
+  name: button-image-yellow
+  label: button-image-yellow
+- type: field_group
+  name: tasting-room
+  label: tasting-room
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: content
+    label: content
+  - type: file
+    name: background-img
+    label: background-img
+- type: field_group
+  name: insta
+  label: insta
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: field_group_list
+    name: list
+    label: list
+    fields:
+    - type: textarea
+      name: text
+      label: text
+    - type: file
+      name: image
+      label: image
+    - type: text
+      name: link
+      label: link
 - type: field_group
   name: online
   label: online
@@ -30,7 +142,7 @@ fields:
   - type: text
     name: title
     label: title
-  - type: file
+  - type: text
     name: spirit-hub-logo
     label: spirit-hub-logo
   - type: text
@@ -39,25 +151,16 @@ fields:
   - type: text
     name: link
     label: link
-  - type: textarea
+  - type: text
     name: body
     label: body
 - type: field_group
   name: location
   label: location
   fields:
-  - type: field_group_list
+  - type: list
     name: list
     label: list
-    fields:
-    - type: text
-      name: name
-      label: name
-    - type: text
-      name: location
-      label: location
-- type: textarea
+- type: text
   name: ledger
   label: ledger
-pages:
-- _pages/home.html
