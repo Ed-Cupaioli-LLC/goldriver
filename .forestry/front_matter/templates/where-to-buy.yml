@@ -11,10 +11,10 @@ fields:
   fields:
   - type: text
     name: title
-    label: Gold text
+    label: Blue Header
   - type: text
     name: ledger
-    label: Paragraph under yellow text
+    label: Shopping Ledger
   label: Retail Stores Banner
 - type: field_group
   name: online
