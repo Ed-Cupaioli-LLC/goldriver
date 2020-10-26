@@ -4,12 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: jekyll-pages
-  label: Home Page
-  create: all
-  new_doc_ext: _pages/home.html
-  templates:
-  - home-page
 - type: document
   path: _pages/home.html
   label: Home page
