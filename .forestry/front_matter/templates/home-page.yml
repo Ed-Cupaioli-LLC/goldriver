@@ -6,15 +6,6 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: layout
-  label: layout
-- type: text
-  name: permalink
-  label: permalink
-- type: text
-  name: css
-  label: css
 - type: field_group
   name: header
   label: header
@@ -51,9 +42,6 @@ fields:
   - type: textarea
     name: body
     label: body
-- type: file
-  name: button-image-yellow
-  label: button-image-yellow
 - type: field_group
   name: location
   label: location
