@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: _pages/where-to-buy.html
+  label: Where To Buy
+  match: "**/*"
+- type: document
   path: _pages/home.html
   label: Home Page
 - type: directory
