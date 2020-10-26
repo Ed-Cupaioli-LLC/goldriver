@@ -1,6 +1,7 @@
 ---
 label: Where to Buy
 hide_body: true
+display_field: layout
 fields:
 - type: text
   name: title
