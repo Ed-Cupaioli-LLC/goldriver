@@ -4,25 +4,32 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
-- type: textarea
-  name: content
-  label: content
+  label: Product Title
 - type: text
   name: price
-  label: price
+  label: Price
+  description: 'No currency. Just the price in dollars and cents: 22.00'
 - type: file
   name: img
-  label: img
-- type: file
-  name: button-img
-  label: button-img
-- type: text
-  name: button
-  label: button
-  default: Curbside pickup
+  label: Product image
   config:
-    required: true
-- type: text
-  name: list
-  label: list
+    maxSize: 1
+- name: list
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - absenthe
+    - apple jack
+    - bourbon
+    - gin
+    - whiskey
+    - hand-sanitizer
+    - vodka
+    source:
+      type: simple
+      section: products
+      file: 
+      path: 
+  label: Product type
