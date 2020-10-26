@@ -81,12 +81,6 @@ fields:
   - type: file
     name: img
     label: img
-- type: file
-  name: button-image
-  label: button-image
-- type: file
-  name: button-image-yellow
-  label: button-image-yellow
 - type: field_group
   name: tasting-room
   label: tasting-room
