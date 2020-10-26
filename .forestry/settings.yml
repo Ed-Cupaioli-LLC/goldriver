@@ -7,8 +7,7 @@ sections:
 - type: jekyll-pages
   label: Home Pge
   create: all
-  match: "**/*"
-  new_doc_ext: _pages/home.html
+  new_doc_ext: home.html
   templates:
   - home-page
 - type: document
