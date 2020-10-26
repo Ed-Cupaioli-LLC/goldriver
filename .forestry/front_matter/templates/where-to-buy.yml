@@ -51,9 +51,6 @@ fields:
   - type: textarea
     name: body
     label: body
-- type: file
-  name: button-image-yellow
-  label: button-image-yellow
 - type: field_group
   name: location
   label: location
