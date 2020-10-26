@@ -2,7 +2,6 @@
 title: WHEEL HOUSE ABSINTHE VERTE
 price: '55.00'
 img: '/img/spirits/absinthe.png'
-button-img: '/img/logos-icons/cart.png'
 button: curbside pickup
 list: absinthe
 ---
