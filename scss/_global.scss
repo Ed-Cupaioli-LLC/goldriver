@@ -184,7 +184,7 @@ p{
 //intro div to page 
 .intro-banner{
     font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url("../img/background/black-background.png");
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url(../img/background/black-leather.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,20 +224,6 @@ p{
         font-size: 30px;
     }
 }
-
-//elemets font
-
-// .font-paragraph{
-//     font-family: 'Noto Sans JP';
-//     font-weight: 300;
-//     font-size: 18px;
-//     letter-spacing: 1px;
-//     line-height: 2;
-//     letter-spacing: 1px;
-
-// }
-
-///letter fonts 
 
 .blue-header{
     font-family: 'Aleo',Georgia,"Times New Roman",serif;
