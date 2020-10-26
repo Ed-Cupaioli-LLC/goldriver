@@ -60,7 +60,7 @@ medals:
          <div class='image'> <img loading="lazy" alt="product image" src='{{ product.img | relative_url }}' ></div>
          <div class='description'>
              <h1 class='blue-header font-header'>{{ product.title }}</h1>
-             <p class='paragraph-p font-paragraph'>{{ product.content }}</p>
+             <div class='paragraph-p font-paragraph'>{{ product.content | markdownify }}</div>
              <p class='p-bold font-paragraph'>${{ product.price }}</p>
              <button class='snipcart-add-item button-yellow'
              data-item-id="{{ product.title }}"
@@ -73,10 +73,11 @@ medals:
              >
                  <div class='button-layout'>
                     <div class='button-image'> 
-                        <img class='interior-cart-image' loading="lazy" alt="cart image" src='{{ product.button-img | relative_url }}'> 
+                        <img class='interior-cart-image' loading="lazy" alt="cart image" src='/img/logos-icons/cart.png'> 
                     </div>
                     <div class='custom'></div>
-                    <div class='button-text'>{{ product.button }} </div>
+                    
+                    <div class='button-text'>Curbside pickup</div>
                 </div>
             </button>
          </div>
