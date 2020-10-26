@@ -7,13 +7,6 @@ fields:
   name: title
   label: title
 - type: field_group
-  name: header
-  fields:
-  - type: file
-    name: img
-    label: Image
-  label: Header Image
-- type: field_group
   name: intro
   fields:
   - type: text
