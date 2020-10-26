@@ -4,55 +4,57 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Page Title
 - type: field_group
   name: header
-  label: header
   fields:
   - type: file
     name: img
-    label: img
+    label: 'Image '
+  label: 'Header Image '
+  description: Image on top of the page
 - type: field_group
   name: logo
-  label: logo
   fields:
   - type: file
     name: img
     label: img
+  label: Logo over video
 - type: field_group
   name: intro
-  label: intro
   fields:
   - type: text
     name: header
-    label: header
+    label: Gold Text
   - type: textarea
     name: content
-    label: content
     config:
       wysiwyg: true
       schema:
         format: markdown
+    label: Content header after gold text
+  label: Introduction Paragraph - Black background
 - type: field_group
   name: served-spirits
-  label: served-spirits
+  label: List of Spirits and Logo
   fields:
   - type: text
     name: title
-    label: title
+    label: Spirits that link to Spirits Page
   - type: field_group_list
     name: list
-    label: list
     fields:
     - type: text
       name: title
-      label: title
+      label: Title of Spirit
     - type: file
       name: logo
-      label: logo
+      label: Logo of Bottles
     - type: text
       name: href
-      label: href
+      label: 'URL '
+      description: Where is the image and name of spirit going to link to.
+    label: List of Spirits
 - type: field_group
   name: craft
   label: craft
