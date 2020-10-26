@@ -21,6 +21,9 @@
     .link-large{
         display: flex;
         flex-direction:row;
+        @include bp-large{
+            font-size: 14px;
+        }
         li{
         list-style-type: none;
         padding: 10px;
