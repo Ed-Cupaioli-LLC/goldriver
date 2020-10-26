@@ -190,7 +190,7 @@ ledger: '(G) = Carries Wheel House American Dry Gin <br>
     </div>
     <div class='ledger brewery-type'>
       <div class='spirit'>
-          <a href='{{ page.online.link }}'><div class='img-container'><img  class='spirit-hub' src=' {{ page.online.spirit-hub-logo | relative_url }}'></div></a>
+          <a href='{{ page.online.link }}'><div class='img-container'><img  loading="lazy" alt="spirit-hub logo" class='spirit-hub' src=' {{ page.online.spirit-hub-logo | relative_url }}'></div></a>
           <p  class='details spirit-info'>{{ page.online.info }}</p>
       </div>
       <p  class='details spirit-info'>{{ page.online.body }}</p>
@@ -199,6 +199,7 @@ ledger: '(G) = Carries Wheel House American Dry Gin <br>
           <div class="button-layout">
             <div class="button-image">
               <img
+                loading="lazy" alt="shopping-page"
                 class="interior-cart-image"
                 src="{{ page.button-image-yellow | relative_url }}"
               />
