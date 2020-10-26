@@ -9,18 +9,6 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: text
-  name: permalink
-  label: permalink
-- type: text
-  name: css
-  label: css
-- type: boolean
-  name: slick
-  label: slick
-- type: list
-  name: scripts
-  label: scripts
 - type: field_group
   name: header
   label: header
@@ -97,12 +85,6 @@ fields:
   - type: file
     name: img
     label: img
-- type: file
-  name: button-image
-  label: button-image
-- type: file
-  name: button-image-yellow
-  label: button-image-yellow
 - type: field_group
   name: tasting-room
   label: tasting-room
@@ -116,26 +98,6 @@ fields:
   - type: file
     name: background-img
     label: background-img
-- type: field_group
-  name: insta
-  label: insta
-  fields:
-  - type: text
-    name: header
-    label: header
-  - type: field_group_list
-    name: list
-    label: list
-    fields:
-    - type: textarea
-      name: text
-      label: text
-    - type: file
-      name: image
-      label: image
-    - type: text
-      name: link
-      label: link
 - type: field_group
   name: online
   label: online
@@ -155,13 +117,3 @@ fields:
   - type: text
     name: body
     label: body
-- type: field_group
-  name: location
-  label: location
-  fields:
-  - type: list
-    name: list
-    label: list
-- type: text
-  name: ledger
-  label: ledger
