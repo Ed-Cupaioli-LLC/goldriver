@@ -20,13 +20,13 @@ fields:
   config:
     required: false
     options:
-    - absenthe
-    - apple jack
     - bourbon
     - gin
     - hand-sanitizer
     - vodka
     - 'whiskey '
+    - 'absinthe '
+    - 'applejack '
     source:
       type: simple
       section: products
