@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: _products
   label: Products
-  create: all
+  create: documents
   match: "**/*"
 - type: directory
   path: _pages
