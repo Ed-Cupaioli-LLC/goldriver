@@ -41,6 +41,13 @@
                 @include bp-large{
                     width: 100%;
                 }
+                p{
+                    color: $black;
+                    padding: 0 40px;
+                    @include bp-large{
+                        padding:0;
+                    }
+                }
                 .p-bold{
                     padding: 0  40px 20px 40px;
                     @include bp-large{
