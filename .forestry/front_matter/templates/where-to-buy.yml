@@ -6,68 +6,59 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: layout
-  label: layout
-- type: text
-  name: permalink
-  label: permalink
-- type: text
-  name: css
-  label: css
 - type: field_group
   name: header
-  label: header
   fields:
   - type: file
     name: img
-    label: img
+    label: Image
+  label: Header Image
 - type: field_group
   name: intro
-  label: intro
   fields:
   - type: text
     name: title
-    label: title
+    label: Gold text
   - type: text
     name: ledger
-    label: ledger
+    label: Paragraph under yellow text
+  label: Introduction Banner
 - type: field_group
   name: online
-  label: online
+  label: 'Online Store '
   fields:
   - type: text
     name: title
-    label: title
+    label: Online Header Blue
   - type: file
     name: spirit-hub-logo
-    label: spirit-hub-logo
+    label: Spirit Hub Logo
   - type: text
     name: info
-    label: info
+    label: Spirit Hub Information
   - type: text
     name: link
-    label: link
+    label: Link to Spirit Hub
   - type: textarea
     name: body
-    label: body
+    label: 'Online Shopping Info '
 - type: field_group
   name: location
-  label: location
+  label: California Retail Stores
   fields:
   - type: field_group_list
     name: list
-    label: list
     fields:
     - type: text
       name: name
-      label: name
+      label: Name
     - type: text
       name: location
-      label: location
+      label: Location
+    label: List of chains that carry Wheelhouse Spirits
 - type: textarea
   name: ledger
-  label: ledger
+  label: 'Ledger for Shopping '
 pages:
 - _pages/tasting-room.html
 - _pages/where-to-buy.html
