@@ -8,9 +8,6 @@ sections:
   path: _pages/home.html
   label: Home Page
   match: "**/*"
-- type: document
-  path: _pages/home.html
-  label: Home page
 - type: directory
   path: _products
   label: Products
