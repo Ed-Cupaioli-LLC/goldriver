@@ -53,5 +53,4 @@ fields:
   name: ledger
   label: 'Ledger for Shopping '
 pages:
-- _pages/tasting-room.html
 - _pages/where-to-buy.html
