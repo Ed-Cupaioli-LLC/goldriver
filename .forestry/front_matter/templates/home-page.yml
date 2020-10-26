@@ -6,9 +6,6 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: layout
-  label: layout
 - type: field_group
   name: header
   label: header
