@@ -71,3 +71,5 @@ fields:
 - type: textarea
   name: ledger
   label: ledger
+pages:
+- _pages/where-to-buy.html
