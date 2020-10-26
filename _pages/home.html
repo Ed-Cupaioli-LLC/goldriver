@@ -98,7 +98,7 @@ insta:
         <div class="bottom-right dot"></div>
         <div class="bottom-left dot"></div>
         <div class="goldriver-logo">
-          <img src="{{ page.logo.img | relative_url }}" alt='GR Logo' />
+          <img loading="lazy" src="{{ page.logo.img | relative_url }}" alt='GR Logo' />
         </div>
       </div>
     </div>
@@ -138,6 +138,7 @@ insta:
           <div class="button-image">
             <img
              alt='bottle logo'
+             loading="lazy" 
               class="interior-cart-image"
               src="{{ page.button-image | relative_url }}"
             />
@@ -160,6 +161,7 @@ insta:
           <div class="button-image">
             <img
               class="interior-cart-image"
+              loading="lazy" alt="bottle-image"
               src="{{ page.button-image-yellow | relative_url }}"
             />
           </div>
@@ -180,7 +182,7 @@ insta:
     <div class="insta-slider backup hidden">
       {% for slide in page.insta.list %}
       <div class="insta-slide" data-imagefull="{{slide.image | relative_url }}" data-shortcode="{{ slide.link }}">
-        <img  alt='insta image' src="{{slide.image | relative_url }}" />
+        <img  alt='insta image' loading="lazy" src="{{slide.image | relative_url }}" />
         <div class="slide-text hidden">{{ slide.text }}</div>
       </div>
       {% endfor %}
@@ -190,7 +192,7 @@ insta:
       <div class="embed-body">
         <div class="insta-embed">
 					<div class="image-col">
-						<a class="insta-link" href=""><img  class="insta-image" src="" alt="" /></a>
+						<a class="insta-link" href=""><img  loading="lazy" class="insta-image" src="" alt="" /></a>
 					</div>
 					<div class="text-col">
 						<div class="insta-caption"></div>

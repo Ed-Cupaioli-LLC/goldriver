@@ -3,7 +3,7 @@ layout: default
 css: product
 ---
 <div id='product'>
-    <div class='header-image background-image'> 
+    <div class='header-image background-image' loading="lazy" alt="background-image"> 
         <div class='yellow-border'>
             <div class=white-border>
                 <div class='top-right dot'></div>
@@ -17,7 +17,7 @@ css: product
 <div class='products'>
     {% assign product = page %}
       <div class='product-layout'>
-       <div class='image'> <img src='{{ product.img | relative_url }}' ></div>
+       <div class='image'> <img loading="lazy" alt="product image"src='{{ product.img | relative_url }}' ></div>
        <div class='description'>
            <h1 class='blue-header font-header'>{{ product.title }}</h1>
            <p class='paragraph-p font-paragraph'>{{ product.content }}</p>
@@ -33,7 +33,7 @@ css: product
            >
                <div class='button-layout'>
                   <div class='button-image'> 
-                      <img class='interior-cart-image' src='{{ product.button-img | relative_url }}'> 
+                      <img class='interior-cart-image' loading="lazy" alt="shopping-cart" src='{{ product.button-img | relative_url }}'> 
                   </div>
                   <div class='custom'></div>
                   <div class='button-text'>{{ product.button }} </div>

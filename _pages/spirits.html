@@ -57,7 +57,7 @@ medals:
         <dt id='{{ list.name }}' style='visibility:hidden'>{{ list.name }}</dt>
         {% for product in list.items %}
         <div class='product-layout'>
-         <div class='image'> <img src='{{ product.img | relative_url }}' ></div>
+         <div class='image'> <img loading="lazy" alt="product image" src='{{ product.img | relative_url }}' ></div>
          <div class='description'>
              <h1 class='blue-header font-header'>{{ product.title }}</h1>
              <p class='paragraph-p font-paragraph'>{{ product.content }}</p>
@@ -73,7 +73,7 @@ medals:
              >
                  <div class='button-layout'>
                     <div class='button-image'> 
-                        <img class='interior-cart-image' src='{{ product.button-img | relative_url }}'> 
+                        <img class='interior-cart-image' loading="lazy" alt="cart image" src='{{ product.button-img | relative_url }}'> 
                     </div>
                     <div class='custom'></div>
                     <div class='button-text'>{{ product.button }} </div>
@@ -92,7 +92,7 @@ medals:
         <button class='button-white'>
             <div class='button-layout'>
                <div class='button-image'> 
-                   <img class='interior-cart-image' src='{{ page.button-image | relative_url }}'> 
+                   <img class='interior-cart-image' loading="lazy" alt="bottle-image" src='{{ page.button-image | relative_url }}'> 
                </div>
                <div class='custom'></div>
                <div class='button-text' ><a  style='color:#4d5f8a'href="{{ base }}/where-to-buy/">Learn More</a></div>
@@ -109,7 +109,7 @@ medals:
         <div class='medal'>
             <h1 class='medal-name'>{{ medal. name }}</h1>
             <div class='medal-type'> {{ medal.type }}</div> 
-            <div class='medal-img'><img src="{{ medal.img | relative_url }}"></div>
+            <div class='medal-img'><img  loading="lazy" alt="medals" src="{{ medal.img | relative_url }}"></div>
              
         </div>
         {% endfor %}  
