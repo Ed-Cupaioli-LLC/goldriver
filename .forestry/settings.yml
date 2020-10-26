@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _pages/home.html
   label: Home page
-  match: "**/*"
 - type: directory
   path: _products
   label: Products
