@@ -1,0 +1,63 @@
+---
+label: Tasting Room
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: css
+  label: css
+- type: field_group
+  name: header
+  label: header
+  fields:
+  - type: file
+    name: img
+    label: img
+- type: field_group
+  name: covid
+  label: covid
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: content
+    label: content
+- type: file
+  name: tasting-room-img
+  label: tasting-room-img
+- type: field_group
+  name: tasting-room
+  label: tasting-room
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: field_group_list
+    name: list
+    label: list
+    fields:
+    - type: text
+      name: time
+      label: time
+  - type: text
+    name: header2
+    label: header2
+  - type: field_group_list
+    name: list-location
+    label: list-location
+    fields:
+    - type: text
+      name: location
+      label: location
+- type: textarea
+  name: button
+  label: button
