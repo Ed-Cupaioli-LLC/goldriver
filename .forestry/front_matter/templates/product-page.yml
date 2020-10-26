@@ -33,3 +33,5 @@ fields:
       file: 
       path: 
   label: Product type
+pages:
+- _products/booze.md
