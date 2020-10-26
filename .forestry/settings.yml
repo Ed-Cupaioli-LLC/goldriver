@@ -11,11 +11,6 @@ sections:
   match: "**/*"
   templates:
   - product-page
-- type: directory
-  path: _terms
-  label: Terms
-  create: all
-  match: "**/*"
 upload_dir: img
 public_path: "/img"
 front_matter_path: ''
