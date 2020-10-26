@@ -7,7 +7,7 @@ sections:
 - type: jekyll-pages
   label: Home Page
   create: all
-  match: "**/*"
+  new_doc_ext: _pages/home.html
   templates:
   - home-page
 - type: document
