@@ -15,7 +15,7 @@ fields:
   - type: text
     name: ledger
     label: Paragraph under yellow text
-  label: Introduction Banner
+  label: Retail Stores Banner
 - type: field_group
   name: online
   label: 'Online Store '
