@@ -72,4 +72,5 @@ fields:
   name: ledger
   label: ledger
 pages:
+- _pages/tasting-room.html
 - _pages/where-to-buy.html
