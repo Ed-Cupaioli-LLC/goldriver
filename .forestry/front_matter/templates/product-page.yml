@@ -24,9 +24,9 @@ fields:
     - apple jack
     - bourbon
     - gin
-    - whiskey
     - hand-sanitizer
     - vodka
+    - 'whiskey '
     source:
       type: simple
       section: products
