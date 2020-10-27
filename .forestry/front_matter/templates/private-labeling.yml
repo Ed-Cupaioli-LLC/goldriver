@@ -1,0 +1,43 @@
+---
+label: Private Labeling
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: css
+  label: css
+- type: field_group
+  name: hero
+  label: hero
+  fields:
+  - type: file
+    name: img
+    label: img
+- type: field_group
+  name: header
+  label: header
+  fields:
+  - type: file
+    name: img
+    label: img
+- type: field_group
+  name: intro
+  label: intro
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: content
+    label: content
+- type: file
+  name: button-image
+  label: button-image
