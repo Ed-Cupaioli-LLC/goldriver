@@ -16,8 +16,8 @@ brewery-locations:
         title: MICRO DISTILLERIES
         list:
         - name: GOLD RIVER DISTILLERY 
-          location: 1160 Sunrise Gold Circle, Suite C <br>
-           (916) 476-3868 
+          location: 1160 Sunrise Gold Circle, Suite C
+          number: (916) 476-3868 
           site: GoldRiverDistillery.com
           url: https://goldriverdistillery.com/
           hours:  'Hours: Wednesday By Appointment Only, Friday 4 – 7PM, Saturday 11AM – 3PM'
@@ -31,32 +31,32 @@ brewery-locations:
         title: CRAFT BREWERIES
         list: 
         - name: CLAIMSTAKE BREWING
-          location: 11366 Monier Park Place <br>
-            (916) 661-5249
+          location: 11366 Monier Park Place 
+          number: (916) 661-5249
           site: ClaimstakeBrewing.com
           url: https://www.claimstakebrewing.com/index.html
           hours: 'Hours: Wednesday and Thursday 4 – 8PM, Friday 2 – 8PM, Saturday 12 – 8PM, Sunday 12 – 6PM'
         - name: FORT ROCK BREWING
-          location: 12401 Folsom Boulevard, Suite 110 <br>
-           (916) 936-4616
+          location: 12401 Folsom Boulevard, Suite 110 
+          number: (916) 936-4616
           site: FortRockBrewing.com
           url: https://fortrockbrewing.com/
           hours: 'Hours: Monday – Sunday 11AM – 11PM'
         - name: OLD HANGTOWN BEER WORKS
-          location: 11327 Trade Center Drive, Suite 350 <br>
-           (530) 919-5166
+          location: 11327 Trade Center Drive, Suite 350
+          number: (530) 919-5166
           site: Facebook.com/Old-Hangtown-Beer-Works
           url: https://www.facebook.com/Old-Hangtown-Beer-Works-112091415508385/
           hours: 'Hours: Monday – Friday 4 – 8PM, Saturday 12 – 4PM'
         - name: THIN LINE BREWING COMPANY
-          location: 11354 White Rock Road <br>
-           (530) 919-5166
+          location: 11354 White Rock Road
+          number: (530) 919-5166
           site: ThinLineBrewing.com
           url: https://www.thinlinebrewing.com/
           hours: 'Hours: Wednesday and Thursday 4 – PM, Friday 2-8PM, Saturday 12 – 8PM, Sunday 12 – 6'
         - name: BURNING BARREL BREWING COMPANY - COMING SOON
-          location: 11210 Sun Center Drive, Suite B <br>
-            (916)382-4846
+          location: 11210 Sun Center Drive, Suite B 
+          number: (916)382-4846
           site: BurningBarrelBrewCo.com
           url: https://burningbarrel.square.site/
           hours: 'Monday – Friday, 12 – 7 PM <br>
@@ -65,8 +65,8 @@ brewery-locations:
         title: MEADERY
         list:
         - name: STRAD MEADERY
-          location: 2539 Mercentile Drive <br>
-            (916) 849-6323
+          location: 2539 Mercentile Drive 
+          number: (916) 849-6323
           
 ---
 
@@ -104,6 +104,7 @@ brewery-locations:
     <div class='brewery-contact-info'>
         <h2 class='sub-header'> {{ item.name }}</h2>
         <p class='details'>{{ item.location }}</p>
+        <p class='details'>{{ item.number }}</p>
         <a class='details link' href='{{ item.url }}'>{{ item.site }}</a>
     </div>
   
@@ -116,6 +117,7 @@ brewery-locations:
     <div class='brewery-contact-info'>
     <h2 class='sub-header'> {{ item.name }}</h2>
     <p class='details'>{{ item.location }}</p>
+    <p class='details'>{{ item.number }}</p>
     <a class='details link' href='{{ item.url }}'>{{ item.site }}</a>
     </div>
   
@@ -128,6 +130,7 @@ brewery-locations:
     <div class='brewery-contact-info'>
     <h2 class='sub-header'> {{ item.name }}</h2>
     <p class='details'>{{ item.location }}</p>
+    <p class='details'>{{ item.number }}</p>
     <a class='details link' href='{{ item.url }}'>{{ item.site }}</a>
     </div>
   
