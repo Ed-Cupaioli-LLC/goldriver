@@ -1,6 +1,6 @@
 ---
 label: Barrel District
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: title
