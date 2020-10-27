@@ -22,11 +22,11 @@ fields:
     options:
     - bourbon
     - gin
-    - hand-sanitizer
     - vodka
     - 'whiskey '
     - 'absinthe '
     - 'applejack '
+    - z-hand-sanitizer
     source:
       type: simple
       section: products
