@@ -8,20 +8,14 @@ fields:
   label: title
 - type: field_group
   name: intro
-  label: intro
   fields:
   - type: text
     name: header
-    label: header
+    label: Gold Font
   - type: textarea
     name: content
-    label: content
-  - type: text
-    name: title
-    label: title
-  - type: text
-    name: ledger
-    label: ledger
+    label: Content Under Gold Heading
+  label: Intro Banner
 - type: field_group
   name: served-spirits
   label: served-spirits
