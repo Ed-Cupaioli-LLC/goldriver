@@ -3,8 +3,9 @@ title: Gold River Distillery
 description: Gold River Distillery is the first legal distillery in Sacramento County since Prohibition.
 meta_img: ./img/gr_logo_navbar.png
 twitter: https://mobile.twitter.com/goldrdistillery
-favicon:
+favicon: /img/GR_favicon.png
 url: https://gold-river.netlify.app
+prod-key: NTkzMjA1YzgtNjVkMy00YTEyLWFjZjItOTY5NGZiOGU1ODFhNjM3MzgxNzg2NzUyMzI1OTA2
 gtm:
 schema:
   name: Gold River Distillery
