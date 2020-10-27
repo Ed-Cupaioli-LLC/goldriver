@@ -1,0 +1,68 @@
+---
+label: Spirits
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: css
+  label: css
+- type: list
+  name: scripts
+  label: scripts
+- type: field_group
+  name: header
+  label: header
+  fields:
+  - type: file
+    name: img
+    label: img
+- type: field_group
+  name: about
+  label: about
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: content
+    label: content
+- type: text
+  name: buy
+  label: buy
+- type: file
+  name: button-image
+  label: button-image
+- type: textarea
+  name: buy-info
+  label: buy-info
+- type: field_group
+  name: medals
+  label: medals
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: field_group_list
+    name: list
+    label: list
+    fields:
+    - type: text
+      name: medal-img
+      label: medal-img
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: type
+      label: type
+    - type: file
+      name: img
+      label: img

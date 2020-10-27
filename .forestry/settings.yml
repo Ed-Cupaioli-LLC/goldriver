@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _pages/spirits.html
   label: Spirits
-  match: "**/*"
 - type: document
   path: _pages/private-labeling.html
   label: Private Labeling
