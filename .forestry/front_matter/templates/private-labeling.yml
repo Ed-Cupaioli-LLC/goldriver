@@ -15,6 +15,3 @@ fields:
   - type: textarea
     name: content
     label: content
-- type: file
-  name: button-image
-  label: button-image
