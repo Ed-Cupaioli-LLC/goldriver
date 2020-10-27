@@ -6,20 +6,6 @@ fields:
   name: title
   label: title
 - type: field_group
-  name: hero
-  label: hero
-  fields:
-  - type: file
-    name: img
-    label: img
-- type: field_group
-  name: header
-  label: header
-  fields:
-  - type: file
-    name: img
-    label: img
-- type: field_group
   name: intro
   label: intro
   fields:
