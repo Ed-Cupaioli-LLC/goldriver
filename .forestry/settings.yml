@@ -5,9 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: _pages/barrel-district.htm
-  label: Barrel District
+  path: _pages/private-labeling.html
+  label: Private Labeling
   match: "**/*"
+- type: document
+  path: _pages/barrel-district.html
+  label: Barrel District
 - type: document
   path: _pages/home.html
   label: Home Page
