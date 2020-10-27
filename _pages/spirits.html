@@ -51,8 +51,7 @@ medals:
      </div>
      <div class='content'>
      <div class='products'>
-        {% assign products = site.products | group_by:"list" %}
-        <!-- <div>{{ products }}</div> -->
+        {% assign products = site.products | group_by:'list' %}
         {% for list in products %}
         <dt id='{{ list.name }}' style='visibility:hidden'>{{ list.name }}</dt>
         {% for product in list.items %}
@@ -60,7 +59,6 @@ medals:
          <div class='image'> <img loading="lazy" alt="product image" src='{{ product.img | relative_url }}' ></div>
          <div class='description'>
              <h1 class='blue-header font-header'>{{ product.title }}</h1>
-             <!-- <p class='paragraph-p font-paragraph'>{{ product.content }}</p> -->
              <p class='paragraph-p font-paragraph'>{{ product.content | markdownify }}</p>
              <p class='p-bold font-paragraph'>${{ product.price }}</p>
              <button class='snipcart-add-item button-yellow'
