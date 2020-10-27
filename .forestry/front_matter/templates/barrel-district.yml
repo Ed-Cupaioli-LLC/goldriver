@@ -109,3 +109,5 @@ fields:
       - type: text
         name: number
         label: number
+pages:
+- _pages/barrel-district.html
