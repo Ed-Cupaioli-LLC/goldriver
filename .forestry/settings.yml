@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _pages/private-labeling.html
   label: Private Labeling
-  match: "**/*"
 - type: document
   path: _pages/barrel-district.html
   label: Barrel District
