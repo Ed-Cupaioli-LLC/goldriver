@@ -3,23 +3,27 @@
       <div class='logo'> {% include footer-logo.html %}</div>
      
       <div class='links'>
-          <a>GOLD RIVER DISTILLERY</a>
-          <a>TASTING ROOM</a>
-          <a>SPIRITS</a>
-          <a>BARREL DISTRICT</a>
-          <a>PRIVATE LABELING</a>
+          <a href="{{ '/' | relative_url }}">HOME</a>
+          <a href="{{ '/tasting' | relative_url }}">TASTING ROOM</a>
+          <a href="{{ '/spirits' | relative_url }}">SPIRITS</a>
+          <a a href="{{ '/barrel-district' | relative_url }}">BARREL DISTRICT</a>
+          <a href="{{ '/private-labeling' | relative_url }}">PRIVATE LABELING</a>
+          <a href="{{ '/where-to-buy' | reltaive_url }}">WHERE TO BUY</a>
       </div>
       <div class='location'>
-          <p>11460 SUNRISE GOLD CIR. C </p>
-          <p>RANCHO CORDOVA, CA</p>
-          <p>95742</p>
-          <p>(916) 476-3868</p>
+          <a href='https://www.google.com/maps/place/Gold+River+Distillery,+11460+Sunrise+Gold+Cir+c,+Rancho+Cordova,+CA+95742/@38.5982544,-121.2629025,17z/data=!4m2!3m1!1s0x809add6020d65305:0x507a3165113bd523'>
+          <p class='footer-p'>11460 SUNRISE GOLD CIR. STE C <br>
+                  RANCHO CORDOVA, CA 95742
+          </p>
+          </a>
+
+          <p class='footer-p'>(916) 476-3868</p>
       </div>
       <div class='social'>
-          <p>FOLLOW US ON</p>
+          <p class='footer-p'>FOLLOW US ON</p>
           <div class='social-icons'> {% include social-links.html %}</div>
-          <p>BAUGHMAN SPIRITS AND BEVERAGE, LLC</p>
-          <p>ALL RIGHTS RESERVED 2020</p>
+          <p class='footer-p'>BAUGHMAN SPIRITS AND BEVERAGE, LLC</p>
+          <p class='footer-p'>ALL RIGHTS RESERVED 2020</p>
       </div>
   
     </div>

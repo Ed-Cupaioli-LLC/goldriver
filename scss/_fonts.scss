@@ -11,5 +11,13 @@ $font-path: 'http://font.com/font';
   font-weight: normal;
   font-style: normal; 
 }
+@font-face {
+  font-family: "Black-Arcade";
+  src: url("../fonts/Black-Arcade.otf") format("opentype"),
+       url("../fonts/Black-Arcade.ttf") format('ttf');
+  font-weight: normal;
+  font-style: normal; 
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap');

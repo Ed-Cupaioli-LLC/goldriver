@@ -1,0 +1,17 @@
+---
+label: Private Labeling
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group
+  name: intro
+  label: intro
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: content
+    label: content

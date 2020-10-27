@@ -1,0 +1,64 @@
+---
+label: Home Page
+hide_body: true
+display_field: layout
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group
+  name: intro
+  fields:
+  - type: text
+    name: header
+    label: Gold Font
+  - type: textarea
+    name: content
+    label: Content Under Gold Heading
+  label: Intro Banner
+- type: field_group
+  name: served-spirits
+  label: served-spirits
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: field_group_list
+    name: list
+    label: list
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: file
+      name: logo
+      label: logo
+    - type: text
+      name: href
+      label: href
+- type: field_group
+  name: craft
+  label: craft
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: content
+    label: content
+  - type: file
+    name: img
+    label: img
+- type: field_group
+  name: celebration
+  label: celebration
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: content
+    label: content
+  - type: file
+    name: img
+    label: img

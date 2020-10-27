@@ -1,6 +1,11 @@
-P{
+.footer-p{
     padding:0;
     margin:0;
+    font-size:14px;
+    font-weight: 400;
+    @include bp-large{
+        text-align: center;
+    }
 }
 #site-footer{
     background-color: black;
@@ -23,38 +28,48 @@ P{
                 align-self: center;
             }
         .logo{
-            margin-right: 55px;
+            margin-right: 40px;
             text-align: left;
             @include bp-large{
                 margin-right: 0;
             }
             .footer_logo{
-                max-width: 300px;
+                max-width: 200px;
             }
         }
         .links{
-            margin-right: 55px;
+            margin-right: 40px;
             text-align: left;
             display: flex;
             flex-direction: column;
-            color: white;
+            color: $white;
             @include bp-large{
                 padding: 20px 0;
                 text-align: center;
                 margin-right: 0;
             }
                 a{
-                    color: white;
+                    line-height: 2;
+                    font-size:14px;
                     font-weight: 400;
+                    color: $white;
+                    &:hover{
+                        color: $yellow;
+                    }
                 }
         }
         .location{
-            margin-right: 55px;
+            margin-right: 40px;
             text-align: left;
             @include bp-large{
                 padding: 20px 0;
                 text-align: center;
                 margin-right: 0;
+            }
+            .footer-p{
+                &:hover{
+                    color: $yellow;
+                }
             }
         }
         .social{
@@ -68,9 +83,19 @@ P{
                 display: flex;
                 flex-direction: row;
                 padding: 10px 0 ;
+                
                 @include bp-large{
                     justify-content: center;
                 }
+                a img:last-child {
+                    display: none;  
+                  }
+                  a:hover img:last-child {
+                    display: block;  
+                  }
+                  a:hover img:first-child {
+                    display: none;  
+                  }
                 .social-logo{
                     width: 42px;
                     height:42px;
@@ -86,10 +111,12 @@ P{
         margin: 0 auto;
         padding-bottom: 40px 0;;
          .warning{
+            color: $white;
             padding-top: 40px;
             line-height: 1.7em;
             font-weight: 500;
-            color: #666;
+            color: $white;
+            font-size: 15px;
             font-weight: 300;
             padding-bottom: 50px;
         }

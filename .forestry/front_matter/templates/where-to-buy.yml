@@ -1,0 +1,56 @@
+---
+label: Where to Buy
+hide_body: true
+display_field: layout
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group
+  name: intro
+  fields:
+  - type: text
+    name: title
+    label: Blue Header
+  - type: text
+    name: ledger
+    label: Shopping Ledger
+  label: Retail Stores Banner
+- type: field_group
+  name: online
+  label: 'Online Store '
+  fields:
+  - type: text
+    name: title
+    label: Online Header Blue
+  - type: file
+    name: spirit-hub-logo
+    label: Spirit Hub Logo
+  - type: text
+    name: info
+    label: Spirit Hub Information
+  - type: text
+    name: link
+    label: Link to Spirit Hub
+  - type: textarea
+    name: body
+    label: 'Online Shopping Info '
+- type: field_group
+  name: location
+  label: California Retail Stores
+  fields:
+  - type: field_group_list
+    name: list
+    fields:
+    - type: text
+      name: name
+      label: Name
+    - type: text
+      name: location
+      label: Location
+    label: List of chains that carry Wheelhouse Spirits
+- type: textarea
+  name: ledger
+  label: 'Ledger for Shopping '
+pages:
+- _pages/where-to-buy.html

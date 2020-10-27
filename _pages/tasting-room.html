@@ -1,33 +1,46 @@
 ---
 title: Tasting Page
 layout: default
-permalink: /tasting
+permalink: "/tasting"
 css: tasting
-
 header:
-    img: "/img/tasting-room/'wiskeyglasses.png"
+  img: "/img/tasting-room/'wiskeyglasses.png"
 covid:
-    header: COVID-19 UPDATE
-    content: "The safety of our visitors, communities, employees and their families is our number one priority during the coronavirus (COVID-19) pandemic. \n
-    <br>
-    <br>
-Governor Gavin Newsom announced on June 5 that California tasting rooms may reopen where permitted by counties and issued state guidance for the health and safety of visitors and employees. Please check back for updates on our re-opening, we are looking forward to welcoming you back."
-tasting-room-img: '/img/tasting-room/tastingroom-logo.png'
+  header: COVID-19 UPDATE
+  content: "The safety of our visitors, communities, employees and their families
+    is our number one priority during the coronavirus (COVID-19) pandemic. \n <br>
+    <br> Governor Gavin Newsom announced on June 5 that California tasting rooms may
+    reopen where permitted by counties and issued state guidance for the health and
+    safety of visitors and employees. Please check back for updates on our re-opening,
+    we are looking forward to welcoming you back."
+tasting-room-img: "/img/tasting-room/tastingroom-logo.png"
 tasting-room:
-    header: TASTING ROOM & STORE HOURS
-    list:
-    - time: 'Wednesday By Appointment Only'
-    - time: 'Friday 4-7 PM'
-    - time: 'Saturday 11-3 PM'
-    - time: 'Sunday 12-4 PM'
-    - time: 'Call Ahead Number: (916)-476-3868'
-
-    header2: VISIT THE TASTING ROOM
-    list-location: 
-    - location: Gold River Distillery Tasting Room
-    - location: 11460 Sunrise Gold Circle, Suite C
-    - location: Rancho Cordova, CA 95742
-button: 'https://www.google.com/maps/place/Gold+River+Distillery,+11460+Sunrise+Gold+Cir+c,+Rancho+Cordova,+CA+95742/@38.5982544,-121.2629025,17z/data=!4m2!3m1!1s0x809add6020d65305:0x507a3165113bd523'
+  header: TASTING ROOM & STORE HOURS
+  list:
+  - time: Wednesday By Appointment Only
+  - time: Friday 4-7 PM
+  - time: Saturday 11-3 PM
+  - time: Sunday 12-4 PM
+  - time: 'Call Ahead Number: (916) 476-3868'
+  header2: VISIT THE TASTING ROOM
+  list-location:
+  - location: Gold River Distillery Tasting Room
+  - location: 11460 Sunrise Gold Circle, Suite C
+  - location: Rancho Cordova, CA 95742
+button: https://www.google.com/maps/place/Gold+River+Distillery,+11460+Sunrise+Gold+Cir+c,+Rancho+Cordova,+CA+95742/@38.5982544,-121.2629025,17z/data=!4m2!3m1!1s0x809add6020d65305:0x507a3165113bd523
+intro:
+  title: ''
+  ledger: ''
+online:
+  title: ''
+  spirit-hub-logo: ''
+  info: ''
+  link: ''
+  body: ''
+button-image-yellow: ''
+location:
+  list: []
+ledger: ''
 
 ---
 <div id='tasting-info-page'>
@@ -38,7 +51,7 @@ button: 'https://www.google.com/maps/place/Gold+River+Distillery,+11460+Sunrise+
             <div class='top-left dot'></div>
             <div class='bottom-right dot'></div>
             <div class='bottom-left dot'></div>
-            <img class='header-img-logo' src='{{ page.tasting-room-img  | relative_url }}' />
+            <h1 class= 'black-arcade-header'>TASTING ROOM</h1>
         </div>
     </div>
        
@@ -48,13 +61,13 @@ button: 'https://www.google.com/maps/place/Gold+River+Distillery,+11460+Sunrise+
 
 
     <div class='intro-banner'>
-            <p class='intro'><span class='gold-heading font-header'>{{ page.covid.header }}</span>{{ page.covid.content }}</p>       
+            <p class='header-p'><span class='gold-heading span-header '>{{ page.covid.header }}</span><br>{{ page.covid.content }}</p>       
     </div>
 
     <div class=tasting-room>
         <div class='content'>
         <div class='hours'>
-            <h1 class='header'> {{ page.tasting-room.header }} </h1>
+            <h1> {{ page.tasting-room.header }} </h1>
             <div>
              {% for day in page.tasting-room.list %}
                 <p class='info'> {{ day.time }}</p>
@@ -62,17 +75,17 @@ button: 'https://www.google.com/maps/place/Gold+River+Distillery,+11460+Sunrise+
         </div>
         </div>
         <div class='hours'>
-            <h1 class='header'> {{ page.tasting-room.header2 }} </h1>
+            <h1> {{ page.tasting-room.header2 }} </h1>
             <div >
              {% for loc in page.tasting-room.list-location %}
                 <p class='info'> {{ loc.location }}</p>
             {% endfor %}
         </div>
         </div>
-        <button class='directions' href='{{ page.button }}' > Get Directions</button>
+        <button class='directions' > <a href='{{ page.button }}'> Get Directions</a></button>
         </div>
 
-        <div class='map-view background-image'> </div>
+        <a class='map' href='{{ page.button }}'><div class='map-view background-image'> </div></a>
     </div>
    
 </div>

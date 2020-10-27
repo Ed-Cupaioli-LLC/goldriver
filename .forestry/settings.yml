@@ -1,0 +1,43 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: 
+webhook_url: 
+sections:
+- type: document
+  path: _pages/private-labeling.html
+  label: Private Labeling
+- type: document
+  path: _pages/barrel-district.html
+  label: Barrel District
+- type: document
+  path: _pages/home.html
+  label: Home Page
+- type: document
+  path: _pages/tasting-room.html
+  label: Tasting Room
+- type: document
+  path: _pages/where-to-buy.html
+  label: Where To Buy
+- type: directory
+  path: _products
+  label: Products
+  create: documents
+  match: "**/*"
+  templates:
+  - product-page
+upload_dir: img
+public_path: "/img"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - JEKYLL_ENV=staging
+  preview_output_directory: _site
+  install_dependencies_command: bundle install --path vendor/bundle
+  preview_docker_image: forestryio/ruby:2.6
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
+    -d _site

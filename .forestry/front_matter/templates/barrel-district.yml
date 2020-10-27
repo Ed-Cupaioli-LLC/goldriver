@@ -1,0 +1,90 @@
+---
+label: Barrel District
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group
+  name: intro
+  label: intro
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: content
+    label: content
+- type: field_group
+  name: brewery-locations
+  label: brewery-locations
+  fields:
+  - type: field_group
+    name: micro-distillery
+    label: micro-distillery
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: field_group_list
+      name: list
+      label: list
+      fields:
+      - type: text
+        name: name
+        label: name
+      - type: text
+        name: location
+        label: location
+      - type: text
+        name: site
+        label: site
+      - type: text
+        name: url
+        label: url
+      - type: text
+        name: hours
+        label: hours
+  - type: field_group
+    name: craft-breweries
+    label: craft-breweries
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: field_group_list
+      name: list
+      label: list
+      fields:
+      - type: text
+        name: name
+        label: name
+      - type: text
+        name: location
+        label: location
+      - type: text
+        name: site
+        label: site
+      - type: text
+        name: url
+        label: url
+      - type: text
+        name: hours
+        label: hours
+  - type: field_group
+    name: meadery
+    label: meadery
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: field_group_list
+      name: list
+      label: list
+      fields:
+      - type: text
+        name: name
+        label: name
+      - type: text
+        name: location
+        label: location

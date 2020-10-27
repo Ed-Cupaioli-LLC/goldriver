@@ -1,39 +1,155 @@
 @import "vars.scss";
 @import "mixins.scss";
+@import "global.scss";
 
 #spirits{
+    -webkit-font-smoothing: antialiased;
     .header-image{
-        background-image:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/spirits/spirits-pour.png");   
+        background-image: linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.82) 100%), url(../img/spirits/spirits-pour.jpg);   
     }
     .products{
-        padding-top: 60px;
-        padding-bottom: 60px;
+      
         display: flex;
-        flex-direction: row;
-        .image{
-            width: 50%;
-        }
-        .description{
-            width: 50%;
-            .curbside-button{
-                align-self: center;;
+        flex-direction: column;
+        .product-layout{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            padding: 60px 40px;
+            @include bp-large{
+                flex-direction:column;
+                padding: 60px 100px;
             }
-        }
-        @include bp-large {
-            flex-direction: column;
+            @include bp-small{
+                flex-direction:column;
+                padding: 60px 40px;
+            }
             .image{
-                width: 100%;
+                width:500px;
+                align-self:center;
+                @include bp-large{
+                    width:600px;
+                    padding-bottom: 50px;
+                }
+                @include bp-small{
+                    width:300px;
+                }
             }
             .description{
-                width: 100%;
-                padding: 0 40px;
-                .p-bold{
-                    text-align: center;
+                width: 50%;
+                align-self: center;
+                @include bp-large{
+                    width: 100%;
                 }
-                
-    
+                p{
+                    color: $black;
+                    padding: 0 40px;
+                    @include bp-large{
+                        padding:0;
+                    }
+                }
+                .p-bold{
+                    padding: 0  40px 20px 40px;
+                    @include bp-large{
+                        text-align: center;
+                    }
+                }
+                .button-yellow{
+                    margin-left: 40px;
+                    @include bp-large{
+                        margin-left: 0;
+                    }
+                }
+            }
+            
         }
+    
+    } 
+    .buy{
+        background-color: $blue;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 60px 25px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      
+        .buy-content{
+         text-align: center;
+         max-width: 60%;
+         margin-bottom: 30px;
+         @include bp-medium{
+             max-width: 100%;
+             margin-bottom: 20px;
+         }
+        }
+        
     }
+    .medals{
+        background-image:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/background/wineglassesbw.png");   
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        padding: 100px 0;
+        @include bp-large{
+            height: 1150px;
+        }
+        .medals-header{
+            max-width: 80%;
+            padding-bottom: 10px;
+            font-size: 38px;
+            @include bp-small{
+                max-width: 80%;
+                padding-bottom: 10px;
+                font-size: 34px;
+                margin: 0 12% 30px;
+            }
+        }
+        .main-medals-layout{
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            @include bp-large{
+                flex-direction: column;
+            }
+            .medal{
+                display:grid;
+                max-width: 80%;
+                padding: 20px 10px;
+                .medal-name{
+                    font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+                    padding-left: 20px;
+                    line-height: 1em;
+                    font-weight: 500;
+                    font-size: 26px;
+                    grid-column: 2/ span 2;
+                    grid-row: 1 / 2;
+                    align-self: end;
+                }
+                .medal-type{
+                    padding-left: 20px;
+                    grid-column: 2/ span 2;
+                    font-weight: 300;
+                    font-size: 21px;
+                    line-height: 2.1em;
+                }
+                .medal-img{
+                   width: 150px;
+                   grid-column: 1/ span 1;
+                   grid-row: 1 / 3;
+                   align-self: center;
+                   @include bp-large{
+                       width:250px;
+                   }
+                   @include bp-small{
+            
+                    width: 111px;
+                }
+                }
+            }
+        }   
+
     }
    
 }

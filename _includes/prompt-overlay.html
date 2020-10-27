@@ -1,0 +1,17 @@
+<div id="prompt-overlay">
+    <div class="close-prompt">&times;</div>
+    
+    <div class="prompt-content">
+      <div class="site-logo">
+          <img  class='logo' loading="lazy" alt="site-logo" src="{{ '/img/logos-icons/gr_logo.png' | relative_url }}">
+      </div>
+      <div class="age-gate prompt-modal active">
+        <h4>Are you over 21 years of age?</h4>
+        <div class="btn-row">
+            {% include button.html link="#yes" text="Yes" color="white"  src="/img/logos-icons/checkmark.png" %} 
+           
+            {% include button.html link="#no" text="No" color="white" src=" /img/logos-icons/x-mark.png" %}   
+        </div>
+      </div>
+    </div>
+  </div>

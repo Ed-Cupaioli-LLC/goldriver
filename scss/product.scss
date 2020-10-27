@@ -1,0 +1,61 @@
+@import "vars.scss";
+@import "mixins.scss";
+@import "global.scss";
+
+#product{
+    p{
+        color: $black;
+        padding: 0 0 20px 0;
+        margin-bottom: 10px;
+        padding: 0 40px;
+        @include bp-large {
+            width: 100%;
+            padding: 0;   
+        }
+    }
+    .header-image{
+        background-image: linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.82) 100%),url("../img/tasting-room/wiskeyglasses.png");   
+    }
+    .products{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        .product-layout{
+            display: flex;
+            flex-direction:row;
+            padding: 60px 40px;
+            @include bp-large{
+                flex-direction:column;
+                padding: 60px 100px;
+            }
+            @include bp-small{
+                flex-direction:column;
+                padding: 60px 40px;
+            }
+            .image{
+                width:400px;
+                align-self:center;
+                @include bp-large{
+                    width:350px;
+                    padding-bottom: 20px;
+                }
+            }
+            .description{
+                width: 50%;
+                align-self: center;
+                @include bp-large{
+                    width: 100%;
+                }
+                .button-yellow{
+                    margin-left: 40px;
+                    @include bp-large{
+                        margin-left: 0;
+                    }
+                }
+            }
+            
+        }
+    
+    } 
+}

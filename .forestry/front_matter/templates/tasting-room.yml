@@ -1,0 +1,44 @@
+---
+label: Tasting Room
+hide_body: true
+display_field: layout
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group
+  name: covid
+  label: covid
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: content
+    label: content
+- type: field_group
+  name: tasting-room
+  label: tasting-room
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: field_group_list
+    name: list
+    label: list
+    fields:
+    - type: text
+      name: time
+      label: time
+  - type: text
+    name: header2
+    label: header2
+  - type: field_group_list
+    name: list-location
+    label: list-location
+    fields:
+    - type: text
+      name: location
+      label: location
+pages:
+- _pages/tasting-room.html

@@ -1,18 +1,38 @@
-<nav>
-    <div>{% include nav-logo.html %}</div>
-    <div class='dropdown-menu'>
-        <div>{% include hamburger.html %}</div>
-        <ul>
-            <li><a href="#">Gold River Distillery</a></li> 
-            <li> <a href="#">Tasting Room </a></li> 
-            <li><a href="#">Spirits</a></li> 
-            <li><a href="#">Barrel District</a></li> 
-            <li><a href="#">Private Labeling</a></li> 
-            <li><a href="#">Where to Buy</a></li> 
-            <li><a href="#">Twitter</a></li> 
-            <li><a href="#">Insta</a></li> 
-            <li><a href="#">Shopping Cart </a></li> 
+<nav id='nav'>
+    <div class='button'>{% include nav-logo.html %}</div>
+    <div class='large-nav'>
+        <div class='link-large'>
+            <li ><a class='large-link'href="{{ '/' | relative_url }}">HOME</a></li> 
+            <li > <a class='large-link'href="{{ '/tasting' | relative_url }}">Tasting Room </a></li> 
+            <li ><a class='large-link' href="{{ '/spirits' | relative_url }}">Spirits</a></li> 
+            <li ><a class='large-link' href="{{ '/barrel-district' | relative_url }}">Barrel District</a></li> 
+            <li ><a class='large-link' href="{{ '/private-labeling' | relative_url }}">Private Labeling</a></li> 
+            <li ><a class='large-link' href="{{ '/where-to-buy' | reltaive_url }}">Where to Buy</a></li> 
+            <span class='snipcart-checkout'><span class='snipcart-items-count'></span><i class="fa fa-shopping-cart "></i></span>
+           </div>
 
+    </div>
+    
+    <div class='dropdown-menu' id='sidenav'>
+        <div>{% include hamburger.html %}</div>
+        <ul style='display:none' >
+            <div class='header-links'>
+                <div><a class="exit"id='1'> &times</a></div>
+                <div class='snipcart-checkout'><span class='snipcart-items-count'></span><i class="fa fa-shopping-cart "></i></div>
+                
+            </div>
+            <div class='image-container'><img  alt='header image' src="{{ '/img/logos-icons/gr_logo.png' | relative_url }}"></div>
+           <div class='link'>
+            <li><a href="{{ '/' | relative_url }}">HOME</a></li> 
+            <li> <a href="{{ '/tasting' | relative_url }}">Tasting Room </a></li> 
+            <li><a href="{{ '/spirits' | relative_url }}">Spirits</a></li> 
+            <li><a href="{{ '/barrel-district' | relative_url }}">Barrel District</a></li> 
+            <li><a href="{{ '/private-labeling' | relative_url }}">Private Labeling</a></li> 
+            <li><a href="{{ '/where-to-buy' | reltaive_url }}">Where to Buy</a></li> 
+           </div>
+            <div class='social-links'>
+                {% include social-links.html %}
+            </div>
         </ul>
 
     </div>

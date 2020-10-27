@@ -1,5 +1,98 @@
+//Color Variables
+$yellow:  #D5A75B ;
+$white: #fff;
+$blue: #4d5f8a ;
+$black: #000;
 
-//borders for all header images
+//fonts 
+h1{
+    color: $white;
+    font-family: 'Aleo',Georgia,"Times New Roman",serif;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @include bp-medium{
+        font-size: 26px;
+    }
+}
+.span-header{
+    font-family: 'Aleo',Georgia,"Times New Roman",serif;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 1px;
+    @include bp-medium{
+        font-size: 26px;
+        
+    }
+}
+p{
+    font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: $white;
+    -webkit-font-smoothing: antialiased;
+
+}
+//intro paragraph in header font 
+.header-p{
+    border-top: $white solid 1px;
+    border-bottom: $white solid 1px;
+    padding: 50px 0;
+}
+.a-white{
+    color:$white;
+}
+.black-arcade-header{
+    font-family: 'Black-Arcade';
+    margin: 0;
+    padding-left: 2rem;
+    line-height: 2;
+    font-size: 40px;
+    
+    @include bp-small{
+        margin: 0 auto;
+        padding-left: 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+}
+.gold-heading{
+    color: $yellow;
+    font-size: 48px;
+    line-height: 0;
+    @include bp-large{
+        display: block; 
+        line-height: 1;
+    }
+    @include bp-medium{
+        font-size: 42px; 
+    }
+    @include bp-small{
+        font-size: 26px;
+    }
+}
+.blue-heading{
+    color: $blue ;
+    font-size: 48px;
+    line-height: 0;
+    @include bp-large{
+        display: block; 
+        line-height: 1;
+    }
+    @include bp-medium{
+        font-size: 42px; 
+    }
+    @include bp-small{
+        font-size: 30px;
+    }
+}
+//header image 
 .header-image{
     position:relative;
     height: 540px;
@@ -16,31 +109,37 @@
 
     
 }
+//image setup background
+.background-image{
+    background-size:cover; 
+    background-position:center; 
+    background-repeat:no-repeat; 
+    padding: 15px;
+
+}
+//Borders around header image 
 .yellow-border{
-    border: solid 1px #dbb778;
-    height: 95%;
-    width: 95%;
+    border: solid 2px $yellow;
+    height: 100%;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
 }
 .white-border{
-    border: solid 2px white;
-    height: 96%;
-    width: 98%;
+    border: solid 2px $white;
+    height: 100%;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: flex-end;
     align-content: flex-end;
-    position:absolute;
-    @include bp-large{
-        width: 96%;
-    }
-    @include bp-small{
-        height:94%;
-    }
+    position:relative;
+    z-index: 1;
 }
 .top-right{
     position: absolute;
@@ -66,103 +165,82 @@
 .dot {
     width: 8px;
     height: 8px;
-    background: white;
+    background: $white;
     border-radius: 50%;
     margin: 10px;
     }
     .header-img-logo{
-        width: 420px;
-        margin: 0;
-        padding: 10px;
+        position: absolute;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        width: 450px;
+        @include bp-small{
+            width: 250px;
+        }
     }
 
-//image setup background
-.background-image{
-    background-size:cover; 
-    background-position:center; 
-    background-repeat:no-repeat; 
 
-}
 
 //intro div to page 
-
 .intro-banner{
     font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url("../img/background/black-background.png")!important;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url(../img/background/black-leather.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 60px 10%;
     background-size: cover;
 }
-.intro{
+.intro-banner-white {
+    font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 15%;
+    @include bp-small{
+        padding: 60px 10%;
+    }
+}
+
+.intro-black-font{
     font-size: 19px;
     font-weight: 300;
-    padding: 80px 0;
-    border-top: white solid 1px;
-    border-bottom: white solid 1px;
+    padding: 30px 0;
     line-height: 2;
     letter-spacing: 0.5px;
-    color: #666;
     text-align: left;
-    color: #ffffff;
+    color: $black;
+
 
 }
-.gold-heading{
-    color: #e7b560;
-    font-size: 48px;
-    line-height: 0;
-    @include bp-large{
-        display: block; 
-        line-height: 1;
-    }
-    @include bp-medium{
-        font-size: 42px; 
-    }
+
+.blue-heading-main{
+    color: $blue ;
+    margin-top: 50px;
+    padding: 10px 0;
+    line-height:0;
+    font-size: 48px;;
     @include bp-small{
-        font-size: 26px;
+        font-size: 30px;
     }
 }
-
-//elemets font
-.font-header{
-    font-family: 'Aleo',Georgia,"Times New Roman",serif;
-    font-weight: 700;
-    font-size: 35px;
-    letter-spacing: 1px;
-    line-height: 1.7em;
-    @include bp-medium{
-        font-size: 26px;
-    }
-}
-.font-paragraph{
-    font-family: 'Noto Sans JP';
-    font-weight: 300;
-    font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 2;
-    letter-spacing: 1px;
-
-}
-
-///letter fonts 
 
 .blue-header{
-        color: #4d5f8a;
+    font-family: 'Aleo',Georgia,"Times New Roman",serif;
+        color: $blue;
         padding: 0 40px;
-        padding-right: 200px;
         @include bp-large {
             width: 100%;
             padding: 0;
              
     }
 }
+//font white - homepage
 .paragraph-p{
-    color: black;
+    color: $black;
     padding: 0 0 20px 0;
     margin-bottom: 10px;
     padding: 0 40px;
-    padding-right: 200px;
     @include bp-large {
         width: 100%;
         padding: 0;   
@@ -182,3 +260,135 @@
     }
 
 }
+.details{
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: $black;
+    text-align: left;
+    color: $black;
+    @include bp-small{
+        font-size: 14px;
+    }
+}
+
+//button with logos
+
+.button-yellow{
+    background: $yellow;
+    border: 3px solid $yellow;
+    color: $white;
+    padding: 0;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    &:hover {
+        background-color: darken($yellow, 15%);
+     }
+    .button-layout{
+        display: flex;
+        flex-direction: row;
+        .button-image{
+            width: 40px;
+            background-color: $white;
+            border-radius: 15% 0 0 15%;
+            .interior-cart-image{
+                padding: 5px;  
+            }   
+        }
+        .custom{
+            align-self: center;    
+            border-color: transparent $white;
+            border-style: solid;
+            border-width: 6px 0px 6px 6px;
+            height: 4px;
+        }
+        .button-text{
+            font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+            color: $black;
+            margin: auto;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+.button-blue{
+    background: $blue;
+    border: 3px solid $blue;
+    color: $white;
+    padding: 0;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    &:hover {
+        background-color: darken($blue, 15%);
+     }
+    .button-layout{
+        display: flex;
+        flex-direction: row;
+        .button-image{
+            width: 40px;
+            background-color: $white;
+            border-radius: 15% 0 0 15%;
+            .interior-cart-image{
+                padding: 5px;  
+            }   
+        }
+        .custom{
+            align-self: center;    
+            border-color: transparent $white;
+            border-style: solid;
+            border-width: 6px 0px 6px 6px;
+            height: 4px;
+        }
+        .button-text{
+            font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+            margin: auto;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+.button-white{
+    background: $white ;
+    border: 3px solid $white ;
+    color: $white;
+    padding: 0;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    &:hover {
+        background-color: darken($white, 15%);
+     }
+    .button-layout{
+        display: flex;
+        flex-direction: row;
+        .button-image{
+            width: 40px;
+            background-color: $blue ;
+            border-radius: 15% 0 0 15%;
+            .interior-cart-image{
+                padding: 5px;  
+            }   
+        }
+        .custom{
+            align-self: center;    
+            border-color: transparent $blue ;
+            border-style: solid;
+            border-width: 6px 0px 6px 6px;
+            height: 4px;
+        }
+        .button-text{
+            font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
+            margin: auto;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $blue ;
+        }
+    }
+}
+
