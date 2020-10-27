@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: _pages/barrel-district.htm
+  label: Barrel District
+  match: "**/*"
+- type: document
   path: _pages/home.html
   label: Home Page
 - type: document
