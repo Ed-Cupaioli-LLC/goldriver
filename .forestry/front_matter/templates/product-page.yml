@@ -23,10 +23,10 @@ fields:
     - gin
     - 'applejack '
     - 'hand-sanitizer '
-    - 'whiskey '
     - vodka
     - bourbon
     - absinthe
+    - whiskey
     source:
       type: simple
       section: products
