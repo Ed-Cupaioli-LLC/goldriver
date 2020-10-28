@@ -14,22 +14,17 @@ fields:
     label: Hours of Operation
   - type: field_group_list
     name: list
-    label: list
     fields:
     - type: text
       name: time
       label: time
     hidden: false
+    label: Hours
+    description: You can update existing hours here or add additional hours of operation
+      using add hours button.
   - type: text
     name: header2
     label: 'Location of Tasting Room '
-  - type: field_group_list
-    name: list-location
-    label: list-location
-    fields:
-    - type: text
-      name: location
-      label: location
   label: Hours and Location
 pages:
 - _pages/tasting-room.html
