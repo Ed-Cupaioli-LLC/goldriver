@@ -26,3 +26,5 @@ fields:
       label: 'Name, address, phone number '
       description: 'List of stores that carry Gold River spirits '
     label: List of cities
+pages:
+- _pages/where-to-buy.html
