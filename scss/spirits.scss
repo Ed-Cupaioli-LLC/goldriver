@@ -79,6 +79,7 @@
          text-align: center;
          max-width: 60%;
          margin-bottom: 30px;
+         color: $white;
          @include bp-medium{
              max-width: 100%;
              margin-bottom: 20px;

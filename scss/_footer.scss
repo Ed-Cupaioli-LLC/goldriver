@@ -67,6 +67,7 @@
                 margin-right: 0;
             }
             .footer-p{
+                color: $white;
                 &:hover{
                     color: $yellow;
                 }
@@ -77,6 +78,9 @@
             @include bp-large{
                 text-align: center;
                 padding: 20px 0; 
+            }
+            .footer-p{
+                color: $white;
             }
         }
             .social-icons{
