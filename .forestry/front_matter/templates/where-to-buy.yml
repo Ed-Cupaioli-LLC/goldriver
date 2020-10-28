@@ -31,5 +31,7 @@ fields:
     label: 'List of cities '
     config:
       labelField: name
+    description: 'Here is a list of all the cities that carry Gold River products.
+      You can edit l and add new locations as well as new cities. '
 pages:
 - _pages/where-to-buy.html
