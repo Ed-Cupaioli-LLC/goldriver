@@ -31,7 +31,7 @@ fields:
     label: City Location
     config:
       labelField: name
-    description: Here is a list of all the cities that carry Gold River products.
-      You can edit and add new locations as well as new cities.
+    description: Here is a list of all the cities that carry your products. You can
+      edit and add new locations as well as new cities.
 pages:
 - _pages/where-to-buy.html
