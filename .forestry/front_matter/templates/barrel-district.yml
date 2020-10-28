@@ -42,11 +42,11 @@ fields:
         You can add new location or edit existing locations.
   - type: field_group
     name: craft-breweries
-    label: 'Craft Breweries '
+    label: 'Craft Breweries List '
     fields:
     - type: text
       name: title
-      label: Craft Breweries List
+      label: 'Craft Breweries '
     - type: field_group_list
       name: list
       label: Location
