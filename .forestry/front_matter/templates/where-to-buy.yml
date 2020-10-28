@@ -30,6 +30,6 @@ fields:
         House Pub (G) 614 Sutter Street, Folsom, CA 95630 (916) 355-8586<br><br></em>'
     label: 'List of cities '
     config:
-      labelField: textarea
+      labelField: name
 pages:
 - _pages/where-to-buy.html
