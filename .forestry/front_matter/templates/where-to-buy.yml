@@ -24,10 +24,11 @@ fields:
         schema:
           format: markdown
       label: New Location
-      description: 'Here is a list of all the markets that carry GR products. When
-        adding multiple locations makes sure there is a line between entries. <br><br>Example:
-        <br><em>BevMo! (G) 2595 Iron Point Road, Folsom, CA 95630 (916) 817-2596<br><br>Power
-        House Pub (G) 614 Sutter Street, Folsom, CA 95630 (916) 355-8586<br><br></em>'
+      description: 'Here is a list of all the markets that carry your products. When
+        adding multiple locations makes sure there is an empty line between entries.
+        <br><br>Example: <br><em>BevMo! (G) 2595 Iron Point Road, Folsom, CA 95630
+        (916) 817-2596<br><br>Power House Pub (G) 614 Sutter Street, Folsom, CA 95630
+        (916) 355-8586<br><br></em>'
     label: City Location
     config:
       labelField: name
