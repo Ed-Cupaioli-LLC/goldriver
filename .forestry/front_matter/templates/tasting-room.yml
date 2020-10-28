@@ -9,9 +9,6 @@ fields:
 - type: field_group
   name: tasting-room
   fields:
-  - type: text
-    name: header
-    label: Hours of Operation
   - type: field_group_list
     name: list
     fields:
