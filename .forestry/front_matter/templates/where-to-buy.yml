@@ -50,9 +50,6 @@ fields:
   - type: textarea
     name: body
     label: body
-- type: file
-  name: button-image-yellow
-  label: button-image-yellow
 - name: textarea
   type: textarea
   default: ''
@@ -73,8 +70,14 @@ fields:
     - type: text
       name: name
       label: name
-    - type: text
-      name: textarea
+    - name: textarea
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
       label: textarea
 - type: textarea
   name: ledger
