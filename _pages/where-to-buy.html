@@ -74,8 +74,7 @@ location:
 
       Save Mart (G)(V) 9160 Elk Grove Florin Rd., Elk Grove, CA 95624 (916) 685-5525
 
-      Total Wine (G)(V) 7707 Laguna Blvd. Suite 140, Elk Grove, California, 95758 (916)
-      479-6079<br>
+      Total Wine (G)(V) 7707 Laguna Blvd. Suite 140, Elk Grove, California, 95758 (916) 479-6079
   - name: FAIR OAKS, CA
     textarea: |-   
      Fair Oaks Village Market (G) 4140 Sunrise Blvd., Fair Oaks, CA 95628
@@ -332,7 +331,7 @@ ledger: "(G) = Carries Wheel House American Dry Gin <br> (V) = Carries Wheel Hou
         {% for loc in page.location.list %}
         <div class='brewery-type'>
             <h2 class='sub-header'> {{ loc.name }}</h2>
-            {{ loc.textarea | markdownify }}
+            <div>{{ loc.textarea | markdownify }}</div>
         </div>
       
         {% endfor %}    
