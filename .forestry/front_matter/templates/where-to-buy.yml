@@ -4,72 +4,17 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
-- type: text
-  name: layout
-  label: layout
-- type: text
-  name: permalink
-  label: permalink
-- type: text
-  name: css
-  label: css
-- type: field_group
-  name: header
-  label: header
-  fields:
-  - type: file
-    name: img
-    label: img
-- type: field_group
-  name: intro
-  label: intro
-  fields:
-  - type: text
-    name: title
-    label: title
-  - type: text
-    name: ledger
-    label: ledger
-- type: field_group
-  name: online
-  label: online
-  fields:
-  - type: text
-    name: title
-    label: title
-  - type: file
-    name: spirit-hub-logo
-    label: spirit-hub-logo
-  - type: text
-    name: info
-    label: info
-  - type: text
-    name: link
-    label: link
-  - type: textarea
-    name: body
-    label: body
-- name: textarea
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: 'Locations in that city '
+  label: 'Where to buy '
 - type: field_group
   name: location
-  label: location
+  label: 'List of cities that carry Gold River spirits '
   fields:
   - type: field_group_list
     name: list
-    label: list
     fields:
     - type: text
       name: name
-      label: name
+      label: City name
     - name: textarea
       type: textarea
       default: ''
@@ -78,7 +23,6 @@ fields:
         wysiwyg: false
         schema:
           format: markdown
-      label: textarea
-- type: textarea
-  name: ledger
-  label: ledger
+      label: 'Name, address, phone number '
+      description: 'List of stores that carry Gold River spirits '
+    label: List of cities
