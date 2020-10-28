@@ -7,7 +7,7 @@ fields:
   label: 'Where to buy '
 - type: field_group
   name: location
-  label: 'List of cities that carry Gold River spirits '
+  label: List of Cities
   fields:
   - type: field_group_list
     name: list
