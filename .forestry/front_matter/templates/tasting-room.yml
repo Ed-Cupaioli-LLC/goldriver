@@ -22,9 +22,6 @@ fields:
     label: Hours
     description: You can update existing hours here or add additional hours of operation
       using add hours button.
-  - type: text
-    name: header2
-    label: 'Location of Tasting Room '
-  label: Hours and Location
+  label: Hours of Operation
 pages:
 - _pages/tasting-room.html
