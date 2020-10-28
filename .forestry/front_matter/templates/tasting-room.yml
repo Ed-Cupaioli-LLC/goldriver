@@ -5,17 +5,7 @@ display_field: layout
 fields:
 - type: text
   name: title
-  label: title
-- type: field_group
-  name: covid
-  label: covid
-  fields:
-  - type: text
-    name: header
-    label: header
-  - type: textarea
-    name: content
-    label: content
+  label: 'Tasting Room '
 - type: field_group
   name: tasting-room
   label: tasting-room
