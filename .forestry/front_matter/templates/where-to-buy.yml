@@ -53,6 +53,15 @@ fields:
 - type: file
   name: button-image-yellow
   label: button-image-yellow
+- name: textarea
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: 'Locations in that city '
 - type: field_group
   name: location
   label: location
