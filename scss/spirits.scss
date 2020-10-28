@@ -118,7 +118,8 @@
                 max-width: 80%;
                 padding: 20px 10px;
                 @include bp-small{
-                    display:unset;
+                    display:flex;
+                    flex-direction: column;
 
                 }
                 .medal-name{
@@ -132,6 +133,7 @@
                     align-self: end;
                     @include bp-small{
                         padding-left: 0;
+                        order:2;
     
                     }
                 }
@@ -143,6 +145,7 @@
                     line-height: 2.1em;
                     @include bp-small{
                         padding-left: 0;
+                        order:3;
     
                     }
                 }
@@ -155,7 +158,9 @@
                        width:250px;
                    }
                    @include bp-small{
-            
+                    order:1;
+                    padding-bottom: 15px;
+                    align-self: start;
                     width: 111px;
                 }
                 }
