@@ -24,7 +24,10 @@ fields:
         schema:
           format: markdown
       label: 'Name, address, phone number '
-      description: 'List of stores that carry Gold River spirits '
-    label: List of cities
+      description: 'List of stores that carry Gold River spirits in that city. Make
+        sure to add a line break in between entries. Example: <br><br><em>BevMo! (G)
+        2595 Iron Point Road, Folsom, CA 95630 (916) 817-2596<br><br>Power House Pub
+        (G) 614 Sutter Street, Folsom, CA 95630 (916) 355-8586</em>'
+    label: List of cities that carry GR spirits
 pages:
 - _pages/where-to-buy.html
