@@ -7,15 +7,12 @@ fields:
   label: 'Barrel District '
 - type: field_group
   name: brewery-locations
-  label: 'List of Breweries '
+  label: 'List of Local Breweries '
   fields:
   - type: field_group
     name: micro-distillery
     label: 'Micro Distillery List '
     fields:
-    - type: text
-      name: title
-      label: Microdistillery
     - type: field_group_list
       name: list
       fields:
@@ -44,9 +41,6 @@ fields:
     name: craft-breweries
     label: 'Craft Breweries List '
     fields:
-    - type: text
-      name: title
-      label: 'Craft Breweries '
     - type: field_group_list
       name: list
       label: Location
@@ -75,9 +69,6 @@ fields:
     name: meadery
     label: 'Meadery List '
     fields:
-    - type: text
-      name: title
-      label: Meadery
     - type: field_group_list
       name: list
       label: Location
