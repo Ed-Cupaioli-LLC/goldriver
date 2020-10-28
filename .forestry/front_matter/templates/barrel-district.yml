@@ -15,10 +15,9 @@ fields:
     fields:
     - type: text
       name: title
-      label: title
+      label: Microdistillery
     - type: field_group_list
       name: list
-      label: list
       fields:
       - type: text
         name: name
@@ -38,6 +37,7 @@ fields:
       - type: text
         name: hours
         label: hours
+      label: New Location
   - type: field_group
     name: craft-breweries
     label: craft-breweries
