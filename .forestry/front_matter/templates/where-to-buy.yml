@@ -5,34 +5,25 @@ fields:
 - type: text
   name: title
   label: 'Where to buy '
-- type: field_group
-  name: location
-  label: List of Cities
+- name: locations
+  type: field_group_list
   fields:
-  - type: field_group_list
-    name: list
-    fields:
-    - type: text
-      name: name
-      label: City name
-    - name: textarea
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
-        schema:
-          format: markdown
-      label: New Location
-      description: 'Here is a list of all the markets that carry your products. When
-        adding multiple locations makes sure there is an empty line between entries.
-        <br><br>Example: <br><em>BevMo! (G) 2595 Iron Point Road, Folsom, CA 95630
-        (916) 817-2596<br><br>Power House Pub (G) 614 Sutter Street, Folsom, CA 95630
-        (916) 355-8586<br><br></em>'
-    label: City Location
+  - name: city
+    type: text
     config:
-      labelField: name
-    description: Here is a list of all the cities that carry your products. You can
-      edit and add new locations as well as new cities.
+      required: false
+    label: City
+  - name: list
+    type: list
+    config:
+      use_select: false
+      min: 
+      max: 
+    label: Locations
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Cities
 pages:
 - _pages/where-to-buy.html
