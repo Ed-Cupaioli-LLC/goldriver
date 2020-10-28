@@ -33,8 +33,9 @@ p{
     line-height: 2;
     letter-spacing: 0.5px;
     text-align: left;
-    color: $white;
+    color: $black;
     -webkit-font-smoothing: antialiased;
+    margin:0;
 
 }
 //intro paragraph in header font 
@@ -42,6 +43,7 @@ p{
     border-top: $white solid 1px;
     border-bottom: $white solid 1px;
     padding: 50px 0;
+    color: $white;
 }
 .a-white{
     color:$white;
