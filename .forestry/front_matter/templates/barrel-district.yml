@@ -7,11 +7,11 @@ fields:
   label: 'Barrel District '
 - type: field_group
   name: brewery-locations
-  label: 'Brewery Type List '
+  label: 'List of Breweries '
   fields:
   - type: field_group
     name: micro-distillery
-    label: micro-distillery
+    label: 'Micro Distillery List '
     fields:
     - type: text
       name: title
