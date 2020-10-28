@@ -36,7 +36,7 @@ fields:
       name: name
       label: name
     - type: text
-      name: text
+      name: text-area
       label: text
 - type: textarea
   name: ledger
