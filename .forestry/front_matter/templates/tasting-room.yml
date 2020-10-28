@@ -8,7 +8,6 @@ fields:
   label: 'Tasting Room '
 - type: field_group
   name: tasting-room
-  label: tasting-room
   fields:
   - type: text
     name: header
@@ -30,5 +29,6 @@ fields:
     - type: text
       name: location
       label: location
+  label: 'Tasting Room Hours of Operations and Location '
 pages:
 - _pages/tasting-room.html
