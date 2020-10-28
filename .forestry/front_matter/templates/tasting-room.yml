@@ -19,7 +19,7 @@ fields:
     - type: text
       name: time
       label: time
-    hidden: true
+    hidden: false
   - type: text
     name: header2
     label: 'Location of Tasting Room '
@@ -30,6 +30,6 @@ fields:
     - type: text
       name: location
       label: location
-  label: 'Store Hours '
+  label: Hours and Location
 pages:
 - _pages/tasting-room.html
