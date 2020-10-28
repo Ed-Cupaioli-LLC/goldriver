@@ -37,17 +37,19 @@ fields:
       - type: text
         name: hours
         label: hours
-      label: New Location
+      label: Location
+      description: Here is a lis of all the breweries listed under this category.
+        You can add new location or edit existing locations.
   - type: field_group
     name: craft-breweries
-    label: craft-breweries
+    label: 'Craft Breweries '
     fields:
     - type: text
       name: title
-      label: title
+      label: 'Craft Breweries '
     - type: field_group_list
       name: list
-      label: list
+      label: Location
       fields:
       - type: text
         name: name
@@ -67,16 +69,18 @@ fields:
       - type: text
         name: hours
         label: hours
+      description: Here is a lis of all the breweries listed under this category.
+        You can add new location or edit existing locations.
   - type: field_group
     name: meadery
-    label: meadery
+    label: Meadery
     fields:
     - type: text
       name: title
-      label: title
+      label: Meadery
     - type: field_group_list
       name: list
-      label: list
+      label: Location
       fields:
       - type: text
         name: name
@@ -87,5 +91,7 @@ fields:
       - type: text
         name: number
         label: number
+      description: Here is a lis of all the breweries listed under this category.
+        You can add new location or edit existing locations.
 pages:
 - _pages/barrel-district.html
