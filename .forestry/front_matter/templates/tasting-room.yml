@@ -11,7 +11,7 @@ fields:
   fields:
   - type: text
     name: header
-    label: header
+    label: Hours of Operation
   - type: field_group_list
     name: list
     label: list
@@ -21,7 +21,7 @@ fields:
       label: time
   - type: text
     name: header2
-    label: header2
+    label: 'Location of Tasting Room '
   - type: field_group_list
     name: list-location
     label: list-location
