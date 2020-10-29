@@ -132,7 +132,7 @@ insta:
     </div>
     <div class="spirits-logo">
       {% for spirit in page.served-spirits.list %}
-      <a href='{{ spirit.href }}'>
+      <a href="{{ spirit.href | relative_url }}">
       <div class="spirit">
         <img class="bottle-icon" src="{{ spirit.logo  | relative_url }}" />
         <span class="drink-names span-header">{{ spirit.title }} </span>
@@ -153,7 +153,7 @@ insta:
     <div class="home-sacramento">
       <h1 class="blue-header">{{ page.celebration.header }}</h1>
       <p class="paragraph-p font-paragraph">{{ page.celebration.content }}</p>
-      <a href="{{ base }}/spirits/"><button class="button-blue">
+      <a href="{{ '/spirits' | relative_url }}"><button class="button-blue">
         <div class="button-layout">
           <div class="button-image">
             <img
@@ -175,7 +175,7 @@ insta:
     <div class="tasting">
       <h1>{{ page.tasting-room.header}}</h1>
       <p class="tasting-content">{{ page.tasting-room.content }}</p>
-      <a href="{{ base }}/tasting/">
+      <a href="{{ '/tasting' | relative_url }}">
       <button class="button-yellow">
         <div class="button-layout">
           <div class="button-image">
