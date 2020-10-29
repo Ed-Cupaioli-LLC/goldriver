@@ -99,6 +99,8 @@
         animation:  0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         @include bp-small{
             justify-content: unset;
+            padding-top: 2rem;
+            padding-bottom:6rem;
         }
         .header-links{
             display: flex;
@@ -150,15 +152,20 @@
                 }
                 }
         }
+        .container{
+            display: grid;
+            align-content: center;
+            row-gap: 5%;
+            height: 70vh;
+        
         .image-container{
             width:300px;
             margin: 0 auto;
             @include bp-small{
-                width:200px;
+                width:170px;
             }
         }
         .link{
-            padding-top: 40px;
             
             li {
                 font-family: 'Noto Sans JP',Helvetica,Arial,Lucida,sans-serif;
@@ -186,7 +193,6 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding-top: 40px;
             
             a img:last-child {
                     display: none;  
@@ -211,6 +217,7 @@
            
 
         }
+    }
     }
 }
 
