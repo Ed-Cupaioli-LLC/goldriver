@@ -132,7 +132,7 @@ insta:
     </div>
     <div class="spirits-logo">
       {% for spirit in page.served-spirits.list %}
-      <a href="{{ '/spirits.href' | relative_url }}">
+      <a href="{{ spirit.href | relative_url }}">
       <div class="spirit">
         <img class="bottle-icon" src="{{ spirit.logo  | relative_url }}" />
         <span class="drink-names span-header">{{ spirit.title }} </span>
