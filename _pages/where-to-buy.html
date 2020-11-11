@@ -17,14 +17,20 @@ online:
   body: Our craft spirits are also available for purchase online in select locations
     via Spirit Hub. visit our online storefront to see what products are currently
     available.
+  shipping: Only available in Illinois, Florida, New Hampshire, and Nebraska.
+  pickup: Only available in California for pick up at Rancho Cordova Tasting Room.
 button-image-yellow: "/img/logos-icons/yellow-bottle.png"
 locations:
-- city: ANTELOPE, CA
+- date: 1982
   list:
-  - Antelope Liquors (V) 8023 Watt Ave. Antelope, CA 95843, (916) 331-6940
-- city: AUBURN, CA
+  - Ilhan is Born Ilhan Omar is born in Somalia’s capital Mogadishu, the youngest of seven children.
+- date: 1991
+
+
   list:
-  - BevMo! (G) 2745 Bell Rd, Auburn, CA 95603 (530) 745-9855
+  - Sanctuary and Hunger Ilhan’s family fled the country during the Somali Civil War and took sanctuary in a Kenyan refugee camp for four years.
+  
+  
 - city: BREA, CA
   list:
   - Total Wine (V) 471 S Associate Rd, Brea, CA 92821 (714) 672-0323
@@ -251,6 +257,7 @@ textarea: ''
           </div>
         </button>
       </a>
+      <p  class='details spirit-info'>{{ page.online.shipping }}</p>
       <a href="{{ '/spirits' | relative_url }}" >
         <button style='margin-top: 30px' class="button-yellow">
           <div class="button-layout">
@@ -268,6 +275,7 @@ textarea: ''
           </div>
         </button>
       </a>
+      <p  class='details spirit-info'>{{ page.online.pickup }}</p>
   </div>
   <!-- --------------------------------Califoria Locations-------------------------- -->
   <div class='header'>
