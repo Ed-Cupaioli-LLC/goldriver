@@ -17,6 +17,8 @@ online:
   body: Our craft spirits are also available for purchase online in select locations
     via Spirit Hub. visit our online storefront to see what products are currently
     available.
+  shipping: Only available in Illinois, Florida, New Hampshire, and Nebraska.
+  pickup: Only available in California for pick up at Rancho Cordova Tasting Room.
 button-image-yellow: "/img/logos-icons/yellow-bottle.png"
 locations:
 - city: ANTELOPE, CA
@@ -251,6 +253,7 @@ textarea: ''
           </div>
         </button>
       </a>
+      <p  class='details spirit-info'>{{ page.online.shipping }}</p>
       <a href="{{ '/spirits' | relative_url }}" >
         <button style='margin-top: 30px' class="button-yellow">
           <div class="button-layout">
@@ -268,6 +271,7 @@ textarea: ''
           </div>
         </button>
       </a>
+      <p  class='details spirit-info'>{{ page.online.pickup }}</p>
   </div>
   <!-- --------------------------------Califoria Locations-------------------------- -->
   <div class='header'>
