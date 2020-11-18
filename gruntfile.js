@@ -16,17 +16,18 @@ module.exports = function(grunt) {
         files: 'img/*.{png,jpg,gif,jpeg,svg}',
         tasks: ['newer:imagemin:target']
       },
-      uglify: {
+      terser: {
         files: ['js/*.js',"js/min/!*.min.js"],
-        tasks: ['newer:uglify:target']
+        tasks: ['newer:terser:target']
       },
       css: {
         files: ['scss/*.scss'],
         tasks: ['sass', 'postcss', 'copy:mincss']
       }
     },
-    uglify: {
+    terser: {
       options: {
+        compress: true,
         mangle: false
       },
       target: {
@@ -96,8 +97,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-newer');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-terser');
 	grunt.loadNpmTasks('grunt-concurrent');
   grunt.loadNpmTasks('grunt-shell');
-  grunt.registerTask('default', ['uglify','sass','concurrent:target']);
+  grunt.registerTask('default', ['terser','sass','concurrent:target']);
 };

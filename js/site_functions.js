@@ -41,6 +41,18 @@ $(function(){
       } 
 
   });
+
+  // Add to Cart conversion 
+  document.addEventListener('snipcart.ready', () => {
+    Snipcart.events.on('item.added', (cartItem) => {
+      fbq('track', 'AddToCart');
+    }); 
+    Snipcart.events.on('cart.confirmed', (cartConfirmResponse) => {
+      var orderValue = cartConfirmResponse.total.toFixed(2);
+     fbq('track','Purchase', {currency: 'USD', value: orderValue })
+  });
+
+  });
   
   
 });
