@@ -1,6 +1,6 @@
 ---
 title: WHEEL HOUSE MALTED RICE WHISKEY
-price: '26.00'
+price: '55.00'
 img: "/img/spirits/ricewhiskey.png"
 list: whiskey
 
