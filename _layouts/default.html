@@ -34,7 +34,12 @@ scripts:
     <!-- Snipcart -->
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.css" />
     <script async src="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.js"></script>
-    <div id="snipcart" data-api-key="{{ site.prod-key }}" hidden></div>
+    {% if jekyll.environment == "development" %}
+        {% assign key = site.dev-key %}
+    {% else %}
+        {% assign key = site.prod-key %}
+    {% endif %}
+    <div id="snipcart" data-api-key="{{ key }}" hidden></div>
     <!-- Cookies -->
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <!-- Slick js -->

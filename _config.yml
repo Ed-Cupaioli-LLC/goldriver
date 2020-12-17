@@ -4,8 +4,10 @@ description: Gold River Distillery is the first legal distillery in Sacramento C
 meta_img: ./img/gr_logo_navbar.png
 twitter: https://mobile.twitter.com/goldrdistillery
 favicon: /img/GR_favicon.png
-url: https://gold-river.netlify.app
+url: https://goldriverdistillery.com
 prod-key: NTkzMjA1YzgtNjVkMy00YTEyLWFjZjItOTY5NGZiOGU1ODFhNjM3MzgxNzg2NzUyMzI1OTA2
+dev-key: YjZjNjkyMTQtZDY3OC00ZjhmLWJiZTItMDU3NWQ5ZGRlODViNjM3MzgxNzg2NzUyMzI1OTA2
+prod-url: https://goldriverdistillery.com  
 gtm: GTM-KZ544XP
 schema:
   name: Gold River Distillery
