@@ -50,10 +50,117 @@ $(function(){
     Snipcart.events.on('cart.confirmed', (cartConfirmResponse) => {
       var orderValue = cartConfirmResponse.total.toFixed(2);
      fbq('track','Purchase', {currency: 'USD', value: orderValue })
-  });
+    });
 
+    Snipcart.events.on('item.added', (cartItem) => {
+    console.log('added-item:' + cartItem);
+    itemAdded(cartItem)
+    });
+    Snipcart.events.on('item.removed', (cartItem) => {
+    itemRemoved(cartItem)
+    console.log('item-removed:' + cartItem);
+   });
+
+ Snipcart.events.on('cart.confirmed', (cart) => {
+  orderCompleted(cart)
+  //ecommerce recording 
+    cart.items.items.map(function (item) {
+      dataLayer.push( {
+          event: 'Ecommerce',
+          transactionId: item.id,
+          transactionTotal: item.totalPrice,
+          name: item.name,
+          sku: item.name,
+          price: item.price,
+          quantity: item.quantity,
+        
+      });
+  })
+});
+
+});
+ 
+function createProductsFromItems (items) {
+  return items.map(function (item) {
+      return {
+          name: item.name,
+          description: item.description,
+          id: item.id,
+          price: item.price,
+          quantity: item.quantity
+      };
   });
+}
+function productsCheckout  (items) {
+  return items.items.map(function (item) {
+      return {
+          name: item.name,
+          description: item.description,
+          id: item.id,
+          price: item.price,
+          quantity: item.quantity
+      };
+  });
+}
+
+function itemAdded(item){
+  dataLayer.push({
+      event: 'snipcartEvent',
+      eventCategory: 'Add To Cart',
+      eventAction: 'Add To Cart',
+      eventLabel: item.name,
+      eventValue: item.price,
+      ecommerce: {
+          currencyCode: 'USD',
+          add: {
+              products: createProductsFromItems([item])
+          }
+      }
+  });
+}
+
+function itemRemoved(item){
+  dataLayer.push({
+      event: 'snipcartEvent',
+      eventCategory: 'Cart Update',
+      eventAction: 'Item Removed From Cart',
+      eventLabel: item.name,
+      eventValue: item.price,
+      ecommerce: {
+          currencyCode: 'USD',
+          remove: {
+              products: createProductsFromItems([item])
+          }
+      }
+  });
+}
+
+
+function orderCompleted(order){
+  dataLayer.push({
+      event: 'snipcartEvent',
+      eventCategory: 'Order Update',
+      eventAction: 'New Order Completed',
+      ecommerce: {
+          currencyCode: order.currency,
+          purchase: {
+              actionField: {
+                  id: order.token,
+                  affiliation: 'Website',
+                  revenue: order.total,
+                  tax: order.taxesTotal,
+                  invoiceNumber: order.invoiceNumber
+              },
+              products: productsCheckout(order.items),
+              userId: order.invoiceNumber
+          }
+      }
+  });
+}
+
+
   
   
 });
+
 
