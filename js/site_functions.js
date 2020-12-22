@@ -158,9 +158,38 @@ function orderCompleted(order){
   });
 }
 
+let items = 
+{
+  "kind": "content#product",
+  "offerId": "1111111111",
+  "title": "Google Tee Black",
+  "description": "The Black Google Tee is available in unisex sizing and features a retail fit.",
+  "link": "http://my.site.com/blacktee/",
+  "imageLink": "https://shop.example.com/.../images/GGOEGXXX1100.jpg",
+  "contentLanguage": "en",
+  "targetCountry": "US",
+  "channel": "online",
+  "ageGroup": "adult",
+  "availability": "in stock",
+  "availabilityDate": "2019-01-25T13:00:00-08:00",
+  "brand": "Google",
+  "color": "black",
+  "condition": "new",
+  "gender": "male",
+  "googleProductCategory": "1604",
+  "gtin": "608802531656",
+  "itemGroupId": "google_tee",
+  "mpn": "608802531656",
+  "price": {
+   "value": "21.99",
+   "currency": "USD"
+  },
+  "sizes": [
+   "Large"
+  ]
+ }
 
   
   
 });
-
 
