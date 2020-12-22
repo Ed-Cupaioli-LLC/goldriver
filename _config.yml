@@ -11,21 +11,12 @@ prod-url: https://goldriverdistillery.com
 gtm: GTM-KZ544XP
 schema:
   name: Gold River Distillery
-  type: 
-  image: 
-  logo:
   phone: (916)476-3868
-  email: 
-  social:
   location: 
     address: 11460 SUNRISE GOLD CIR. C
     city: RANCHO CORDOVA
     state: CA
-    zip: 95742
-  hours:
-    days:
-    opens:
-    closes:  
+    zip: 95742 
 timezone: America/New York
 future: true
 markdown: kramdown
