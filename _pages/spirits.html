@@ -50,17 +50,19 @@ medals:
     </div>
      </div>
      <div class='content'>
-     <div class='products'>
+     <div class='products' itemscope itemtype="http://schema.org/Product">
         {% assign products = site.products | group_by:'list' %}
         {% for list in products %}
         <dt id='{{ list.name }}' style='visibility:hidden'>{{ list.name }}</dt>
         {% for product in list.items %}
         <div class='product-layout'>
-         <div class='image'> <img loading="lazy" alt="product image" src='{{ product.img | relative_url }}' ></div>
+         <div class='image'> <img loading="lazy" itemprop="image" alt="product image" src='{{ product.img | relative_url }}' ></div>
          <div class='description'>
-             <h1 class='blue-header font-header'>{{ product.title }}</h1>
-             <p class='paragraph-p font-paragraph'>{{ product.content | markdownify }}</p>
-             <p class='p-bold font-paragraph'>${{ product.price }}</p>
+             <h1 class='blue-header font-header' itemprop="name">{{ product.title }}</h1>
+             <p class='paragraph-p font-paragraph' itemprop="description">{{ product.content | markdownify }}</p>
+             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+             <p class='p-bold font-paragraph' itemprop="priceCurrency" content="USD">${{ product.price }}</p>
+            </div>
              <button class='snipcart-add-item button-yellow'
              data-item-id="{{ product.title }}"
              data-item-price="{{ product.price }}"
