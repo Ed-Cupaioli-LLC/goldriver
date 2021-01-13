@@ -61,9 +61,12 @@ $(function(){
     console.log('item-removed:' + cartItem);
    });
 
- Snipcart.events.on('cart.confirmed', (cart) => {
-  orderCompleted(cart)
-  //ecommerce recording 
+   Snipcart.events.on('summary.checkout_clicked', () => {
+    console.log('checkout clicked')
+   });
+   Snipcart.events.on('cart.confirmed', (cart) => {
+    orderCompleted(cart)
+    //ecommerce recording 
     cart.items.items.map(function (item) {
       dataLayer.push( {
           event: 'Ecommerce',
@@ -91,7 +94,7 @@ function createProductsFromItems (items) {
       };
   });
 }
-function productsCheckout  (items) {
+function productsCheckout (items) {
   return items.items.map(function (item) {
       return {
           name: item.name,
@@ -106,7 +109,7 @@ function productsCheckout  (items) {
 function itemAdded(item){
   dataLayer.push({
       event: 'snipcartEvent',
-      eventCategory: 'Add To Cart',
+      eventCategory: 'Add To Cart', 
       eventAction: 'Add To Cart',
       eventLabel: item.name,
       eventValue: item.price,
@@ -158,38 +161,5 @@ function orderCompleted(order){
   });
 }
 
-let items = 
-{
-  "kind": "content#product",
-  "offerId": "1111111111",
-  "title": "Google Tee Black",
-  "description": "The Black Google Tee is available in unisex sizing and features a retail fit.",
-  "link": "http://my.site.com/blacktee/",
-  "imageLink": "https://shop.example.com/.../images/GGOEGXXX1100.jpg",
-  "contentLanguage": "en",
-  "targetCountry": "US",
-  "channel": "online",
-  "ageGroup": "adult",
-  "availability": "in stock",
-  "availabilityDate": "2019-01-25T13:00:00-08:00",
-  "brand": "Google",
-  "color": "black",
-  "condition": "new",
-  "gender": "male",
-  "googleProductCategory": "1604",
-  "gtin": "608802531656",
-  "itemGroupId": "google_tee",
-  "mpn": "608802531656",
-  "price": {
-   "value": "21.99",
-   "currency": "USD"
-  },
-  "sizes": [
-   "Large"
-  ]
- }
-
-  
-  
 });
 
