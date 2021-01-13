@@ -8,7 +8,14 @@
             <li ><a class='large-link' href="{{ '/barrel-district' | relative_url }}">Barrel District</a></li> 
             <li ><a class='large-link' href="{{ '/private-labeling' | relative_url }}">Private Labeling</a></li> 
             <li ><a class='large-link' href="{{ '/where-to-buy' | reltaive_url }}">Where to Buy</a></li> 
-            <span class='snipcart-checkout'><span class='snipcart-items-count'></span><i class="fa fa-shopping-cart "></i></span>
+            <span onclick=" dataLayer.push({
+                'event': 'checkoutOption',
+                'ecommerce': {
+                  'checkout_option': {
+                    'actionField': {'step': 1, 'option': 'Cart Click'}
+                  }
+                }
+              });" class='snipcart-checkout'><span class='snipcart-items-count'></span><i class="fa fa-shopping-cart "></i></span>
            </div>
 
     </div>
