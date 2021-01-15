@@ -54,15 +54,6 @@ medals:
         {% for list in products %}
         <dt id='{{ list.name }}' style='visibility:hidden'>{{ list.name }}</dt>
         {% for product in list.items %}
-        <span itemscope itemtype="http://schema.org/Product" class="microdata">
-            <meta itemprop="image" content="{{ product.img | relative_url }}">
-            <meta itemprop="name" content="{{ product.title }}">
-            <meta itemprop="description" content="{{ product.content }}">
-            <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-              <meta itemprop="price" content="{{ product.price }}">
-              <meta itemprop="priceCurrency" content="USD">
-            </span>
-          </span>
         <div class='product-layout'>
          <div class='image'> <img loading="lazy" alt="product image" src='{{ product.img | relative_url }}' ></div>
          <div class='description'>

@@ -53,16 +53,10 @@ $(function(){
     });
 
     Snipcart.events.on('item.added', (cartItem) => {
-    console.log('added-item:' + cartItem);
     itemAdded(cartItem)
     });
     Snipcart.events.on('item.removed', (cartItem) => {
     itemRemoved(cartItem)
-    console.log('item-removed:' + cartItem);
-   });
-
-   Snipcart.events.on('summary.checkout_clicked', () => {
-    console.log('checkout clicked')
    });
    Snipcart.events.on('cart.confirmed', (cart) => {
     orderCompleted(cart)
@@ -160,6 +154,25 @@ function orderCompleted(order){
       }
   });
 }
+
+//Event tracking for sessions with product views 
+
+$(".snipcart-add-item").on("click", function() {
+  console.log( $(this).attr('data-item-id'));
+  dataLayer.push({
+    event: 'item-view',
+    'ecommerce': {
+      'detail': {
+        'products': [{
+          'name': $(this).attr('data-item-id'),
+
+         }]
+       }
+     }
+  });
+  
+});
+
 
 });
 
